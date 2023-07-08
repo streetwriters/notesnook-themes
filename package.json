@@ -1,0 +1,17 @@
+{
+  "name": "themes-server",
+  "version": "1.0.0",
+  "description": "A simple rest api for notesnook themes",
+  "private": "true",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "generate": "node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "20.4.1",
+    "typescript": "^4.5.4"
+  }
+}
