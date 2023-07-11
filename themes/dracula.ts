@@ -161,7 +161,7 @@ export const ThemeDracula: ThemeDefinition = {
         background: "#282a36",
       },
       secondary: {
-        background: "#bd93f9",
+        background: "#343746",
       },
     },
   },
