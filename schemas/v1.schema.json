@@ -1,0 +1,3462 @@
+{
+  "$ref": "#/definitions/ThemeDefinition",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Colors": {
+      "additionalProperties": false,
+      "properties": {
+        "accent": {
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+          "type": "string"
+        },
+        "backdrop": {
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+          "type": "string"
+        },
+        "background": {
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+          "type": "string"
+        },
+        "border": {
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+          "type": "string"
+        },
+        "heading": {
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+          "type": "string"
+        },
+        "hover": {
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+          "type": "string"
+        },
+        "icon": {
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+          "type": "string"
+        },
+        "paragraph": {
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+          "type": "string"
+        },
+        "placeholder": {
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+          "type": "string"
+        },
+        "separator": {
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+          "type": "string"
+        },
+        "shade": {
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+          "type": "string"
+        },
+        "textSelection": {
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "accent",
+        "paragraph",
+        "background",
+        "border",
+        "heading",
+        "icon",
+        "separator",
+        "placeholder",
+        "hover",
+        "shade",
+        "backdrop",
+        "textSelection"
+      ],
+      "type": "object"
+    },
+    "ThemeAuthor": {
+      "additionalProperties": false,
+      "properties": {
+        "email": {
+          "description": "Contact email of the author.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the author.",
+          "type": "string"
+        },
+        "url": {
+          "description": "Website or support page of the author.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
+    "ThemeCompatibilityVersion": {
+      "const": 1,
+      "type": "number"
+    },
+    "ThemeDefinition": {
+      "additionalProperties": false,
+      "description": "This is a schema for validation of Notesnook themes.",
+      "properties": {
+        "authors": {
+          "description": "Author(s) of the theme.",
+          "items": {
+            "$ref": "#/definitions/ThemeAuthor"
+          },
+          "type": "array"
+        },
+        "colorScheme": {
+          "description": "Whether the theme has a dark color scheme or light.",
+          "enum": [
+            "light",
+            "dark"
+          ],
+          "type": "string"
+        },
+        "compatibilityVersion": {
+          "$ref": "#/definitions/ThemeCompatibilityVersion",
+          "description": "The compatibility version of the theme used by the client to decide whether the theme is compatible with the current app version."
+        },
+        "description": {
+          "description": "A short description of the theme.",
+          "type": "string"
+        },
+        "homepage": {
+          "description": "Website or homepage of the theme.",
+          "format": "uri",
+          "type": "string"
+        },
+        "id": {
+          "description": "ID of the theme. Must be unique across all other themes.",
+          "type": "string"
+        },
+        "license": {
+          "description": "The license under which the theme can be shared, modified etc.",
+          "examples": [
+            "GPL-3.0-or-later",
+            "Apache-2.0",
+            "BSD-3-Clause",
+            "MIT",
+            "MPL-2.0"
+          ],
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the theme",
+          "type": "string"
+        },
+        "scopes": {
+          "$ref": "#/definitions/ThemeScopes",
+          "description": "All the theme scopes."
+        },
+        "tags": {
+          "description": "Keywords to help categorize the theme & improve search results.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "version": {
+          "description": "Version of the theme.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "id",
+        "version",
+        "compatibilityVersion",
+        "license",
+        "authors",
+        "homepage",
+        "description",
+        "colorScheme",
+        "scopes"
+      ],
+      "title": "Notesnook Theme schema",
+      "type": "object"
+    },
+    "ThemeScopes": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "$ref": "#/definitions/Variants%3Ctrue%3E",
+          "description": "Base theme scope is the only scope that must be 100% specified. There are no optional variants or colors in this scope and it acts as a fallback for all the other scopes in case a color or variant is missing in them."
+        },
+        "contextMenu": {
+          "additionalProperties": false,
+          "description": "Scope for all the context menus in the app. This is desktop/web only since the mobile clients do not have context menus.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "dialog": {
+          "additionalProperties": false,
+          "description": "Scope for all the dialogs in the app.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "editor": {
+          "additionalProperties": false,
+          "description": "Scope for everything inside the editor excluding the toolbar which has its own scope.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "editorToolbar": {
+          "additionalProperties": false,
+          "description": "Scope specific to the Editor Toolbar.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "list": {
+          "additionalProperties": false,
+          "description": "Scope for the central list view containing your notes, notebooks, tags etc.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "navigationMenu": {
+          "additionalProperties": false,
+          "description": "Scope for the side navigation menu.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "sheet": {
+          "additionalProperties": false,
+          "description": "Scope for all the bottom sheets shown in the app. This scope only applies on the mobile clients & the mobile version of the web app.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "statusBar": {
+          "additionalProperties": false,
+          "description": "Scope for the status bar on Desktop & mobile. On mobile, the status bar can be found at the bottom of the side navigation menu which includes the sync status, logged in status etc.",
+          "properties": {
+            "disabled": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "error": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "primary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "secondary": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "selected": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "success": {
+              "additionalProperties": false,
+              "properties": {
+                "accent": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "backdrop": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "background": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "border": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "heading": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "hover": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "paragraph": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "placeholder": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "separator": {
+                  "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+                  "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+                  "type": "string"
+                },
+                "shade": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                },
+                "textSelection": {
+                  "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+                  "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "required": [
+        "base"
+      ],
+      "type": "object"
+    },
+    "Variants<true>": {
+      "additionalProperties": false,
+      "properties": {
+        "disabled": {
+          "$ref": "#/definitions/Colors"
+        },
+        "error": {
+          "$ref": "#/definitions/Colors"
+        },
+        "primary": {
+          "$ref": "#/definitions/Colors"
+        },
+        "secondary": {
+          "$ref": "#/definitions/Colors"
+        },
+        "selected": {
+          "$ref": "#/definitions/Colors"
+        },
+        "success": {
+          "$ref": "#/definitions/Colors"
+        }
+      },
+      "required": [
+        "primary",
+        "secondary",
+        "disabled",
+        "selected",
+        "error",
+        "success"
+      ],
+      "type": "object"
+    }
+  }
+}

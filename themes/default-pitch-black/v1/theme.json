@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/v1.schema.json",
+  "version": 1.0,
+  "id": "default-pitch-black",
+  "name": "Notesnook Pitch Black",
+  "description": "The default pitch black theme for Notesnook app.",
+  "homepage": "https://notesnook.com",
+  "tags": ["default"],
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Streetwriters (Private) Limited",
+      "email": "support@streetwriters.co",
+      "url": "https://streetwriters.co"
+    }
+  ],
+  "compatibilityVersion": 1.0,
+  "colorScheme": "dark",
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#008837",
+        "background": "#000000",
+        "border": "#202020",
+        "placeholder": "#404040",
+        "heading": "#e3e3e3",
+        "paragraph": "#D3D3D3",
+        "icon": "#808080",
+        "separator": "#383838",
+        "backdrop": "#35353580",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "textSelection": "#00883777"
+      },
+      "secondary": {
+        "accent": "#008837",
+        "background": "#2b2b2b",
+        "border": "#202020",
+        "placeholder": "#404040",
+        "heading": "#808080",
+        "paragraph": "#818589",
+        "icon": "#808080",
+        "separator": "#383838",
+        "backdrop": "#35353580",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "textSelection": "#00883777"
+      },
+      "disabled": {
+        "accent": "#008837",
+        "background": "#000000",
+        "border": "#202020",
+        "placeholder": "#404040",
+        "heading": "#212121",
+        "paragraph": "#505050",
+        "icon": "#808080",
+        "separator": "#383838",
+        "backdrop": "#35353580",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "textSelection": "#00883777"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "background": "#f4433620",
+        "border": "#202020",
+        "placeholder": "#404040",
+        "heading": "#f54b42",
+        "paragraph": "#f54b42",
+        "icon": "#f54b42",
+        "separator": "#383838",
+        "backdrop": "#35353580",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "textSelection": "#f54b4255"
+      },
+      "success": {
+        "accent": "#4F8A10",
+        "background": "#00FF0020",
+        "border": "#202020",
+        "placeholder": "#404040",
+        "heading": "#4F8A10",
+        "paragraph": "#4F8A10",
+        "icon": "#4F8A10",
+        "separator": "#383838",
+        "backdrop": "#35353580",
+        "hover": "#ffffff10",
+        "shade": "#4F8A1012",
+        "textSelection": "#4F8A1055"
+      }
+    }
+  }
+}
