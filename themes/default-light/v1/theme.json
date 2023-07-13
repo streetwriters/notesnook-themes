@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../schemas/v1.schema.json",
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "version": 1.0,
   "id": "default-light",
   "name": "Notesnook Light",
