@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "version": 1.0,
+  "version": 1.1,
   "id": "default-dark",
   "name": "Notesnook Dark",
   "license": "GPL-3.0-or-later",
@@ -21,7 +21,7 @@
       "primary": {
         "accent": "#008837",
         "background": "#181818",
-        "border": "#202020",
+        "border": "#303030",
         "placeholder": "#404040",
         "heading": "#e3e3e3",
         "paragraph": "#D3D3D3",
