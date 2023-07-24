@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "version": 1.1,
+  "version": 1.2,
   "id": "default-pitch-black",
   "name": "Notesnook Pitch Black",
   "description": "The default pitch black theme for Notesnook app.",
@@ -28,13 +28,13 @@
         "icon": "#808080",
         "separator": "#383838",
         "backdrop": "#35353580",
-        "hover": "#ffffff10",
+        "hover": "#2b2b2b",
         "shade": "#00883712",
         "textSelection": "#00883777"
       },
       "secondary": {
         "accent": "#008837",
-        "background": "#2b2b2b",
+        "background": "#202020",
         "border": "#202020",
         "placeholder": "#404040",
         "heading": "#808080",
@@ -90,7 +90,7 @@
       },
       "selected": {
         "accent": "#008837",
-        "background": "#2b2b2b",
+        "background": "#303030",
         "border": "#202020",
         "placeholder": "#404040",
         "heading": "#e3e3e3",
@@ -101,6 +101,16 @@
         "hover": "#ffffff10",
         "shade": "#00883712",
         "textSelection": "#00883777"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#202020"
+      }
+    },
+    "list": {
+      "selected": {
+        "background": "#202020"
       }
     }
   }

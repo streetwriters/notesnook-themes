@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "version": 1.1,
+  "version": 1.2,
   "id": "default-light",
   "name": "Notesnook Light",
   "description": "The default light theme for Notesnook app",
@@ -90,12 +90,12 @@
       },
       "selected": {
         "accent": "#008837",
-        "background": "#f7f7f7",
+        "background": "#e0e0e0",
         "border": "#008837",
         "placeholder": "#a9a9a9",
         "heading": "#212121",
         "paragraph": "#303030",
-        "icon": "#008837",
+        "icon": "#303030",
         "separator": "#E8E8E8",
         "backdrop": "#0000001a",
         "hover": "#00000010",
@@ -113,6 +113,16 @@
         "icon": "#303030"
       },
       "secondary": { "background": "#EEEEEE" }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#f7f7f7"
+      }
+    },
+    "list": {
+      "selected": {
+        "background": "#f7f7f7"
+      }
     }
   }
 }
