@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "version": 1.3,
+  "version": 1.4,
   "id": "default-dark",
   "name": "Notesnook Dark",
   "license": "GPL-3.0-or-later",
@@ -111,6 +111,11 @@
     "list": {
       "selected": {
         "background": "#202020"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
       }
     }
   }

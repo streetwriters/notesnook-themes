@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "version": 1.2,
+  "version": 1.3,
   "id": "default-light",
   "name": "Notesnook Light",
   "description": "The default light theme for Notesnook app",
@@ -122,6 +122,11 @@
     "list": {
       "selected": {
         "background": "#f7f7f7"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
       }
     }
   }
