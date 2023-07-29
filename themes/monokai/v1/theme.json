@@ -1,7 +1,7 @@
 {
   "name": "Monokai",
   "id": "monokai",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Monokai theme the Notesnook app",
@@ -39,7 +39,7 @@
         "icon": "#808080",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
+        "hover": "#32332c",
         "shade": "#ff618812",
         "backdrop": "#35353580",
         "textSelection": "#ff618877"
@@ -81,7 +81,7 @@
         "icon": "#dc2626",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
+        "hover": "#320909",
         "shade": "#dc262612",
         "backdrop": "#35353580",
         "textSelection": "#dc262655"
@@ -95,7 +95,7 @@
         "icon": "#4F8A10",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
+        "hover": "#152404",
         "shade": "#4F8A1012",
         "backdrop": "#35353580",
         "textSelection": "#4F8A1055"
@@ -103,14 +103,19 @@
     },
     "statusBar": {
       "primary": {
-        "paragraph": "#7a8288",
-        "background": "#2e2f28",
-        "border": "#313437"
+        "paragraph": "#dcdcdc",
+        "background": "#414339",
+        "border": "#313437",
+        "icon": "#dcdcdc"
       }
     },
     "list": { "selected": { "background": "#2e2f28" } },
     "editor": {
-      "primary": { "paragraph": "#faf9f4", "background": "#272822" },
+      "primary": {
+        "paragraph": "#faf9f4",
+        "background": "#272822",
+        "textSelection": "#878b9180"
+      },
       "secondary": { "background": "#1e1f1c" },
       "selected": { "background": "#3e3d32", "icon": "#ff6188" }
     },
