@@ -102,9 +102,9 @@
         "textSelection": "#4F8A1055"
       }
     },
-    "contextMenu": { "primary": { "background": "#161616" }, "secondary": { "background": "#1a1a1a" } },
+    "contextMenu": { "primary": { "background": "#141414" }, "secondary": { "background": "#1a1a1a" } },
     "sheet": {
-      "primary": { "background": "#161616" },
+      "primary": { "background": "#141414" },
       "secondary": { "background": "#1a1a1a" },
       "selected": { "paragraph": "#008837" }
     }
