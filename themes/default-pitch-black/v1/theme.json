@@ -102,10 +102,10 @@
         "textSelection": "#4F8A1055"
       }
     },
-    "contextMenu": { "primary": { "background": "#101010" } },
+    "contextMenu": { "primary": { "background": "#161616" }, "secondary": { "background": "#1a1a1a" } },
     "sheet": {
-      "primary": { "background": "#101010" },
-      "secondary": { "background": "#141414" },
+      "primary": { "background": "#161616" },
+      "secondary": { "background": "#1a1a1a" },
       "selected": { "paragraph": "#008837" }
     }
   }
