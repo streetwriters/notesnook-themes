@@ -104,7 +104,7 @@
     },
     "contextMenu": { "primary": { "background": "#101010" } },
     "sheet": {
-      "primary": { "background": "#101010" }
+      "primary": { "background": "#101010" },
       "secondary": { "background": "#141414" },
       "selected": { "paragraph": "#008837" }
     }
