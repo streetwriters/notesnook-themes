@@ -127,6 +127,10 @@
           "$ref": "#/definitions/PartialVariants",
           "description": "Scope specific to the Editor Toolbar."
         },
+        "editorSidebar": {
+          "$ref": "#/definitions/PartialVariants",
+          "description": "Scope for all the Editor side bars include note properties, attachment previews etc."
+        },
         "dialog": {
           "$ref": "#/definitions/PartialVariants",
           "description": "Scope for all the dialogs in the app."
