@@ -1,7 +1,7 @@
 {
   "name": "Notesnook Pitch Black",
   "id": "default-pitch-black",
-  "version": 1.5,
+  "version": 1.6,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default pitch black theme for Notesnook app.",
@@ -101,6 +101,7 @@
         "textSelection": "#4F8A1055"
       }
     },
+    "editor": { "primary": { "border": "#202020" } },
     "contextMenu": {
       "primary": { "background": "#141414", "border": "#1f1f1f" },
       "secondary": { "background": "#1a1a1a", "border": "#202020" }
