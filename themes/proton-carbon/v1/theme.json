@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Proton Carbon theme",
   "id": "proton-carbon",
-  "version": 1,
+  "version": 2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Colors from proton mail's carbon theme",
@@ -27,7 +27,7 @@
         "separator": "#4A4658",
         "placeholder": "#404040",
         "hover": "#24212B",
-        "shade": "#00883712",
+        "shade": "#7C5CFF12",
         "backdrop": "#35353580",
         "textSelection": "#7C5CFF"
       },
@@ -41,7 +41,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
+        "shade": "#7C5CFF12",
         "backdrop": "#35353580",
         "textSelection": "#7C5CFF"
       },
@@ -55,7 +55,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
+        "shade": "#7C5CFF12",
         "backdrop": "#35353580",
         "textSelection": "#7C5CFF"
       },
@@ -69,7 +69,7 @@
         "separator": "#4A4658",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
+        "shade": "#7C5CFF12",
         "backdrop": "#35353580",
         "textSelection": "#7C5CFF"
       },
@@ -83,7 +83,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
+        "shade": "#7C5CFF12",
         "backdrop": "#35353580",
         "textSelection": "#f54b4255"
       },
@@ -97,7 +97,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#4F8A1012",
+        "shade": "#7C5CFF12",
         "backdrop": "#35353580",
         "textSelection": "#4F8A1055"
       }
