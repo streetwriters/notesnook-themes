@@ -4,7 +4,6 @@
   "id": "tokyonight-dark",
   "version": 1.5,
   "license": "GPL-3.0-or-later",
-  "homepage": "https://notesnook.com",
   "description": "A Tokyonight dark theme for Notesnook app",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
