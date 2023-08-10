@@ -18,6 +18,8 @@ jobs:
           files_yaml: |
             theme:
               - themes/**/theme.json
+            schema:
+              - schemas/*.json
 
       - name: Get PR number
         id: pr
@@ -27,7 +29,7 @@ jobs:
           echo "pull_number=$pull_number" >>$GITHUB_OUTPUT
 
       - name: Validate JSON
-        if: steps.changed-files.outputs.theme_any_changed == 'true'
+        if: steps.changed-files.outputs.theme_any_changed == 'true' || steps.changed-files.outputs.schema_any_changed == 'true'
         uses: GrantBirki/json-yaml-validate@v2.1.0
         with:
           comment: "true"
