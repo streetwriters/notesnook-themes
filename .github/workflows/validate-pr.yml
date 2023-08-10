@@ -46,4 +46,4 @@ jobs:
         if: steps.changed-files.outputs.theme_any_changed == 'true'
         with:
           message: |
-            Your preview URL is: https://theme-builder.notesnook.com/notes?from_pr=streetwriters/notesnook/${{steps.pr.outputs.pull_number}}
+            Your preview URL is: https://theme-builder.notesnook.com/notes?from_pr=streetwriters/notesnook-themes/${{steps.pr.outputs.pull_number}}
