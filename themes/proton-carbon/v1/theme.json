@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Proton Carbon theme",
+  "id": "proton-carbon",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Colors from proton mail's carbon theme",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Anastasis M.",
+      "email": "notesnook.ktzyd@slmail.me",
+      "url": ""
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#7C5CFF",
+        "paragraph": "#D3D3D3",
+        "background": "#16141C",
+        "border": "#4A4658",
+        "heading": "#6D6A79",
+        "icon": "#918F94",
+        "separator": "#4A4658",
+        "placeholder": "#404040",
+        "hover": "#24212B",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#7C5CFF"
+      },
+      "secondary": {
+        "accent": "#7C5CFF",
+        "paragraph": "#818589",
+        "background": "#24212B",
+        "border": "#4A4658",
+        "heading": "#808080",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#7C5CFF"
+      },
+      "disabled": {
+        "accent": "#7C5CFF",
+        "paragraph": "#505050",
+        "background": "#ffffff",
+        "border": "#383838",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#7C5CFF"
+      },
+      "selected": {
+        "accent": "#7C5CFF",
+        "paragraph": "#D3D3D3",
+        "background": "#24212B",
+        "border": "#7C5CFF",
+        "heading": "#e3e3e3",
+        "icon": "#7C5CFF",
+        "separator": "#4A4658",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#7C5CFF"
+      },
+      "error": {
+        "accent": "#F64C6B",
+        "paragraph": "#F64C6B",
+        "background": "#250b0a",
+        "border": "#383838",
+        "heading": "#F64C6B",
+        "icon": "#F64C6B",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#f54b4255"
+      },
+      "success": {
+        "accent": "#1EA885",
+        "paragraph": "#1EA885",
+        "background": "#132204",
+        "border": "#383838",
+        "heading": "#1EA885",
+        "icon": "#1EA885",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#4F8A1012",
+        "backdrop": "#35353580",
+        "textSelection": "#4F8A1055"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#7C5CFF"
+      }
+    }
+  }
+}
