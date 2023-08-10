@@ -6,6 +6,8 @@ jobs:
   validate:
     name: Validate
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: actions/checkout@v3
       - name: Validate JSON
@@ -16,3 +18,24 @@ jobs:
           json_schema: ./schemas/v1.schema.json
           base_dir: ./themes/
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get all theme files that have changed
+        id: changed-files
+        uses: tj-actions/changed-files@v37
+        with:
+          files_yaml: |
+            theme:
+              - themes/**/theme.json
+
+      - name: Get PR number
+        id: pr
+        run: |
+          pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+          echo "Pull number is $pull_number"
+          echo "pull_number=$pull_number" >>$GITHUB_OUTPUT
+
+      - uses: mshick/add-pr-comment@v2
+        if: steps.changed-files.outputs.theme_any_changed == 'true'
+        with:
+          message: |
+            Your preview URL is: https://theme-builder.notesnook.com/notes?from_pr=streetwriters/notesnook/${{steps.pr.outputs.pull_number}}
