@@ -1,18 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Proton Carbon theme",
+  "name": "Proton Carbon",
   "id": "proton-carbon",
-  "version": 2,
+  "version": 2.1,
   "license": "GPL-3.0-or-later",
-  "homepage": "https://notesnook.com",
   "description": "Colors from proton mail's carbon theme",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
     {
       "name": "Anastasis M.",
-      "email": "notesnook.ktzyd@slmail.me",
-      "url": ""
+      "email": "notesnook.ktzyd@slmail.me"
     }
   ],
   "scopes": {
