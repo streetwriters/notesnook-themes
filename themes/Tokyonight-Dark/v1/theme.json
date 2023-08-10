@@ -10,7 +10,7 @@
   "compatibilityVersion": 1,
   "authors": [
     {
-      "name": "Andres M.",
+      "name": "Andres M",
       "email": "andresmessina@proton.me",
       "url": "https://mastodon.social/@aureliuspublius"
     }
@@ -82,10 +82,10 @@
         "icon": "#ed333b",
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
+        "hover": "#241f31",
+        "shade": "#241f31",
+        "backdrop": "#191a26",
+        "textSelection": "#62a0ea"
       },
       "success": {
         "accent": "#4f8a10",
@@ -96,101 +96,34 @@
         "icon": "#4f8a10",
         "separator": "#e8e8e8",
         "placeholder": "#a9a9a9",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
+        "hover": "#241f31",
+        "shade": "#241f31",
+        "backdrop": "#191a26",
+        "textSelection": "#62a0ea"
       }
     },
     "statusBar": {
       "primary": {
-        "accent": "#000000",
         "paragraph": "#c0caf5",
         "background": "#191a26",
-        "border": "#000000",
-        "heading": "#000000",
-        "icon": "#c0caf5",
-        "separator": "#000000",
-        "placeholder": "#000000",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
+        "icon": "#c0caf5"
       },
       "secondary": {
-        "accent": "#000000",
         "paragraph": "#c0caf5",
         "background": "#191a26",
-        "border": "#000000",
-        "heading": "#000000",
-        "icon": "#c0caf5",
-        "separator": "#000000",
-        "placeholder": "#000000",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
-      },
-      "disabled": {
-        "accent": "#000000",
-        "paragraph": "#000000",
-        "background": "#000000",
-        "border": "#000000",
-        "heading": "#000000",
-        "icon": "#000000",
-        "separator": "#000000",
-        "placeholder": "#000000",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
-      },
-      "selected": {
-        "accent": "#000000",
-        "paragraph": "#000000",
-        "background": "#000000",
-        "border": "#000000",
-        "heading": "#000000",
-        "icon": "#000000",
-        "separator": "#000000",
-        "placeholder": "#000000",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
+        "icon": "#c0caf5"
       },
       "error": {
-        "accent": "#000000",
-        "paragraph": "#000000",
-        "background": "#000000",
-        "border": "#000000",
-        "heading": "#000000",
         "icon": "#ed333b",
-        "separator": "#c0caf5",
-        "placeholder": "#000000",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
+        "separator": "#c0caf5"
       },
       "success": {
-        "accent": "#000000",
-        "paragraph": "#000000",
-        "background": "#000000",
-        "border": "#000000",
-        "heading": "#000000",
-        "icon": "#57e389",
-        "separator": "#000000",
-        "placeholder": "#000000",
-        "hover": "#000000",
-        "shade": "#000000",
-        "backdrop": "#000000",
-        "textSelection": "#000000"
+        "icon": "#57e389"
       }
     },
     "list": {
       "primary": {
-        "accent": "#c0caf5",
+        "accent": "#1b728d",
         "paragraph": "#c0caf5",
         "background": "#191a26",
         "border": "#c0caf5",
