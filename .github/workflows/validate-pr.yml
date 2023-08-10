@@ -10,14 +10,6 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v3
-      - name: Validate JSON
-        uses: GrantBirki/json-yaml-validate@v2.1.0
-        with:
-          comment: "true"
-          use_dot_match: "false"
-          json_schema: ./schemas/v1.schema.json
-          base_dir: ./themes/
-          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get all theme files that have changed
         id: changed-files
@@ -33,6 +25,16 @@ jobs:
           pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
           echo "Pull number is $pull_number"
           echo "pull_number=$pull_number" >>$GITHUB_OUTPUT
+
+      - name: Validate JSON
+        if: steps.changed-files.outputs.theme_any_changed == 'true'
+        uses: GrantBirki/json-yaml-validate@v2.1.0
+        with:
+          comment: "true"
+          use_dot_match: "false"
+          json_schema: ./schemas/v1.schema.json
+          base_dir: ./themes/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: mshick/add-pr-comment@v2
         if: steps.changed-files.outputs.theme_any_changed == 'true'
