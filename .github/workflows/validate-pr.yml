@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Validate JSON
-        uses: GrantBirki/json-yaml-validate@v2.0.0
+        uses: GrantBirki/json-yaml-validate@v2.1.0
         with:
           comment: "true"
           use_dot_match: "false"
