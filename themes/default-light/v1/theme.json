@@ -5,7 +5,7 @@
   "version": 1.5,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
-  "description": "The default light theme for Notesnook app",
+  "description": "The default light theme for Notesnook app.",
   "colorScheme": "light",
   "compatibilityVersion": 1,
   "authors": [
