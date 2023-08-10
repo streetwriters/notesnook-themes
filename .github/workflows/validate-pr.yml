@@ -32,6 +32,23 @@ jobs:
           echo "Pull number is $pull_number"
           echo "pull_number=$pull_number" >>$GITHUB_OUTPUT
 
+      - name: Get base directory
+        if: steps.changed-files.outputs.theme_any_changed == 'true'
+        id: get_base_dir
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "File changed $file";
+            if [[ $file == *theme.json ]]
+            then
+              echo "Found theme file at $file";
+              base_dir=$(dirname $file)
+              echo "Dirname: $base_dir"
+              echo "base_dir=$base_dir" >> $GITHUB_OUTPUT
+            else
+              echo "Did not find the theme file.";
+            fi
+          done
+
       - name: Validate JSON
         if: steps.changed-files.outputs.theme_any_changed == 'true' || steps.changed-files.outputs.schema_any_changed == 'true'
         uses: GrantBirki/json-yaml-validate@v2.1.0
@@ -39,7 +56,7 @@ jobs:
           comment: "true"
           use_dot_match: "false"
           json_schema: ./schemas/v1.schema.json
-          base_dir: ./themes/
+          base_dir: ${{ steps.get_base_dir.outputs.base_dir }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: mshick/add-pr-comment@v2
