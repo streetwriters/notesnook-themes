@@ -1,0 +1,18 @@
+name: Lint and validate
+
+on: [pull_request]
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON
+        uses: snapcart/json-schema-validator@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          json_schema: ./schemas/v1.schema.json
+          json_path_pattern: ^theme.json$
+          send_comment: true
+          clear_comments: true
