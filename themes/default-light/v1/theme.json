@@ -1,7 +1,8 @@
 {
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Notesnook Light",
   "id": "default-light",
-  "version": 1.4,
+  "version": 1.5,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default light theme for Notesnook app",
@@ -75,7 +76,7 @@
       "error": {
         "accent": "#f54b42",
         "paragraph": "#f54b42",
-        "background": "#ffa69c",
+        "background": "#ffe2df",
         "border": "#E8E8E8",
         "heading": "#f54b42",
         "icon": "#f54b42",
@@ -102,19 +103,35 @@
       }
     },
     "statusBar": {
-      "primary": { "paragraph": "#5E5E5E", "background": "#f7f7f7" }
+      "primary": {
+        "paragraph": "#5E5E5E",
+        "background": "#f7f7f7"
+      }
     },
-    "list": { "selected": { "background": "#f7f7f7" } },
+    "list": {
+      "selected": {
+        "background": "#f7f7f7"
+      }
+    },
     "navigationMenu": {
       "primary": {
         "paragraph": "#303030",
         "background": "#f7f7f7",
         "icon": "#303030"
       },
-      "secondary": { "background": "#EEEEEE" }
+      "secondary": {
+        "background": "#EEEEEE"
+      }
     },
-    "contextMenu": { "primary": { "background": "#f7f7f7" } },
-    "sheet": { "selected": { "paragraph": "#008837" } }
-  },
-  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json"
+    "contextMenu": {
+      "primary": {
+        "background": "#f7f7f7"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
+      }
+    }
+  }
 }
