@@ -5,6 +5,10 @@
     "ThemeDefinition": {
       "type": "object",
       "properties": {
+        "$schema": {
+          "type": "string",
+          "const": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json"
+        },
         "name": {
           "type": "string",
           "description": "Name of the theme"
@@ -66,6 +70,7 @@
         }
       },
       "required": [
+        "$schema",
         "name",
         "id",
         "version",
@@ -201,8 +206,8 @@
         },
         "background": {
           "type": "string",
-          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
-          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$"
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$"
         },
         "border": {
           "type": "string",
@@ -305,8 +310,8 @@
         },
         "background": {
           "type": "string",
-          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
-          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$"
+          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
+          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$"
         },
         "border": {
           "type": "string",
