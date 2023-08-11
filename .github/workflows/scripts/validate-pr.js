@@ -16,6 +16,7 @@ module.exports = async ({ github, context, files }) => {
     await comment({
       github,
       context,
+      id: "validate-pr",
       body: `**We found a couple of errors in your submission:**
     
 ${errors.join("\n\n")}`,

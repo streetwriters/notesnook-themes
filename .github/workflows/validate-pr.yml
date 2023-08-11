@@ -57,5 +57,6 @@ jobs:
             await script({ 
               github,
               context,
+              id: "preview-comment",
               body: `Your preview URL is: https://theme-builder.notesnook.com/notes?from_pr=streetwriters/notesnook-themes/${context.issue.number}`
             });

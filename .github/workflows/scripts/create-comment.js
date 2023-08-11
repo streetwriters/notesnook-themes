@@ -1,5 +1,5 @@
-const MESSAGE_ID = `<!-- add-pr-comment:add-pr-comment -->`;
-module.exports = async ({ github, context, body }) => {
+const MESSAGE_ID = (id) => `<!-- add-pr-comment:${id}:add-pr-comment -->`;
+module.exports = async ({ github, context, body, id }) => {
   const parameters = {
     owner: context.repo.owner,
     repo: context.repo.repo,
@@ -13,7 +13,7 @@ module.exports = async ({ github, context, body }) => {
     parameters
   )) {
     found = comments.data.find(({ body }) => {
-      return (body?.search(MESSAGE_ID) ?? -1) > -1;
+      return (body?.search(MESSAGE_ID(id)) ?? -1) > -1;
     });
 
     if (found) {
@@ -34,6 +34,6 @@ module.exports = async ({ github, context, body }) => {
     issue_number: context.issue.number,
     owner: context.repo.owner,
     repo: context.repo.repo,
-    body: `${MESSAGE_ID}\n\n${body}`,
+    body: `${MESSAGE_ID(id)}\n\n${body}`,
   });
 };
