@@ -24,7 +24,7 @@ jobs:
         with:
           files_yaml: |
             theme:
-              - themes/**/theme.json
+              - themes/**/*.json
             schema:
               - schemas/*.json
 
