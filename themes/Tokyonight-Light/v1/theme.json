@@ -1,0 +1,123 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Tokyonight Light",
+  "id": "tokyonight-light",
+  "version": 1.5,
+  "license": "GPL-3.0-or-later",
+  "description": "Tokyonight light theme for Notesnook app",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Andres M",
+      "email": "andresmessina@proton.me",
+      "url": "https://mastodon.social/@aureliuspublius"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#191a26",
+        "paragraph": "#191A26",
+        "background": "#D8DAE6",
+        "border": "#191A26",
+        "heading": "#191A26",
+        "icon": "#191A26",
+        "separator": "#191A26",
+        "placeholder": "#191A26",
+        "hover": "#c8cff1",
+        "shade": "#C0C8F4",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      },
+      "secondary": {
+        "accent": "#191a26",
+        "paragraph": "#191A26",
+        "background": "#D8DAE6",
+        "border": "#191a26",
+        "heading": "#191a26",
+        "icon": "#191a26",
+        "separator": "#191a26",
+        "placeholder": "#191a26",
+        "hover": "#c8cff1",
+        "shade": "#C0C8F4",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      },
+      "disabled": {
+        "accent": "#191a26",
+        "paragraph": "#191A26",
+        "background": "#D8DAE6",
+        "border": "#191a26",
+        "heading": "#191a26",
+        "icon": "#191a26",
+        "separator": "#191a26",
+        "placeholder": "#191a26",
+        "hover": "#c8cff1",
+        "shade": "#C0C8F4",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      },
+      "selected": {
+        "accent": "#191a26",
+        "paragraph": "#191a26",
+        "background": "#C0C8F4",
+        "border": "#191a26",
+        "heading": "#212121",
+        "icon": "#9141ac",
+        "separator": "#E8E8E8",
+        "placeholder": "#191a26",
+        "hover": "#00000010",
+        "shade": "#00883712",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      },
+      "error": {
+        "accent": "#191a26",
+        "paragraph": "#f54b42",
+        "background": "#dfe0e5",
+        "border": "#E8E8E8",
+        "heading": "#f54b42",
+        "icon": "#ed333b",
+        "separator": "#E8E8E8",
+        "placeholder": "#191a26",
+        "hover": "#00000010",
+        "shade": "#00883712",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      },
+      "success": {
+        "accent": "#191a26",
+        "paragraph": "#191a26",
+        "background": "#dfe0e5",
+        "border": "#191a26",
+        "heading": "#191a26",
+        "icon": "#191a26",
+        "separator": "#191a26",
+        "placeholder": "#191a26",
+        "hover": "#00000010",
+        "shade": "#4F8A1012",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "background": "#D8DAE6"
+      },
+      "secondary": {
+        "background": "#D8DAE6"
+      }
+    },
+    "list": {
+      "selected": {
+        "background": "#c0c8f4"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#D8DAE6"
+      }
+    }
+  }
+}
