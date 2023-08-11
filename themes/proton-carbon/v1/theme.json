@@ -28,7 +28,7 @@
         "hover": "#24212B",
         "shade": "#7C5CFF12",
         "backdrop": "#35353580",
-        "textSelection": "#7C5CFF"
+        "textSelection": "#7C5CFF20"
       },
       "secondary": {
         "accent": "#7C5CFF",
