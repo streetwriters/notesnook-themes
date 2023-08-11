@@ -21,7 +21,7 @@ module.exports = async ({ github, context, files }) => {
     
 ${errors.join("\n\n")}`,
     });
-    return false;
+    throw new Error(errors.join(", "));
   }
   return true;
 };
