@@ -4,7 +4,7 @@
   "id": "proton-snow",
   "version": 1,
   "license": "GPL-3.0-or-later",
-  "description": "Colors inspired from proton mail's snow theme",
+  "description": "A light theme inspired by Proton Mail's Snow theme.",
   "colorScheme": "light",
   "compatibilityVersion": 1,
   "authors": [
