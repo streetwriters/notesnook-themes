@@ -12,7 +12,7 @@ module.exports = async ({ github, context, files }) => {
       );
     }
   }
-  if (errors.length > 0)
+  if (errors.length > 0) {
     await comment({
       github,
       context,
@@ -20,4 +20,7 @@ module.exports = async ({ github, context, files }) => {
     
 ${errors.join("\n\n")}`,
     });
+    return false;
+  }
+  return true;
 };

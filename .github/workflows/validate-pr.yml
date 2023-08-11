@@ -37,11 +37,12 @@ jobs:
 
       - name: Run custom validations
         uses: actions/github-script@v6
+        id: custom-validations
         if: steps.changed-files.outputs.theme_any_changed == 'true'
         with:
           script: |
             const script = require('./.github/workflows/scripts/validate-pr.js')
-            await script({ 
+            return await script({ 
               github,
               context,
               files: `${{ steps.changed-files.outputs.theme_all_changed_and_modified_files }}`
@@ -49,7 +50,7 @@ jobs:
 
       - name: Create preview comment
         uses: actions/github-script@v6
-        if: steps.changed-files.outputs.theme_any_changed == 'true'
+        if: steps.changed-files.outputs.theme_any_changed == 'true' && steps.custom-validations.outputs.result == 'true'
         with:
           script: |
             const script = require('./.github/workflows/scripts/create-comment.js')
