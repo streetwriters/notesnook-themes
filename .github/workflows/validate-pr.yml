@@ -42,6 +42,22 @@ jobs:
           base_dir: ./themes
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Validate directory name
+        run: |
+          for file in ${{ steps.changed-files.outputs.theme_all_changed_and_modified_files }}; do
+              theme_id=$(jq --raw-output .id "$file")
+              version=$(jq --raw-output .compatibilityVersion "$file")
+              expected_path="themes/${theme_id}/v${version}/theme.json"
+
+              if [ $file == $expected_path ]
+              then
+                  echo "$theme_id: all good."
+              else
+                  echo "$theme_id: file path is invalid."
+                  exit -1
+              fi
+          done
+
       - uses: mshick/add-pr-comment@v2
         if: steps.changed-files.outputs.theme_any_changed == 'true'
         with:
