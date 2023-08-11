@@ -15,7 +15,8 @@
         },
         "id": {
           "type": "string",
-          "description": "ID of the theme. Must be unique across all other themes."
+          "description": "ID of the theme. Must be unique across all other themes.",
+          "pattern": "^[a-z0-9_-]+$"
         },
         "version": {
           "type": "number",
