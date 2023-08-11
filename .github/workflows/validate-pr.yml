@@ -1,7 +1,7 @@
 name: Lint and validate
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
     branches:
       - "main"
@@ -25,41 +25,38 @@ jobs:
             schema:
               - schemas/*.json
 
-      - name: Get PR number
-        id: pr
-        run: |
-          pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
-          echo "Pull number is $pull_number"
-          echo "pull_number=$pull_number" >>$GITHUB_OUTPUT
-
       - name: Validate JSON
         if: steps.changed-files.outputs.theme_any_changed == 'true' || steps.changed-files.outputs.schema_any_changed == 'true'
-        uses: GrantBirki/json-yaml-validate@v2.1.0
+        uses: GrantBirki/json-yaml-validate@v2.2.0
         with:
           comment: "true"
           use_dot_match: "false"
           json_schema: ./schemas/v1.schema.json
-          base_dir: ./themes
+          files: ${{ steps.changed-files.outputs.theme_all_changed_and_modified_files }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Validate directory name
-        run: |
-          for file in ${{ steps.changed-files.outputs.theme_all_changed_and_modified_files }}; do
-              theme_id=$(jq --raw-output .id "$file")
-              version=$(jq --raw-output .compatibilityVersion "$file")
-              expected_path="themes/${theme_id}/v${version}/theme.json"
-
-              if [ $file == $expected_path ]
-              then
-                  echo "$theme_id: all good."
-              else
-                  echo "$theme_id: file path is invalid."
-                  exit -1
-              fi
-          done
-
-      - uses: mshick/add-pr-comment@v2
+      - name: Run custom validations
+        uses: actions/github-script@v6
+        id: custom-validations
         if: steps.changed-files.outputs.theme_any_changed == 'true'
         with:
-          message: |
-            Your preview URL is: https://theme-builder.notesnook.com/notes?from_pr=streetwriters/notesnook-themes/${{steps.pr.outputs.pull_number}}
+          script: |
+            const script = require('./.github/workflows/scripts/validate-pr.js')
+            return await script({ 
+              github,
+              context,
+              files: `${{ steps.changed-files.outputs.theme_all_changed_and_modified_files }}`
+            });
+
+      - name: Create preview comment
+        uses: actions/github-script@v6
+        if: steps.changed-files.outputs.theme_any_changed == 'true' && steps.custom-validations.outputs.result == 'true'
+        with:
+          script: |
+            const script = require('./.github/workflows/scripts/create-comment.js')
+            await script({ 
+              github,
+              context,
+              id: "preview-comment",
+              body: `Your preview URL is: https://theme-builder.notesnook.com/notes?from_pr=streetwriters/notesnook-themes/${context.issue.number}`
+            });
