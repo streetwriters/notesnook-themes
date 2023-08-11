@@ -4,7 +4,7 @@
   "id": "proton-carbon",
   "version": 2.2,
   "license": "GPL-3.0-or-later",
-  "description": "Colors from proton mail's carbon theme",
+  "description": "A dark theme inspired by Proton Mail's Carbon theme.",
   "homepage": "https://notesnook.com",
   "colorScheme": "dark",
   "compatibilityVersion": 1,

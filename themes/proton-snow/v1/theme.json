@@ -5,6 +5,7 @@
   "version": 1,
   "license": "GPL-3.0-or-later",
   "description": "A light theme inspired by Proton Mail's Snow theme.",
+  "homepage": "https://notesnook.com",
   "colorScheme": "light",
   "compatibilityVersion": 1,
   "authors": [
