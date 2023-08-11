@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Proton Snow",
   "id": "proton-snow",
-  "version": 1,
+  "version": 1.1,
   "license": "GPL-3.0-or-later",
-  "description": "A light theme inspired by Proton Mail's Snow theme.",
   "homepage": "https://notesnook.com",
+  "description": "A light theme inspired by Proton Mail's Snow theme.",
   "colorScheme": "light",
   "compatibilityVersion": 1,
   "authors": [
@@ -18,17 +18,17 @@
     "base": {
       "primary": {
         "accent": "#6243E6",
-        "paragraph": "#303030",
+        "paragraph": "#6D6A79",
         "background": "#ffffff",
         "border": "#D1CFCD",
-        "heading": "#6D6A79",
+        "heading": "#303030",
         "icon": "#292930",
         "separator": "#D1CFCD",
         "placeholder": "#999794",
         "hover": "#F3F3F3",
         "shade": "#6243E612",
         "backdrop": "#0000001a",
-        "textSelection": "#6243E6"
+        "textSelection": "#6243E640"
       },
       "secondary": {
         "accent": "#6243E6",
