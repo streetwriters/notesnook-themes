@@ -2,9 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Proton Carbon",
   "id": "proton-carbon",
-  "version": 2.1,
+  "version": 2.2,
   "license": "GPL-3.0-or-later",
   "description": "Colors from proton mail's carbon theme",
+  "homepage": "https://notesnook.com",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
