@@ -1,0 +1,109 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Proton snow",
+  "id": "proton-snow",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "description": "Colors inspired from proton mail's snow theme",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Anastasis M.",
+      "email": "notesnook.ktzyd@slmail.me"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#6243E6",
+        "paragraph": "#303030",
+        "background": "#ffffff",
+        "border": "#D1CFCD",
+        "heading": "#6D6A79",
+        "icon": "#292930",
+        "separator": "#D1CFCD",
+        "placeholder": "#999794",
+        "hover": "#F3F3F3",
+        "shade": "#6243E612",
+        "backdrop": "#0000001a",
+        "textSelection": "#6243E6"
+      },
+      "secondary": {
+        "accent": "#6243E6",
+        "paragraph": "#666",
+        "background": "#f7f7f7",
+        "border": "#D1CFCD",
+        "heading": "#6D6A79",
+        "icon": "#292930",
+        "separator": "#D1CFCD",
+        "placeholder": "#999794",
+        "hover": "#F3F3F3",
+        "shade": "#6243E612",
+        "backdrop": "#0000001a",
+        "textSelection": "#6243E6"
+      },
+      "disabled": {
+        "accent": "#6243E6",
+        "paragraph": "#505050",
+        "background": "#ffffff",
+        "border": "#D1CFCD",
+        "heading": "#6D6A79",
+        "icon": "#292930",
+        "separator": "#D1CFCD",
+        "placeholder": "#999794",
+        "hover": "#F3F3F3",
+        "shade": "#6243E612",
+        "backdrop": "#0000001a",
+        "textSelection": "#6243E6"
+      },
+      "selected": {
+        "accent": "#6243E6",
+        "paragraph": "#303030",
+        "background": "#F3F3F3",
+        "border": "#6243E6",
+        "heading": "#6D6A79",
+        "icon": "#6243E6",
+        "separator": "#D1CFCD",
+        "placeholder": "#999794",
+        "hover": "#F3F3F3",
+        "shade": "#6243E612",
+        "backdrop": "#0000001a",
+        "textSelection": "#6243E6"
+      },
+      "error": {
+        "accent": "#F64C6B",
+        "paragraph": "#F64C6B",
+        "background": "#ffe2df",
+        "border": "#D1CFCD",
+        "heading": "#F64C6B",
+        "icon": "#F64C6B",
+        "separator": "#D1CFCD",
+        "placeholder": "#999794",
+        "hover": "#F3F3F3",
+        "shade": "#F64C6B12",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      },
+      "success": {
+        "accent": "#1EA885",
+        "paragraph": "#1EA885",
+        "background": "#85ce68",
+        "border": "#D1CFCD",
+        "heading": "#1EA885",
+        "icon": "#1EA885",
+        "separator": "#D1CFCD",
+        "placeholder": "#999794",
+        "hover": "#F3F3F3",
+        "shade": "#1EA88512",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#6243E6"
+      }
+    }
+  }
+}
