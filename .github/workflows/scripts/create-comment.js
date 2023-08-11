@@ -22,7 +22,7 @@ module.exports = async ({ github, context, body }) => {
   }
 
   if (found) {
-    await octokit.rest.issues.deleteComment({
+    await github.rest.issues.deleteComment({
       comment_id: found.id,
       owner: context.repo.owner,
       repo: context.repo.repo,
