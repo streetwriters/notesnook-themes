@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Proton Carbon",
   "id": "proton-carbon",
-  "version": 2.3,
+  "version": 2.4,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A dark theme inspired by Proton Mail's Carbon theme.",
@@ -18,7 +18,7 @@
     "base": {
       "primary": {
         "accent": "#7C5CFF",
-        "paragraph": "#6D6A79",
+        "paragraph": "#D3D3D3",
         "background": "#16141C",
         "border": "#4A4658",
         "heading": "#D3D3D3",
@@ -99,6 +99,11 @@
         "shade": "#7C5CFF12",
         "backdrop": "#35353580",
         "textSelection": "#4F8A1055"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#6D6A79"
       }
     },
     "sheet": {
