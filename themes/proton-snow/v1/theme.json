@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Proton Snow",
   "id": "proton-snow",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A light theme inspired by Proton Mail's Snow theme.",
@@ -18,7 +18,7 @@
     "base": {
       "primary": {
         "accent": "#6243E6",
-        "paragraph": "#6D6A79",
+        "paragraph": "#303030",
         "background": "#ffffff",
         "border": "#D1CFCD",
         "heading": "#303030",
@@ -32,7 +32,7 @@
       },
       "secondary": {
         "accent": "#6243E6",
-        "paragraph": "#666",
+        "paragraph": "#303030",
         "background": "#f7f7f7",
         "border": "#D1CFCD",
         "heading": "#6D6A79",
