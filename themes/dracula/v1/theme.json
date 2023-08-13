@@ -1,0 +1,138 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Dracula",
+  "id": "dracula",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://draculatheme.com",
+  "description": "Dracula theme for Notesnook",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Aaron Graves",
+      "email": "notesnook@hkknmd.com"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#bd93f9",
+        "paragraph": "#f8f8f2",
+        "background": "#282a36",
+        "border": "#2b2b2b",
+        "heading": "#e3e3e3",
+        "icon": "#bd93f9",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#2b2b2b",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#00883777"
+      },
+      "secondary": {
+        "accent": "#bd93f9",
+        "paragraph": "#818589",
+        "background": "#202020",
+        "border": "#202020",
+        "heading": "#808080",
+        "icon": "#bd93f9",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#00883777"
+      },
+      "disabled": {
+        "accent": "#bd93f9",
+        "paragraph": "#505050",
+        "background": "#ffffff",
+        "border": "#383838",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#00883777"
+      },
+      "selected": {
+        "accent": "#bd93f9",
+        "paragraph": "#D3D3D3",
+        "background": "#303030",
+        "border": "#bd93f9",
+        "heading": "#e3e3e3",
+        "icon": "#ff79c6",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#00883777"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "paragraph": "#f54b42",
+        "background": "#250b0a",
+        "border": "#383838",
+        "heading": "#f54b42",
+        "icon": "#f54b42",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#00883712",
+        "backdrop": "#35353580",
+        "textSelection": "#f54b4255"
+      },
+      "success": {
+        "accent": "#ff79c6",
+        "paragraph": "#ff79c6",
+        "background": "#132204",
+        "border": "#383838",
+        "heading": "#ff79c6",
+        "icon": "#ff79c6",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "shade": "#4F8A1012",
+        "backdrop": "#35353580",
+        "textSelection": "#4F8A1055"
+      }
+    },
+    "list": {
+      "primary": {
+        "hover": "#202231"
+      },
+      "selected": {
+        "background": "#202231"
+      }
+    },
+    "editor": {
+      "primary": {
+        "accent": "#ff79c6",
+        "textSelection": "#ff79c6"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "hover": "#44475a"
+      },
+      "selected": {
+        "background": "#44475a",
+        "hover": "#44475a"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#282a36"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
+      }
+    }
+  }
+}
