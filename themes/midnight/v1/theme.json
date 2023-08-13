@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Midnight",
   "id": "midnight",
-  "version": 1,
+  "version": 1.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A dark theme inspired by the SN Midnight theme",
@@ -117,10 +117,12 @@
     },
     "navigationMenu": {
       "primary": {
-        "background": "#313142"
+        "background": "#313142",
+        "hover": "#20202b"
       },
       "selected": {
-        "background": "#20202b"
+        "background": "#20202b",
+        "hover": "#20202b"
       }
     },
     "contextMenu": {
