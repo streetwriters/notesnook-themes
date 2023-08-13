@@ -3,16 +3,15 @@
   "name": "Dracula",
   "id": "dracula",
   "version": 1,
-  "license": "GPL-3.0-or-later",
-  "homepage": "https://notesnook.com",
-  "description": "Dracula Theme",
+  "license": "MIT",
+  "homepage": "https://draculatheme.com",
+  "description": "Dracula is a color scheme for code editors and terminal emulators such as Vim, Notepad++, iTerm, VSCode, Terminal.app, ZSH, and much more.",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
     {
       "name": "c4ssiopei4",
       "email": "dev@privly.ch",
-      "url": ""
     }
   ],
   "scopes": {
