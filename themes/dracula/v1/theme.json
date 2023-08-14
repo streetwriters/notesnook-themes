@@ -103,6 +103,17 @@
     },
     "editor": {
       "primary": {
+        "icon": "#bd93f9",
+        "placeholder": "#bd93f9"
+      },
+      "secondary": {
+        "heading": "#ff79c6"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "accent": "#bd93f9",
+        "paragraph": "#bd93f9",
         "icon": "#bd93f9"
       }
     },
