@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Cloud",
   "id": "cloud",
-  "version": 1,
+  "version": 1.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A clear environment where focus remains",
@@ -21,7 +21,7 @@
         "background": "#dee9f6",
         "border": "#c5cbd8",
         "heading": "#415558",
-        "icon": "#6a868a",
+        "icon": "#819a9c",
         "separator": "#cad1d3",
         "placeholder": "#adc0cc",
         "hover": "#dde7f3",
@@ -35,7 +35,7 @@
         "background": "#f0f5ff",
         "border": "#dee9f6",
         "heading": "#415558",
-        "icon": "#c4dae9",
+        "icon": "#91aeb1",
         "separator": "#13131a",
         "placeholder": "#404040",
         "hover": "#00000012",
@@ -109,6 +109,7 @@
     },
     "list": {
       "primary": {
+        "paragraph": "#597173",
         "icon": "#1c6978",
         "hover": "#f0f5ff"
       },
@@ -118,7 +119,8 @@
     },
     "editor": {
       "primary": {
-        "border": "#adc0cc"
+        "border": "#adc0cc",
+        "hover": "#1c6978"
       }
     },
     "editorToolbar": {
@@ -145,7 +147,8 @@
       },
       "secondary": {
         "accent": "#1c6978",
-        "background": "#dfedf7"
+        "background": "#dfedf7",
+        "icon": "#7d9ea1"
       }
     },
     "navigationMenu": {
@@ -155,7 +158,8 @@
         "hover": "#dee9f6"
       },
       "secondary": {
-        "background": "#eeeeee"
+        "background": "#eeeeee",
+        "icon": "#81a3a7"
       },
       "selected": {
         "background": "#dee9f6",
@@ -166,9 +170,11 @@
     "contextMenu": {
       "primary": {
         "background": "#f0f5ff",
+        "icon": "#1c6978",
         "shade": "#c4dae9"
       },
       "secondary": {
+        "icon": "#f0f5ff",
         "shade": "#c4dae9"
       },
       "selected": {
@@ -177,15 +183,22 @@
     },
     "sheet": {
       "primary": {
+        "paragraph": "#597173",
         "background": "#f0f5ff",
-        "separator": "#cad1d3"
+        "border": "#dee9f6",
+        "icon": "#597173"
       },
       "secondary": {
-        "shade": "#c4dae9"
+        "background": "#e4ebf7",
+        "border": "#f0f5ff",
+        "icon": "#597173"
+      },
+      "disabled": {
+        "icon": "#6a868a"
       },
       "selected": {
-        "paragraph": "#1c6978",
-        "shade": "#c4dae9"
+        "icon": "#1c6978",
+        "shade": "#1c6978"
       }
     }
   }
