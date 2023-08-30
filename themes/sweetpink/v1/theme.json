@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Sweetpink",
   "id": "sweetpink",
-  "version": 1,
+  "version": 1.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Delicate and sweet to color your space",
@@ -18,7 +18,7 @@
       "primary": {
         "accent": "#e65b62",
         "paragraph": "#20154c",
-        "background": "#d18c8b",
+        "background": "#e6aaa9",
         "border": "#deb9af",
         "heading": "#20154c",
         "icon": "#9a6a6c",
@@ -39,7 +39,7 @@
         "separator": "#13131a",
         "placeholder": "#c07272",
         "hover": "#00000012",
-        "shade": "#f3b0b3",
+        "shade": "#00883712",
         "backdrop": "#0000001a",
         "textSelection": "#ffb3ad"
       },
@@ -74,10 +74,10 @@
       "error": {
         "accent": "#f54b42",
         "paragraph": "#f54b42",
-        "background": "#ffe2df",
+        "background": "#e6aaa9",
         "border": "#E8E8E8",
         "heading": "#f54b42",
-        "icon": "#ff817a",
+        "icon": "#eb1005",
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
@@ -86,11 +86,11 @@
         "textSelection": "#00883777"
       },
       "success": {
-        "accent": "#1c6978",
-        "paragraph": "#1c6978",
-        "background": "#1d4249",
+        "accent": "#e65b62",
+        "paragraph": "#e65b62",
+        "background": "#e6aaa9",
         "border": "#E8E8E8",
-        "heading": "#1c6978",
+        "heading": "#e65b62",
         "icon": "#6dba8f",
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
@@ -144,8 +144,11 @@
     },
     "editorSidebar": {
       "primary": {
-        "background": "#e8a8a7",
-        "separator": "#e8a8a7"
+        "background": "#e6aaa9",
+        "separator": "#e6aaa9"
+      },
+      "secondary": {
+        "icon": "#efbdbd"
       }
     },
     "dialog": {
@@ -159,15 +162,15 @@
       },
       "secondary": {
         "accent": "#d76064",
-        "background": "#f2a1a1",
-        "icon": "#e4b4b4",
+        "background": "#e8c5c5",
+        "icon": "#efbdbd",
         "hover": "#f6dfd9"
       }
     },
     "navigationMenu": {
       "primary": {
         "paragraph": "#292929",
-        "background": "#f2a6a6",
+        "background": "#e6aaa9",
         "border": "#ca6465"
       },
       "selected": {
@@ -194,7 +197,9 @@
     "sheet": {
       "primary": {
         "accent": "#e65b62",
-        "background": "#e8a8a7",
+        "background": "#f3c4c4",
+        "border": "#b08082",
+        "placeholder": "#df9a9a",
         "shade": "#bf9799"
       },
       "secondary": {
