@@ -19,6 +19,7 @@
     "base": {
       "primary": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#303030",
         "background": "#ffffff",
         "border": "#E8E8E8",
@@ -33,6 +34,7 @@
       },
       "secondary": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#666",
         "background": "#f7f7f7",
         "border": "#E8E8E8",
@@ -47,6 +49,7 @@
       },
       "disabled": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#505050",
         "background": "#ffffff",
         "border": "#E8E8E8",
@@ -61,6 +64,7 @@
       },
       "selected": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#303030",
         "background": "#ebebeb",
         "border": "#008837",
@@ -75,6 +79,7 @@
       },
       "error": {
         "accent": "#f54b42",
+        "accentForeground": "#ffffff",
         "paragraph": "#f54b42",
         "background": "#ffe2df",
         "border": "#E8E8E8",
@@ -89,6 +94,7 @@
       },
       "success": {
         "accent": "#4F8A10",
+        "accentForeground": "#ffffff",
         "paragraph": "#4F8A10",
         "background": "#85ce68",
         "border": "#E8E8E8",
