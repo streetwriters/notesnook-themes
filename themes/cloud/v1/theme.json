@@ -1,0 +1,207 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Cloud",
+  "id": "cloud",
+  "version": 1.3,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A clear environment where focus remains",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Kenneth V."
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#1c6978",
+        "paragraph": "#3b4c4e",
+        "background": "#f0f5ff",
+        "border": "#c5cbd8",
+        "heading": "#415558",
+        "icon": "#7d9497",
+        "separator": "#cad1d3",
+        "placeholder": "#adc0cc",
+        "hover": "#dde7f3",
+        "shade": "#c4dae9",
+        "backdrop": "#0000001a",
+        "textSelection": "#82a9b0"
+      },
+      "secondary": {
+        "accent": "#1c6978",
+        "paragraph": "#415558",
+        "background": "#f0f5ff",
+        "border": "#dee9f6",
+        "heading": "#415558",
+        "icon": "#7d9497",
+        "separator": "#13131a",
+        "placeholder": "#404040",
+        "hover": "#00000012",
+        "shade": "#00883712",
+        "backdrop": "#0000001a",
+        "textSelection": "#82a9b0"
+      },
+      "disabled": {
+        "accent": "#1c6978",
+        "paragraph": "#415558",
+        "background": "#f0f5ff",
+        "border": "#13131a",
+        "heading": "#444141",
+        "icon": "#808080",
+        "separator": "#2b2b36",
+        "placeholder": "#a9a9a9",
+        "hover": "#ffffff10",
+        "shade": "#00883711",
+        "backdrop": "#35353580",
+        "textSelection": "#82a9b0"
+      },
+      "selected": {
+        "accent": "#1c6978",
+        "paragraph": "#415558",
+        "background": "#f0f5ff",
+        "border": "#1c6978",
+        "heading": "#415558",
+        "icon": "#1c6978",
+        "separator": "#131311",
+        "placeholder": "#030202",
+        "hover": "#00000010",
+        "shade": "#00883712",
+        "backdrop": "#0000001a",
+        "textSelection": "#82a9b0"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "paragraph": "#f54b42",
+        "background": "#ffe2df",
+        "border": "#E8E8E8",
+        "heading": "#f54b42",
+        "icon": "#ff817a",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#00000010",
+        "shade": "#00883712",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      },
+      "success": {
+        "accent": "#1c6978",
+        "paragraph": "#1c6978",
+        "background": "#1d4249",
+        "border": "#E8E8E8",
+        "heading": "#1c6978",
+        "icon": "#6dba8f",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#00000010",
+        "shade": "#4F8A1012",
+        "backdrop": "#0000001a",
+        "textSelection": "#00883777"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "accent": "#1c6978",
+        "paragraph": "#415558",
+        "background": "#f0f5ff"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#597173",
+        "background": "#dee9f6",
+        "icon": "#1c6978",
+        "hover": "#e1eefe"
+      },
+      "selected": {
+        "background": "#e1eefe"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#dee9f6",
+        "border": "#adc0cc",
+        "hover": "#759caa"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#f0f5ff",
+        "border": "#dee9f6",
+        "icon": "#7d9497"
+      },
+      "selected": {
+        "background": "#c4dae9"
+      }
+    },
+    "editorSidebar": {
+      "primary": {
+        "background": "#f0f5ff",
+        "separator": "#f0f5ff"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "accent": "#1c6978",
+        "background": "#f0f5ff",
+        "icon": "#1c6978",
+        "separator": "#cedede"
+      },
+      "secondary": {
+        "accent": "#1c6978",
+        "background": "#dee9f6",
+        "icon": "#cbdfe1"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#728688",
+        "background": "#f0f5ff",
+        "border": "#f0f5ff",
+        "hover": "#dee9f6"
+      },
+      "secondary": {
+        "background": "#dee9f6",
+        "icon": "#81a3a7"
+      },
+      "selected": {
+        "paragraph": "#09424e",
+        "icon": "#1c6978",
+        "hover": "#dee9f6"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#f0f5ff",
+        "icon": "#1c6978",
+        "shade": "#c4dae9"
+      },
+      "secondary": {
+        "icon": "#f0f5ff",
+        "shade": "#c4dae9"
+      },
+      "selected": {
+        "shade": "#c4dae9"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "accent": "#1c6978",
+        "shade": "#c4dae9"
+      },
+      "secondary": {
+        "background": "#dee9f6",
+        "border": "#e7f2fd",
+        "icon": "#83a2a5"
+      },
+      "disabled": {
+        "icon": "#6a868a"
+      },
+      "selected": {
+        "icon": "#1c6978",
+        "shade": "#1c6978"
+      }
+    }
+  }
+}

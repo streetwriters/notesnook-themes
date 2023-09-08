@@ -1,7 +1,7 @@
 {
   "name": "Notesnook Pitch Black",
   "id": "default-pitch-black",
-  "version": 1.7,
+  "version": 1.8,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default pitch black theme for Notesnook app.",
@@ -18,6 +18,7 @@
     "base": {
       "primary": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#D3D3D3",
         "background": "#000000",
         "border": "#161616",
@@ -32,6 +33,7 @@
       },
       "secondary": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#818589",
         "background": "#141414",
         "border": "#202020",
@@ -46,6 +48,7 @@
       },
       "disabled": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#505050",
         "background": "#000000",
         "border": "#202020",
@@ -60,6 +63,7 @@
       },
       "selected": {
         "accent": "#008837",
+        "accentForeground": "#ffffff",
         "paragraph": "#008837",
         "background": "#1b1b1b",
         "border": "#202020",
@@ -74,6 +78,7 @@
       },
       "error": {
         "accent": "#dc2626",
+        "accentForeground": "#ffffff",
         "paragraph": "#dc2626",
         "background": "#140504",
         "border": "#202020",
@@ -88,6 +93,7 @@
       },
       "success": {
         "accent": "#4F8A10",
+        "accentForeground": "#ffffff",
         "paragraph": "#4F8A10",
         "background": "#00FF00",
         "border": "#202020",
