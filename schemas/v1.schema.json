@@ -51,10 +51,7 @@
         },
         "colorScheme": {
           "type": "string",
-          "enum": [
-            "light",
-            "dark"
-          ],
+          "enum": ["light", "dark"],
           "description": "Whether the theme has a dark color scheme or light."
         },
         "tags": {
@@ -109,9 +106,7 @@
           "description": "Website or support page of the author."
         }
       },
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "additionalProperties": false
     },
     "ThemeScopes": {
@@ -158,9 +153,7 @@
           "description": "Scope for all the bottom sheets shown in the app. This scope only applies on the mobile clients & the mobile version of the web app."
         }
       },
-      "required": [
-        "base"
-      ],
+      "required": ["base"],
       "additionalProperties": false
     },
     "Variants<true>": {
@@ -218,8 +211,8 @@
         },
         "background": {
           "type": "string",
-          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
-          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$"
         },
         "border": {
           "type": "string",
@@ -328,8 +321,8 @@
         },
         "background": {
           "type": "string",
-          "description": "Only Hex RGB values are supported. No Alpha. (e.g. #f33ff3)",
-          "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+          "description": "Hex RGB & ARGB values both are supported. (e.g. #dbdbdb99)",
+          "pattern": "^#(?:(?:[\\da-fA-F]{3}){1,2}|(?:[\\da-fA-F]{4}){1,2})$"
         },
         "border": {
           "type": "string",
