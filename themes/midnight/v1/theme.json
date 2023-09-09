@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Midnight",
   "id": "midnight",
-  "version": 1.4,
+  "version": 1.5,
   "license": "MIT",
   "homepage": "https://notesnook.com",
   "description": "A dark theme inspired by the SN Midnight theme",
@@ -26,7 +26,7 @@
         "separator": "#13131a",
         "placeholder": "#404040",
         "hover": "#2b2b2b",
-        "accentForeground": "#4ca3ff",
+        "accentForeground": "#d8d8d8",
         "backdrop": "#35353580"
       },
       "secondary": {
@@ -39,7 +39,7 @@
         "separator": "#13131a",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "accentForeground": "#4ca3ff",
+        "accentForeground": "#d8d8d8",
         "backdrop": "#35353580"
       },
       "disabled": {
@@ -78,7 +78,7 @@
         "separator": "#13131a",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "accentForeground": "#f54b42",
+        "accentForeground": "#d8d8d8",
         "backdrop": "#35353580"
       },
       "success": {
@@ -91,7 +91,7 @@
         "separator": "#13131a",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "accentForeground": "#4ca3ff",
+        "accentForeground": "#d8d8d8",
         "backdrop": "#35353580"
       }
     },
