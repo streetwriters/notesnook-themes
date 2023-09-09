@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Sweetpink",
   "id": "sweetpink",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Delicate and sweet to color your space",
@@ -22,12 +22,11 @@
         "border": "#deb9af",
         "heading": "#20154c",
         "icon": "#9a6a6c",
-        "separator": "#f88b8b",
+        "separator": "#e7c9c1",
         "placeholder": "#e8b0b0",
         "hover": "#f6dfd9",
-        "shade": "#f3b0b3",
-        "backdrop": "#0000001a",
-        "textSelection": "#ffb3ad"
+        "accentForeground": "#eee2ec",
+        "backdrop": "#0000001a"
       },
       "secondary": {
         "accent": "#e65b62",
@@ -36,12 +35,11 @@
         "border": "#deb9af",
         "heading": "#20154c",
         "icon": "#9a6a6c",
-        "separator": "#13131a",
+        "separator": "#e7c9c1",
         "placeholder": "#c07272",
         "hover": "#00000012",
-        "shade": "#00883712",
-        "backdrop": "#0000001a",
-        "textSelection": "#ffb3ad"
+        "accentForeground": "#eee2ec",
+        "backdrop": "#0000001a"
       },
       "disabled": {
         "accent": "#e65b62",
@@ -50,12 +48,11 @@
         "border": "#13131a",
         "heading": "#20154c",
         "icon": "#61424b",
-        "separator": "#13131a",
+        "separator": "#e7c9c1",
         "placeholder": "#c07272",
         "hover": "#ffffff10",
-        "shade": "#00883711",
-        "backdrop": "#35353580",
-        "textSelection": "#ffb3ad"
+        "accentForeground": "#eee2ec",
+        "backdrop": "#35353580"
       },
       "selected": {
         "accent": "#e65b62",
@@ -64,12 +61,11 @@
         "border": "#e65b62",
         "heading": "#20154c",
         "icon": "#e65b62",
-        "separator": "#131311",
+        "separator": "#e7c9c1",
         "placeholder": "#030202",
         "hover": "#e6b8b7",
-        "shade": "#00883712",
-        "backdrop": "#0000001a",
-        "textSelection": "#ffb3ad"
+        "accentForeground": "#eee2ec",
+        "backdrop": "#0000001a"
       },
       "error": {
         "accent": "#f54b42",
@@ -81,9 +77,8 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "shade": "#00883712",
-        "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#eee2ec",
+        "backdrop": "#0000001a"
       },
       "success": {
         "accent": "#e65b62",
@@ -95,9 +90,8 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "shade": "#4F8A1012",
-        "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#eee2ec",
+        "backdrop": "#0000001a"
       }
     },
     "statusBar": {
@@ -105,7 +99,8 @@
         "accent": "#20154c",
         "paragraph": "#20154c",
         "background": "#e6aaa9",
-        "icon": "#61424b"
+        "icon": "#61424b",
+        "separator": "#deabaa"
       }
     },
     "list": {
@@ -135,7 +130,8 @@
         "paragraph": "#61424b",
         "background": "#f0a9a8",
         "border": "#f6dfd9",
-        "icon": "#61424b"
+        "icon": "#61424b",
+        "separator": "#d79d9d"
       },
       "selected": {
         "background": "#fcd4ca",
@@ -171,7 +167,8 @@
       "primary": {
         "paragraph": "#292929",
         "background": "#e6aaa9",
-        "border": "#ca6465"
+        "border": "#ca6465",
+        "separator": "#deabaa"
       },
       "selected": {
         "paragraph": "#20154c",
@@ -184,14 +181,10 @@
       "primary": {
         "background": "#e6b8b7",
         "icon": "#20154c",
-        "shade": "#fadfd9"
+        "separator": "#f6dfd9"
       },
       "secondary": {
-        "icon": "#fadfd9",
-        "shade": "#fadfd9"
-      },
-      "selected": {
-        "shade": "#fadfd9"
+        "icon": "#fadfd9"
       }
     },
     "sheet": {
@@ -200,16 +193,19 @@
         "background": "#f3c4c4",
         "border": "#b08082",
         "placeholder": "#df9a9a",
-        "shade": "#bf9799"
+        "accentForeground": "#d76064"
       },
       "secondary": {
         "background": "#fadfd9",
         "border": "#d18c8b",
-        "icon": "#9a6a6c"
+        "icon": "#9a6a6c",
+        "accentForeground": "#d76064"
+      },
+      "disabled": {
+        "accentForeground": "#d76064"
       },
       "selected": {
-        "icon": "#d76064",
-        "shade": "#d76064"
+        "icon": "#d76064"
       }
     }
   }
