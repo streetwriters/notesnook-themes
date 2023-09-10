@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Cloud",
   "id": "cloud",
-  "version": 1.4,
+  "version": 1.5,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A clear environment where focus remains",
@@ -20,7 +20,7 @@
         "paragraph": "#3b4c4e",
         "background": "#f0f5ff",
         "border": "#ccd2e1",
-        "heading": "#415558",
+        "heading": "#0b4651",
         "icon": "#7d9497",
         "separator": "#cbdce1",
         "placeholder": "#adc0cc",
@@ -107,10 +107,14 @@
         "paragraph": "#597173",
         "background": "#dee9f6",
         "icon": "#1c6978",
-        "hover": "#e1eefe"
+        "hover": "#d8e7f3"
+      },
+      "secondary": {
+        "background": "#ebf2ff"
       },
       "selected": {
-        "background": "#e1eefe"
+        "background": "#d8e7f3",
+        "hover": "#d8e7f3"
       }
     },
     "editor": {
@@ -118,6 +122,9 @@
         "background": "#dee9f6",
         "border": "#adc0cc",
         "hover": "#759caa"
+      },
+      "secondary": {
+        "background": "#e8effc"
       },
       "selected": {
         "background": "#82a9b0"
@@ -189,7 +196,7 @@
         "accent": "#1c6978"
       },
       "secondary": {
-        "background": "#e6edf4",
+        "background": "#e8effc",
         "border": "#e7f2fd",
         "icon": "#83a2a5"
       },
