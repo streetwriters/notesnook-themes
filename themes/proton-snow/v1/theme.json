@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Proton Snow",
   "id": "proton-snow",
-  "version": 1.2,
+  "version": 2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A light theme inspired by Proton Mail's Snow theme.",
@@ -26,23 +26,21 @@
         "separator": "#D1CFCD",
         "placeholder": "#999794",
         "hover": "#F3F3F3",
-        "shade": "#6243E612",
-        "backdrop": "#0000001a",
-        "textSelection": "#6243E640"
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
       },
       "secondary": {
         "accent": "#6243E6",
         "paragraph": "#303030",
         "background": "#f7f7f7",
         "border": "#D1CFCD",
-        "heading": "#6D6A79",
+        "heading": "#303030",
         "icon": "#292930",
         "separator": "#D1CFCD",
         "placeholder": "#999794",
         "hover": "#F3F3F3",
-        "shade": "#6243E612",
-        "backdrop": "#0000001a",
-        "textSelection": "#6243E6"
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
       },
       "disabled": {
         "accent": "#6243E6",
@@ -54,23 +52,21 @@
         "separator": "#D1CFCD",
         "placeholder": "#999794",
         "hover": "#F3F3F3",
-        "shade": "#6243E612",
-        "backdrop": "#0000001a",
-        "textSelection": "#6243E6"
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
       },
       "selected": {
         "accent": "#6243E6",
         "paragraph": "#303030",
         "background": "#F3F3F3",
         "border": "#6243E6",
-        "heading": "#6D6A79",
+        "heading": "#303030",
         "icon": "#6243E6",
         "separator": "#D1CFCD",
         "placeholder": "#999794",
         "hover": "#F3F3F3",
-        "shade": "#6243E612",
-        "backdrop": "#0000001a",
-        "textSelection": "#6243E6"
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
       },
       "error": {
         "accent": "#F64C6B",
@@ -82,9 +78,8 @@
         "separator": "#D1CFCD",
         "placeholder": "#999794",
         "hover": "#F3F3F3",
-        "shade": "#F64C6B12",
-        "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
       },
       "success": {
         "accent": "#1EA885",
@@ -96,9 +91,13 @@
         "separator": "#D1CFCD",
         "placeholder": "#999794",
         "hover": "#F3F3F3",
-        "shade": "#1EA88512",
-        "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
+      }
+    },
+    "editor": {
+      "selected": {
+        "background": "#D8D0F9"
       }
     },
     "sheet": {
