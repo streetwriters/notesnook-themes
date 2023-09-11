@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Notesnook Light",
   "id": "default-light",
-  "version": 1.7,
+  "version": 1.8,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default light theme for Notesnook app.",
