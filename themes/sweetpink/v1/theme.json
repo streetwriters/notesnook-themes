@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Sweetpink",
   "id": "sweetpink",
-  "version": 1.2,
-  "license": "GPL-3.0-or-later",
+  "version": 1.3,
+  "license": "MIT",
   "homepage": "https://notesnook.com",
   "description": "Delicate and sweet to color your space",
   "colorScheme": "light",
@@ -18,12 +18,12 @@
       "primary": {
         "accent": "#e65b62",
         "paragraph": "#20154c",
-        "background": "#e6aaa9",
-        "border": "#deb9af",
+        "background": "#edbaba",
+        "border": "#d76064",
         "heading": "#20154c",
         "icon": "#9a6a6c",
         "separator": "#e7c9c1",
-        "placeholder": "#e8b0b0",
+        "placeholder": "#d29393",
         "hover": "#f6dfd9",
         "accentForeground": "#eee2ec",
         "backdrop": "#0000001a"
@@ -31,7 +31,7 @@
       "secondary": {
         "accent": "#e65b62",
         "paragraph": "#20154c",
-        "background": "#f3c4c4",
+        "background": "#ffd1d1",
         "border": "#deb9af",
         "heading": "#20154c",
         "icon": "#9a6a6c",
@@ -98,7 +98,7 @@
       "primary": {
         "accent": "#20154c",
         "paragraph": "#20154c",
-        "background": "#e6aaa9",
+        "background": "#eab3b3",
         "icon": "#61424b",
         "separator": "#deabaa"
       }
@@ -109,26 +109,28 @@
         "background": "#fadfd9",
         "border": "#d76064",
         "icon": "#e65b62",
-        "hover": "#ffdad1"
+        "hover": "#fcd4ca"
       },
       "secondary": {
-        "background": "#f3c4c4"
+        "background": "#ffd1d1"
       },
       "selected": {
-        "background": "#ffdad1"
+        "background": "#ffdad1",
+        "hover": "#ffdad1"
       }
     },
     "editor": {
       "primary": {
         "background": "#fadfd9",
         "border": "#f2a6a6",
+        "placeholder": "#edbaba",
         "hover": "#ec6765"
       }
     },
     "editorToolbar": {
       "primary": {
         "paragraph": "#61424b",
-        "background": "#f0a9a8",
+        "background": "#edbaba",
         "border": "#f6dfd9",
         "icon": "#61424b",
         "separator": "#d79d9d"
@@ -140,11 +142,11 @@
     },
     "editorSidebar": {
       "primary": {
-        "background": "#e6aaa9",
+        "background": "#edbaba",
         "separator": "#e6aaa9"
       },
       "secondary": {
-        "icon": "#efbdbd"
+        "icon": "#e3abab"
       }
     },
     "dialog": {
@@ -159,44 +161,48 @@
       "secondary": {
         "accent": "#d76064",
         "background": "#e8c5c5",
-        "icon": "#efbdbd",
+        "icon": "#f2c0c0",
         "hover": "#f6dfd9"
       }
     },
     "navigationMenu": {
       "primary": {
         "paragraph": "#292929",
-        "background": "#e6aaa9",
+        "background": "#eab3b3",
         "border": "#ca6465",
         "separator": "#deabaa"
       },
       "selected": {
         "paragraph": "#20154c",
-        "background": "#f6dfd9",
+        "background": "#fddbd3",
         "icon": "#d76064",
-        "hover": "#f6dfd9"
+        "hover": "#fddbd3"
       }
     },
     "contextMenu": {
       "primary": {
-        "background": "#e6b8b7",
+        "background": "#edbaba",
         "icon": "#20154c",
-        "separator": "#f6dfd9"
+        "separator": "#fbccc1",
+        "hover": "#ffb8bf"
       },
       "secondary": {
         "icon": "#fadfd9"
+      },
+      "selected": {
+        "hover": "#ffd8d6"
       }
     },
     "sheet": {
       "primary": {
         "accent": "#e65b62",
-        "background": "#f3c4c4",
+        "background": "#edbaba",
         "border": "#b08082",
         "placeholder": "#df9a9a",
         "accentForeground": "#d76064"
       },
       "secondary": {
-        "background": "#fadfd9",
+        "background": "#f2d4d4",
         "border": "#d18c8b",
         "icon": "#9a6a6c",
         "accentForeground": "#d76064"
