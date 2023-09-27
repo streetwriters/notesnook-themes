@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Light Orange",
   "id": "light-orange",
-  "version": 1.02,
+  "version": 1.03,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A light orange theme with a dark sidebar.",
@@ -126,8 +126,8 @@
       },
       "selected": {
         "paragraph": "#ebebeb",
-        "background": "#f58700",
-        "icon": "#59565a",
+        "background": "#6e6b6f",
+        "icon": "#2d2b2d",
         "hover": "#707070"
       }
     },
