@@ -1,0 +1,145 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "DARK & light",
+  "id": "dark-and-light",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Dark theme with light everything. ⛔ONLY FOR WEB/DESKTOP APP. MAY HAVE SOME ISSUES IN SMARTPHONE APP⛔",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "MONARCH",
+      "email": "N/A",
+      "url": "N/A"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#ffffff",
+        "paragraph": "#ffffff",
+        "background": "#000000",
+        "border": "#2b2b2b",
+        "heading": "#ffffff",
+        "icon": "#ffffff",
+        "separator": "#383838",
+        "placeholder": "#808080",
+        "hover": "#2b2b2b",
+        "accentForeground": "#000000",
+        "backdrop": "#35353580"
+      },
+      "secondary": {
+        "accent": "#ffffff",
+        "paragraph": "#808080",
+        "background": "#202020",
+        "border": "#2b2b2b",
+        "heading": "#808080",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "disabled": {
+        "accent": "#008837",
+        "paragraph": "#505050",
+        "background": "#ffffff",
+        "border": "#383838",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "selected": {
+        "accent": "#ffffff",
+        "paragraph": "#D3D3D3",
+        "background": "#303030",
+        "border": "#ffffff",
+        "heading": "#e3e3e3",
+        "icon": "#ffffff",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "paragraph": "#f54b42",
+        "background": "#250b0a",
+        "border": "#383838",
+        "heading": "#f54b42",
+        "icon": "#f54b42",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "success": {
+        "accent": "#4F8A10",
+        "paragraph": "#4F8A10",
+        "background": "#132204",
+        "border": "#383838",
+        "heading": "#4F8A10",
+        "icon": "#4F8A10",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#D3D3D3"
+      },
+      "selected": {
+        "paragraph": "#D3D3D3",
+        "background": "#202020"
+      }
+    },
+    "editor": {
+      "primary": {
+        "accent": "#008837"
+      }
+    },
+    "editorSidebar": {
+      "primary": {
+        "accent": "#008837"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "accent": "#008837",
+        "paragraph": "#D3D3D3"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#D3D3D3",
+        "icon": "#D3D3D3"
+      },
+      "selected": {
+        "paragraph": "#ffffff",
+        "icon": "#ffffff"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#202020"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
+      }
+    }
+  }
+}
