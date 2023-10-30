@@ -109,11 +109,6 @@
         "background": "#202020"
       }
     },
-    "editor": {
-      "primary": {
-        "accent": "#008837"
-      }
-    },
     "editorSidebar": {
       "primary": {
         "accent": "#008837"
