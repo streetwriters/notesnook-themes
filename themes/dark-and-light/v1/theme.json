@@ -109,6 +109,11 @@
         "background": "#202020"
       }
     },
+    "editor": {
+      "selected": {
+        "background": "#3b3b3b"
+      }
+    },
     "editorSidebar": {
       "primary": {
         "accent": "#008837"
@@ -137,7 +142,7 @@
     },
     "sheet": {
       "selected": {
-        "paragraph": "#008837"
+        "background": "#5b5b5b"
       }
     }
   }
