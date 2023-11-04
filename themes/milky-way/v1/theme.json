@@ -109,6 +109,14 @@
     "editor": {
       "primary": {
         "border": "#303030"
+      },
+      "selected": {
+        "background": "#3b3b3b"
+      }
+    },
+    "editorSidebar": {
+      "primary": {
+        "accent": "#5b5b5b"
       }
     },
     "dialog": {
@@ -146,7 +154,7 @@
         "border": "#202020"
       },
       "selected": {
-        "paragraph": "#008837"
+        "background": "#5b5b5b"
       }
     }
   }
