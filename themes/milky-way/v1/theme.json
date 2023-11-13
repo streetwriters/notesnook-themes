@@ -122,6 +122,9 @@
     "dialog": {
       "primary": {
         "paragraph": "#b1b1b1"
+      },
+      "selected": {
+        "background": "#5b5b5b"
       }
     },
     "navigationMenu": {
