@@ -119,6 +119,9 @@
       "primary": {
         "paragraph": "#5E5E5E",
         "icon": "#5E5E5E"
+      },
+      "selected": {
+        "background": "#d1d1d1"
       }
     },
     "navigationMenu": {
