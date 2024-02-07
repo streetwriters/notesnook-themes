@@ -1,103 +1,102 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Forevernote Dark",
-  "id": "forevernote-dark",
-  "version": 1.1,
+  "name": "GNM dark blue",
+  "id": "gnm-dark-blue",
+  "version": 1.0,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
-  "description": "A dark theme inspired by Evernote",
+  "description": "A dark theme inspired by Adwaita dark with blue accent",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
     {
-      "name": "Kai Brueckers",
-      "url": "https://kaibrueckers.com"
+      "name": "Baiyah7o"
     }
   ],
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#00A82D",
+        "accent": "#4990E7",
         "paragraph": "#F2F2F2",
         "background": "#1A1A1A",
-        "border": "#000000",
+        "border": "#303030",
         "heading": "#D9D9D9",
         "icon": "#666666",
-        "separator": "#000000",
+        "separator": "#303030",
         "placeholder": "#737373",
-        "hover": "#111111",
+        "hover": "#3e3e3e",
         "accentForeground": "#1A1A1A",
-        "backdrop": "#000000bb"
+        "backdrop": "#303030bb"
       },
       "secondary": {
         "accent": "#008523",
         "paragraph": "#6f6f6f",
-        "background": "#202020",
+        "background": "#353535",
         "border": "#2b2b2b",
         "heading": "#808080",
         "icon": "#808080",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#e0e0e022",
+        "accentForeground": "#e0e0e0",
         "backdrop": "#35353580"
       },
       "disabled": {
-        "accent": "#008837",
+        "accent": "#e0e0e0",
         "paragraph": "#505050",
-        "background": "#ffffff",
+        "background": "#e0e0e0",
         "border": "#383838",
         "heading": "#212121",
         "icon": "#808080",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
-        "backdrop": "#35353580"
+        "hover": "#e0e0e022",
+        "accentForeground": "#e0e0e0",
+        "backdrop": "#23232380"
       },
       "selected": {
-        "accent": "#008837",
+        "accent": "#e0e0e0",
         "paragraph": "#F2F2F2",
         "background": "#3C3C3C",
-        "border": "#008837",
+        "border": "#e0e0e0",
         "heading": "#e3e3e3",
-        "icon": "#008837",
+        "icon": "#e0e0e0",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#e0e0e022",
+        "accentForeground": "#e0e0e0",
         "backdrop": "#35353580"
       },
       "error": {
-        "accent": "#f54b42",
-        "paragraph": "#f54b42",
+        "accent": "#C01C28",
+        "paragraph": "#C01C28",
         "background": "#250b0a",
         "border": "#383838",
-        "heading": "#f54b42",
-        "icon": "#f54b42",
+        "heading": "#C01C28",
+        "icon": "#C01C28",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#e0e0e022",
+        "accentForeground": "#e0e0e0",
         "backdrop": "#35353580"
       },
       "success": {
-        "accent": "#4F8A10",
-        "paragraph": "#4F8A10",
+        "accent": "#e0e0e0",
+        "paragraph": "#e0e0e0",
         "background": "#132204",
         "border": "#383838",
-        "heading": "#4F8A10",
-        "icon": "#4F8A10",
+        "heading": "#e0e0e0",
+        "icon": "#e0e0e0",
         "separator": "#383838",
         "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#e0e0e022",
+        "accentForeground": "#e0e0e0",
         "backdrop": "#35353580"
       }
     },
     "statusBar": {
       "primary": {
-        "background": "#000000"
+        "background": "#303030"
       }
     },
     "list": {
@@ -107,27 +106,27 @@
     },
     "editor": {
       "primary": {
-        "background": "#262626"
+        "background": "#242424"
       }
     },
     "editorToolbar": {
       "primary": {
-        "background": "#000000"
+        "background": "#353535"
       }
     },
     "navigationMenu": {
       "primary": {
-        "background": "#000000"
+        "background": "#242424"
       }
     },
     "contextMenu": {
       "primary": {
-        "background": "#202020"
+        "background": "#242424"
       }
     },
     "sheet": {
       "selected": {
-        "paragraph": "#008837"
+        "paragraph": "#e0e0e0"
       }
     }
   }
