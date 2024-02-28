@@ -52,9 +52,9 @@
 /* Set the main properties of the code, code blocks, and inline code */
 code[class*="language-"],
 pre[class*="language-"] {
-	background: unset;
-	color: unset;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* this is the default */
+	background: var(--crust);
+	color: var(--text);
+	font-family: "JetBrainsMonoNL Nerd Font", monospace; /* this is the default */
 	/* The following properties are standard, please leave them as they are */
 	font-size: 1em;
 	direction: ltr;
@@ -79,16 +79,14 @@ code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection,
 pre[class*="language-"]::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
-	background: unset;
-	color: unset;
+	background: rgba(var(--surface2), 0.6);
 }
 
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection {
-	background: unset;
-	color: unset;
+	background: rgba(var(--surface2), 0.6);
 }
 
 /* Properties specific to code blocks */
@@ -111,23 +109,23 @@ pre[class*="language-"] {
  * The concepts behind these standard tokens, as well as some examples, can be found here: https://prismjs.com/tokens.html
  */
 .token.comment {
-	color: unset;
+	color: var(--overlay0);
 }
 
 .token.prolog {
-	color: unset;
+	color: var(--overlay0);
 }
 
 .token.cdata {
-	color: unset;
+	color: var(--overlay0);
 }
 
 .token.doctype {
-	color: unset;
+	color: var(--overlay0);
 }
 
 .token.punctuation {
-	color: unset;
+	color: var(--overlay2);
 }
 
 .token.entity {
@@ -135,95 +133,86 @@ pre[class*="language-"] {
 }
 
 .token.attr-name {
-	color: unset;
+	color: var(--maroon);
 }
 
 .token.class-name {
-	color: unset;
+	color: var(--yellow);
 }
 
 .token.boolean {
-	color: unset;
+	color: var(--mauve);
 }
 
-.token.constant {
-	color: unset;
-}
-
+.token.constant,
 .token.number {
-	color: unset;
+	color: var(--peach);
 }
 
 .token.atrule {
-	color: unset;
+	color: var(--yellow);
 }
 
-.token.keyword {
-	color: unset;
+.token.keyword,
+.token.tag {
+	color: var(--mauve);
 }
 
 .token.property {
-	color: unset;
-}
-
-.token.tag {
-	color: unset;
+	color: var(--maroon);
 }
 
 .token.symbol {
-	color: unset;
+	color: var(--pink);
 }
 
 .token.deleted {
-	color: unset;
+    background: rgba(var(--red), 0.2);
 }
 
 .token.important {
-	color: unset;
+	color: var(--yellow);
 }
 
 .token.selector {
-	color: unset;
+	color: var(--blue);
 }
 
-.token.string {
-	color: unset;
-}
-
+.token.string,
 .token.char {
-	color: unset;
+	color: var(--green);
 }
 
 .token.builtin {
-	color: unset;
+	color: var(--red);
 }
 
 .token.inserted {
-	color: unset;
+    background: rgba(var(--green), 0.2);
 }
 
 .token.regex {
-	color: unset;
+	color: var(--pink);
 }
 
 .token.attr-value {
-	color: unset;
+	color: var(--green);
 }
 
 .token.variable {
-	color: unset;
+	color: var(--pink);
 }
 
 .token.operator {
-	color: unset;
+	color: var(--sky);
 }
 
 .token.function {
-	color: unset;
+	color: var(--blue);
 }
 
 .token.url {
-	color: unset;
+	color: var(--blue);
 }
 
 /* The following rules are pretty similar across themes, but feel free to adjust them */
@@ -245,6 +234,7 @@ pre[class*="language-"] {
 
 /* LANGUAGE-SPECIFIC OVERRIDES */
 /* If you'd like your theme to have overrides for specific languages, here's an example, you can remove it and/or add more overrides */
-.language-css .token.important {
+/* .language-css .token.important {
 	color: unset;
-}
+} */
+
