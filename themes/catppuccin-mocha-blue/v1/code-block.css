@@ -20,6 +20,7 @@
  */
 
 /* COLOURS: */
+/*
 :root {
     --rosewater: #f5e0dc;
     --flamingo: #f2cdcd;
@@ -48,12 +49,13 @@
     --mantle: #181825;
     --crust: #11111b;
 }
+*/
 
 /* Set the main properties of the code, code blocks, and inline code */
 code[class*="language-"],
 pre[class*="language-"] {
-	background: var(--crust);
-	color: var(--text);
+	background: #11111b;
+	color: #cdd6f4;
 	font-family: "JetBrainsMonoNL Nerd Font", monospace; /* this is the default */
 	/* The following properties are standard, please leave them as they are */
 	font-size: 1em;
@@ -79,14 +81,14 @@ code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection,
 pre[class*="language-"]::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
-	background: rgba(var(--surface2), 0.6);
+	background: rgba(88, 91, 112, 0.6);
 }
 
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection {
-	background: rgba(var(--surface2), 0.6);
+	background: rgba(88, 91, 112, 0.6);
 }
 
 /* Properties specific to code blocks */
@@ -109,23 +111,23 @@ pre[class*="language-"] {
  * The concepts behind these standard tokens, as well as some examples, can be found here: https://prismjs.com/tokens.html
  */
 .token.comment {
-	color: var(--overlay0);
+	color: #6c7086;
 }
 
 .token.prolog {
-	color: var(--overlay0);
+	color: #6c7086;
 }
 
 .token.cdata {
-	color: var(--overlay0);
+	color: #6c7086;
 }
 
 .token.doctype {
-	color: var(--overlay0);
+	color: #6c7086;
 }
 
 .token.punctuation {
-	color: var(--overlay2);
+	color: #9399b2;
 }
 
 .token.entity {
@@ -133,86 +135,86 @@ pre[class*="language-"] {
 }
 
 .token.attr-name {
-	color: var(--maroon);
+	color: #eba0ac;
 }
 
 .token.class-name {
-	color: var(--yellow);
+	color: #f9e2af;
 }
 
 .token.boolean {
-	color: var(--mauve);
+	color: #cba6f7;
 }
 
 .token.constant,
 .token.number {
-	color: var(--peach);
+	color: #fab387;
 }
 
 .token.atrule {
-	color: var(--yellow);
+	color: #f9e2af;
 }
 
 .token.keyword,
 .token.tag {
-	color: var(--mauve);
+	color: #cba6f7;
 }
 
 .token.property {
-	color: var(--maroon);
+	color: #eba0ac;
 }
 
 .token.symbol {
-	color: var(--pink);
+	color: #f5c2e7;
 }
 
 .token.deleted {
-    background: rgba(var(--red), 0.2);
+    background: rgba(243, 139, 168, 0.2);
 }
 
 .token.important {
-	color: var(--yellow);
+	color: #f9e2af;
 }
 
 .token.selector {
-	color: var(--blue);
+	color: #89b4fa;
 }
 
 .token.string,
 .token.char {
-	color: var(--green);
+	color: #a6e3a1;
 }
 
 .token.builtin {
-	color: var(--red);
+	color: #f38ba8;
 }
 
 .token.inserted {
-    background: rgba(var(--green), 0.2);
+    background: rgba(166, 227, 161, 0.2);
 }
 
 .token.regex {
-	color: var(--pink);
+	color: #f5c2e7;
 }
 
 .token.attr-value {
-	color: var(--green);
+	color: #a6e3a1;
 }
 
 .token.variable {
-	color: var(--pink);
+	color: #f5c2e7;
 }
 
 .token.operator {
-	color: var(--sky);
+	color: #89dceb;
 }
 
 .token.function {
-	color: var(--blue);
+	color: #89b4fa;
 }
 
 .token.url {
-	color: var(--blue);
+	color: #89b4fa;
 }
 
 /* The following rules are pretty similar across themes, but feel free to adjust them */
