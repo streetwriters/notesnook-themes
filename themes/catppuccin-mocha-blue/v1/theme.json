@@ -19,7 +19,7 @@
         "accent": "#89b4fa",
         "paragraph": "#cdd6f4",
         "background": "#181825",
-        "border": "#6c7086",
+        "border": "#313244",
         "heading": "#cdd6f4",
         "icon": "#bac2de",
         "separator": "#181825",
@@ -105,14 +105,14 @@
         "border": "#313244"
       }
     },
+    "editorToolbar": {
+      "secondary": {
+        "background": "#585b70"
+      }
+    },
     "navigationMenu": {
       "primary": {
         "background": "#11111b"
-      }
-    },
-    "contextMenu": {
-      "primary": {
-        "background": "#585b70"
       }
     },
     "sheet": {
@@ -122,3 +122,4 @@
     }
   }
 }
+
