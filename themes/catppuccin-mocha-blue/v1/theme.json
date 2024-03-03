@@ -94,6 +94,12 @@
         "backdrop": "#11111b99"
       }
     },
+    "statusBar": {
+      "primary": {
+        "background": "#1e1e2e",
+        "separator": "#1e1e2e"
+      }
+    },
     "list": {
       "selected": {
         "background": "#313244"
@@ -122,4 +128,3 @@
     }
   }
 }
-
