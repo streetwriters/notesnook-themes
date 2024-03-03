@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Catppuccin Mocha Blue",
   "id": "catppuccin-mocha-blue",
-  "version": 1,
+  "version": 1.01,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Catppuccin Mocha with a blue highlihgt",
@@ -101,6 +101,12 @@
       }
     },
     "list": {
+      "primary": {
+        "paragraph": "#a6adc8"
+      },
+      "secondary": {
+        "paragraph": "#bac2de"
+      },
       "selected": {
         "background": "#313244"
       }
