@@ -20,7 +20,8 @@
  */
 
 /* COLOURS: */
-:root {
+/* @thecodrr on discord suggested css vars should work under this selector instead of :root */
+pre[class*="language-"] {
     --rosewater: #f5e0dc;
     --flamingo: #f2cdcd;
     --pink: #f5c2e7;
