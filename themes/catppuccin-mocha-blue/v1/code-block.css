@@ -58,7 +58,7 @@ code[class*="language-"],
 pre[class*="language-"] {
 	background: var(--crust);
 	color: var(--text);
-	font-family: "JetBrainsMonoNL Nerd Font", monospace; /* this is the default */
+	font-family: "JetBrainsMonoNL Nerd Font", "JetBrains Mono NL Regular", "JetBrains Mono Regular", monospace; /* this is the default */
 	/* The following properties are standard, please leave them as they are */
 	font-size: 1em;
 	direction: ltr;
