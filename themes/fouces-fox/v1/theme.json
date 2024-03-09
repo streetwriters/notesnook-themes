@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Fouces Fox",
+  "id": "fouces-fox",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://color.firefox.com/",
+  "description": "🦊 FF is a dark theme with a soft visual and reduced glare, inspired by Firefox",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "逊狼",
+      "url": "https://github.com/vicevolf"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#7b7fcc",
+        "paragraph": "#fbfbfe",
+        "background": "#1c1b22",
+        "border": "#3b3a41",
+        "heading": "#fbfbfe",
+        "icon": "#55555f",
+        "separator": "#1c1b22",
+        "placeholder": "#55555f",
+        "hover": "#3b3a41",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "secondary": {
+        "accent": "#7b7fcc",
+        "paragraph": "#55555f",
+        "background": "#33323a",
+        "border": "#3b3a41",
+        "heading": "#808080",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#55555f",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "disabled": {
+        "accent": "#7b7fcc",
+        "paragraph": "#505050",
+        "background": "#ffffff",
+        "border": "#383838",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#55555f",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "selected": {
+        "accent": "#7b7fcc",
+        "paragraph": "#c3c3c6",
+        "background": "#33323a",
+        "border": "#7b7fcc",
+        "heading": "#e3e3e3",
+        "icon": "#7b7fcc",
+        "separator": "#383838",
+        "placeholder": "#55555f",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#000000"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "paragraph": "#f54b42",
+        "background": "#250b0a",
+        "border": "#383838",
+        "heading": "#f54b42",
+        "icon": "#f54b42",
+        "separator": "#383838",
+        "placeholder": "#55555f",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "success": {
+        "accent": "#4F8A10",
+        "paragraph": "#4F8A10",
+        "background": "#132204",
+        "border": "#383838",
+        "heading": "#4F8A10",
+        "icon": "#4F8A10",
+        "separator": "#383838",
+        "placeholder": "#55555f",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      }
+    },
+    "editor": {
+      "primary": {
+        "paragraph": "#c3c3c6",
+        "background": "#23222b"
+      },
+      "selected": {
+        "background": "#7b7fcc"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#23222b",
+        "separator": "#23222b"
+      }
+    }
+  }
+}
