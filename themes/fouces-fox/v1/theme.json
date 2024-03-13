@@ -1,71 +1,72 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Forevernote Dark",
-  "id": "forevernote-dark",
-  "version": 1.1,
+  "name": "Fouces Fox",
+  "id": "fouces-fox",
+  "version": 1,
   "license": "GPL-3.0-or-later",
-  "homepage": "https://notesnook.com",
-  "description": "A dark theme inspired by Evernote",
+  "homepage": "https://color.firefox.com/",
+  "description": "🦊 FF is a dark theme with a soft visual and reduced glare, inspired by Firefox",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
     {
-      "name": "Kai"
+      "name": "逊狼",
+      "url": "https://github.com/vicevolf"
     }
   ],
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#00A82D",
-        "paragraph": "#F2F2F2",
-        "background": "#1A1A1A",
-        "border": "#000000",
-        "heading": "#D9D9D9",
-        "icon": "#666666",
-        "separator": "#000000",
-        "placeholder": "#737373",
-        "hover": "#111111",
-        "accentForeground": "#1A1A1A",
-        "backdrop": "#000000bb"
+        "accent": "#7b7fcc",
+        "paragraph": "#fbfbfe",
+        "background": "#1c1b22",
+        "border": "#3b3a41",
+        "heading": "#fbfbfe",
+        "icon": "#55555f",
+        "separator": "#1c1b22",
+        "placeholder": "#55555f",
+        "hover": "#3b3a41",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
       },
       "secondary": {
-        "accent": "#008523",
-        "paragraph": "#6f6f6f",
-        "background": "#202020",
-        "border": "#2b2b2b",
+        "accent": "#7b7fcc",
+        "paragraph": "#55555f",
+        "background": "#33323a",
+        "border": "#3b3a41",
         "heading": "#808080",
         "icon": "#808080",
         "separator": "#383838",
-        "placeholder": "#404040",
+        "placeholder": "#55555f",
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
         "backdrop": "#35353580"
       },
       "disabled": {
-        "accent": "#008837",
+        "accent": "#7b7fcc",
         "paragraph": "#505050",
         "background": "#ffffff",
         "border": "#383838",
         "heading": "#212121",
         "icon": "#808080",
         "separator": "#383838",
-        "placeholder": "#404040",
+        "placeholder": "#55555f",
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
         "backdrop": "#35353580"
       },
       "selected": {
-        "accent": "#008837",
-        "paragraph": "#F2F2F2",
-        "background": "#3C3C3C",
-        "border": "#008837",
+        "accent": "#7b7fcc",
+        "paragraph": "#c3c3c6",
+        "background": "#33323a",
+        "border": "#7b7fcc",
         "heading": "#e3e3e3",
-        "icon": "#008837",
+        "icon": "#7b7fcc",
         "separator": "#383838",
-        "placeholder": "#404040",
+        "placeholder": "#55555f",
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
-        "backdrop": "#35353580"
+        "backdrop": "#000000"
       },
       "error": {
         "accent": "#f54b42",
@@ -75,7 +76,7 @@
         "heading": "#f54b42",
         "icon": "#f54b42",
         "separator": "#383838",
-        "placeholder": "#404040",
+        "placeholder": "#55555f",
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
         "backdrop": "#35353580"
@@ -88,45 +89,25 @@
         "heading": "#4F8A10",
         "icon": "#4F8A10",
         "separator": "#383838",
-        "placeholder": "#404040",
+        "placeholder": "#55555f",
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
         "backdrop": "#35353580"
       }
     },
-    "statusBar": {
-      "primary": {
-        "background": "#000000"
-      }
-    },
-    "list": {
-      "selected": {
-        "background": "#202020"
-      }
-    },
     "editor": {
       "primary": {
-        "background": "#262626"
+        "paragraph": "#c3c3c6",
+        "background": "#23222b"
+      },
+      "selected": {
+        "background": "#7b7fcc"
       }
     },
     "editorToolbar": {
       "primary": {
-        "background": "#000000"
-      }
-    },
-    "navigationMenu": {
-      "primary": {
-        "background": "#000000"
-      }
-    },
-    "contextMenu": {
-      "primary": {
-        "background": "#202020"
-      }
-    },
-    "sheet": {
-      "selected": {
-        "paragraph": "#008837"
+        "background": "#23222b",
+        "separator": "#23222b"
       }
     }
   }

@@ -1,0 +1,108 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Slate Stone",
+  "id": "slate-stone",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://tailwindcss.com/docs/customizing-colors",
+  "description": "⛄ SS is a light theme with a soft visual and reduced glare, inspired by Tailwind",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "逊狼",
+      "url": "https://github.com/vicevolf"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#475569",
+        "paragraph": "#0f172a",
+        "background": "#fafaf9",
+        "border": "#E8E8E8",
+        "heading": "#0f172a",
+        "icon": "#0f172a",
+        "separator": "#fafaf9",
+        "placeholder": "#94a3b8",
+        "hover": "#47556910",
+        "accentForeground": "#fafaf9",
+        "backdrop": "#0000001a"
+      },
+      "secondary": {
+        "accent": "#475569",
+        "paragraph": "#64748b",
+        "background": "#f5f5f4",
+        "border": "#E8E8E8",
+        "heading": "#808080",
+        "icon": "#666",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#dbdbdb",
+        "accentForeground": "#fafaf9",
+        "backdrop": "#0000001a"
+      },
+      "disabled": {
+        "accent": "#475569",
+        "paragraph": "#505050",
+        "background": "#fafaf9",
+        "border": "#E8E8E8",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#00000010",
+        "accentForeground": "#fafaf9",
+        "backdrop": "#0000001a"
+      },
+      "selected": {
+        "accent": "#475569",
+        "paragraph": "#0f172a",
+        "background": "#f5f5f4",
+        "border": "#475569",
+        "heading": "#212121",
+        "icon": "#475569",
+        "separator": "#ebebeb",
+        "placeholder": "#a9a9a9",
+        "hover": "#47556910",
+        "accentForeground": "#fafaf9",
+        "backdrop": "#0000001a"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "paragraph": "#f54b42",
+        "background": "#ffa69c",
+        "border": "#E8E8E8",
+        "heading": "#f54b42",
+        "icon": "#f54b42",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#00000010",
+        "accentForeground": "#fafaf9",
+        "backdrop": "#0000001a"
+      },
+      "success": {
+        "accent": "#4F8A10",
+        "paragraph": "#4F8A10",
+        "background": "#85ce68",
+        "border": "#E8E8E8",
+        "heading": "#4F8A10",
+        "icon": "#4F8A10",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#00000010",
+        "accentForeground": "#fafaf9",
+        "backdrop": "#0000001a"
+      }
+    },
+    "editor": {
+      "primary": {
+        "accent": "#64748b",
+        "paragraph": "#1e293b"
+      },
+      "selected": {
+        "background": "#94a3b8"
+      }
+    }
+  }
+}
