@@ -20,17 +20,19 @@
  */
 
 /* COLOURS: */
-/*
-:root {
+/* @thecodrr on discord suggested css vars should work under this selector instead of :root */
+pre[class*="language-"] {
     --rosewater: #f5e0dc;
     --flamingo: #f2cdcd;
     --pink: #f5c2e7;
     --mauve: #cba6f7;
     --red: #f38ba8;
+    --redrgba: 243, 139, 168;
     --maroon: #eba0ac;
     --peach: #fab387;
     --yellow: #f9e2af;
     --green: #a6e3a1;
+    --greenrgba: 166, 227, 161;
     --teal: #94e2d5;
     --sky: #89dceb;
     --sapphire: #74c7ec;
@@ -43,20 +45,20 @@
     --overlay1: #7f849c;
     --overlay0: #6c7086;
     --surface2: #585b70;
+    --surface2rgba: 88, 91, 112;
     --surface1: #45475a;
     --surface0: #313244;
     --base: #313244;
     --mantle: #181825;
     --crust: #11111b;
 }
-*/
 
 /* Set the main properties of the code, code blocks, and inline code */
 code[class*="language-"],
 pre[class*="language-"] {
-	background: #11111b;
-	color: #cdd6f4;
-	font-family: "JetBrainsMonoNL Nerd Font", monospace; /* this is the default */
+	background: var(--crust);
+	color: var(--text);
+	font-family: "JetBrainsMono Nerd Font", "JetBrainsMonoNL Nerd Font", "JetBrains Mono Regular", "JetBrains Mono NL Regular", monospace; /* this is the default */
 	/* The following properties are standard, please leave them as they are */
 	font-size: 1em;
 	direction: ltr;
@@ -80,15 +82,12 @@ pre[class*="language-"] {
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection,
 pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection {
-	background: rgba(88, 91, 112, 0.6);
-}
-
+pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection {
-	background: rgba(88, 91, 112, 0.6);
+	background: rgba(var(--surface2rgba), 0.6);
 }
 
 /* Properties specific to code blocks */
@@ -111,23 +110,23 @@ pre[class*="language-"] {
  * The concepts behind these standard tokens, as well as some examples, can be found here: https://prismjs.com/tokens.html
  */
 .token.comment {
-	color: #6c7086;
+	color: var(--overlay0);
 }
 
 .token.prolog {
-	color: #6c7086;
+	color: var(--overlay0);
 }
 
 .token.cdata {
-	color: #6c7086;
+	color: var(--overlay0);
 }
 
 .token.doctype {
-	color: #6c7086;
+	color: var(--overlay0);
 }
 
 .token.punctuation {
-	color: #9399b2;
+	color: var(--overlay2);
 }
 
 .token.entity {
@@ -135,86 +134,86 @@ pre[class*="language-"] {
 }
 
 .token.attr-name {
-	color: #eba0ac;
+	color: var(--maroon);
 }
 
 .token.class-name {
-	color: #f9e2af;
+	color: var(--yellow);
 }
 
 .token.boolean {
-	color: #cba6f7;
+	color: var(--mauve);
 }
 
 .token.constant,
 .token.number {
-	color: #fab387;
+	color: var(--peach);
 }
 
 .token.atrule {
-	color: #f9e2af;
+	color: var(--yellow);
 }
 
 .token.keyword,
 .token.tag {
-	color: #cba6f7;
+	color: var(--mauve);
 }
 
 .token.property {
-	color: #eba0ac;
+	color: var(--maroon);
 }
 
 .token.symbol {
-	color: #f5c2e7;
+	color: var(--pink);
 }
 
 .token.deleted {
-    background: rgba(243, 139, 168, 0.2);
+    background: rgba(var(--redrgba), 0.2);
 }
 
 .token.important {
-	color: #f9e2af;
+	color: var(--yellow);
 }
 
 .token.selector {
-	color: #89b4fa;
+	color: var(--blue);
 }
 
 .token.string,
 .token.char {
-	color: #a6e3a1;
+	color: var(--green);
 }
 
 .token.builtin {
-	color: #f38ba8;
+	color: var(--red);
 }
 
 .token.inserted {
-    background: rgba(166, 227, 161, 0.2);
+    background: rgba(var(--greenrgba), 0.2);
 }
 
 .token.regex {
-	color: #f5c2e7;
+	color: var(--pink);
 }
 
 .token.attr-value {
-	color: #a6e3a1;
+	color: var(--green);
 }
 
 .token.variable {
-	color: #f5c2e7;
+	color: var(--pink);
 }
 
 .token.operator {
-	color: #89dceb;
+	color: var(--sky);
 }
 
 .token.function {
-	color: #89b4fa;
+	color: var(--blue);
 }
 
 .token.url {
-	color: #89b4fa;
+	color: var(--blue);
 }
 
 /* The following rules are pretty similar across themes, but feel free to adjust them */
