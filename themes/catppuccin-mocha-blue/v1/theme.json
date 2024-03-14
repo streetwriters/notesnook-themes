@@ -5,7 +5,7 @@
   "version": 1.22,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
-  "description": "Catppuccin Mocha with a blue highlight",
+  "description": "Catppuccin Mocha with a blue accent",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
