@@ -210,6 +210,7 @@ pre[class*="language-"] {
 
 .token.function {
 	color: var(--blue);
+    font-style: italic;
 }
 
 .token.url {
