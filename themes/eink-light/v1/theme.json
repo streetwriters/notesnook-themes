@@ -1,0 +1,159 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "E-Ink Light",
+  "id": "eink-light",
+  "version": 1.8,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "E-ink theme for light mode",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Tsyron"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#000000",
+        "paragraph": "#000000",
+        "background": "#ffffff",
+        "border": "#000000",
+        "heading": "#000000",
+        "icon": "#000000",
+        "separator": "#000000",
+        "placeholder": "#6a6a6a",
+        "hover": "#00000010",
+        "accentForeground": "#ffffff",
+        "backdrop": "#ffffff"
+      },
+      "secondary": {
+        "accent": "#000000",
+        "paragraph": "#000000",
+        "background": "#ffffff",
+        "border": "#000000",
+        "heading": "#000000",
+        "icon": "#000000",
+        "separator": "#000000",
+        "placeholder": "#6a6a6a",
+        "hover": "#00000010",
+        "accentForeground": "#ffffff",
+        "backdrop": "#ffffff"
+      },
+      "disabled": {
+        "accent": "#303030",
+        "paragraph": "#484848",
+        "background": "#ffffff",
+        "border": "#000000",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#E8E8E8",
+        "placeholder": "#6a6a6a",
+        "hover": "#00000010",
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
+      },
+      "selected": {
+        "accent": "#303030",
+        "paragraph": "#202020",
+        "background": "#dbdbdb99",
+        "border": "#000000",
+        "heading": "#212121",
+        "icon": "#303030",
+        "separator": "#E8E8E8",
+        "placeholder": "#6a6a6a",
+        "hover": "#00000010",
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "paragraph": "#f54b42",
+        "background": "#ffe2df",
+        "border": "#E8E8E8",
+        "heading": "#f54b42",
+        "icon": "#f54b42",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#00000010",
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
+      },
+      "success": {
+        "accent": "#4F8A10",
+        "paragraph": "#4F8A10",
+        "background": "#85ce68",
+        "border": "#E8E8E8",
+        "heading": "#4F8A10",
+        "icon": "#4F8A10",
+        "separator": "#E8E8E8",
+        "placeholder": "#a9a9a9",
+        "hover": "#00000010",
+        "accentForeground": "#ffffff",
+        "backdrop": "#0000001a"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#000000",
+        "border": "#000000",
+        "icon": "#000000"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#000000",
+        "icon": "#000000"
+      },
+      "selected": {
+        "paragraph": "#5e5e5e",
+        "background": "#00000010"
+      }
+    },
+    "editor": {
+      "primary": {
+        "placeholder": "#6a6a6a"
+      },
+      "selected": {
+        "background": "#d1d1d1"
+      }
+    },
+    "editorSidebar": {
+      "selected": {
+        "border": "#000000"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "paragraph": "#000000",
+        "border": "#000000",
+        "icon": "#000000"
+      },
+      "selected": {
+        "background": "#d1d1d1"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#000000",
+        "border": "#000000",
+        "icon": "#000000"
+      },
+      "selected": {
+        "paragraph": "#303030",
+        "icon": "#303030"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#f7f7f7"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "background": "#84ff28"
+      }
+    }
+  }
+}
