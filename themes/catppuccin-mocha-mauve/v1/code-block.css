@@ -1,0 +1,241 @@
+/**
+ * Catppuccin Mocha
+ * If this is an adaptation of an existing theme, credit the creator and/or leave a link to it!
+ * By @revsuine
+ * Licenced under the GPL v3
+ */
+
+/**
+ * How to use this template:
+ *
+ * This file contains all the boilerplate necessary for a Prism theme along with template rules for you to fill in.
+ *
+ * All properties with the value `unset` are for you to change.
+ * You should fill in all `color` and `background` properties.
+ * If you don't need an `unset` property (e.g. `border-radius`), then feel free to remove it.
+ * You are also free to add more properties that aren't stated, such as `text-shadow`.
+ * If you wish to style the plugins, you may grab their selectors from their respective .css files in the template folder.
+ *
+ * Your finished theme should have all `unset` properties either filled in or removed.
+ */
+
+/* COLOURS: */
+/* @thecodrr on discord suggested css vars should work under this selector instead of :root */
+pre[class*="language-"] {
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --redrgba: 243, 139, 168;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --greenrgba: 166, 227, 161;
+    --teal: #94e2d5;
+    --sky: #89dceb;
+    --sapphire: #74c7ec;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --text: #cdd6f4;
+    --subtext1: #bac2de;
+    --subtext0: #a6adc8;
+    --overlay2: #9399b2;
+    --overlay1: #7f849c;
+    --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface2rgba: 88, 91, 112;
+    --surface1: #45475a;
+    --surface0: #313244;
+    --base: #313244;
+    --mantle: #181825;
+    --crust: #11111b;
+}
+
+/* Set the main properties of the code, code blocks, and inline code */
+code[class*="language-"],
+pre[class*="language-"] {
+	background: var(--crust);
+	color: var(--text);
+	font-family: "JetBrainsMono Nerd Font", "JetBrainsMonoNL Nerd Font", "JetBrains Mono Regular", "JetBrains Mono NL Regular", monospace; /* this is the default */
+	/* The following properties are standard, please leave them as they are */
+	font-size: 1em;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+	/* The default is 4, but you could change it if you really, really want to */
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	/* The following properties are also standard */
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Optional: What the code looks like when highlighted */
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection,
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection {
+	background: rgba(var(--surface2rgba), 0.6);
+}
+
+/* Properties specific to code blocks */
+pre[class*="language-"] {
+	padding: 1em; /* this is standard */
+	margin: 0.5em 0; /* this is the default */
+	overflow: auto; /* this is standard */
+	border-radius: unset;
+}
+
+/* Properties specific to inline code */
+:not(pre) > code[class*="language-"] {
+	padding: 0.1em; /* this is the default */
+	border-radius: unset;
+	white-space: normal; /* this is standard */
+}
+
+/**
+ * These are the minimum tokens you must style, you can rearrange them and/or style more tokens as you want
+ * The concepts behind these standard tokens, as well as some examples, can be found here: https://prismjs.com/tokens.html
+ */
+.token.comment {
+	color: var(--overlay0);
+}
+
+.token.prolog {
+	color: var(--overlay0);
+}
+
+.token.cdata {
+	color: var(--overlay0);
+}
+
+.token.doctype {
+	color: var(--overlay0);
+}
+
+.token.punctuation {
+	color: var(--overlay2);
+}
+
+.token.entity {
+	color: unset;
+}
+
+.token.attr-name {
+	color: var(--maroon);
+}
+
+.token.class-name {
+	color: var(--yellow);
+}
+
+.token.boolean {
+	color: var(--mauve);
+}
+
+.token.constant,
+.token.number {
+	color: var(--peach);
+}
+
+.token.atrule {
+	color: var(--yellow);
+}
+
+.token.keyword,
+.token.tag {
+	color: var(--mauve);
+}
+
+.token.property {
+	color: var(--maroon);
+}
+
+.token.symbol {
+	color: var(--pink);
+}
+
+.token.deleted {
+    background: rgba(var(--redrgba), 0.2);
+}
+
+.token.important {
+	color: var(--yellow);
+}
+
+.token.selector {
+	color: var(--blue);
+}
+
+.token.string,
+.token.char {
+	color: var(--green);
+}
+
+.token.builtin {
+	color: var(--red);
+}
+
+.token.inserted {
+    background: rgba(var(--greenrgba), 0.2);
+}
+
+.token.regex {
+	color: var(--pink);
+}
+
+.token.attr-value {
+	color: var(--green);
+}
+
+.token.variable {
+	color: var(--pink);
+}
+
+.token.operator {
+	color: var(--sky);
+}
+
+.token.function {
+	color: var(--blue);
+    font-style: italic;
+}
+
+.token.url {
+	color: var(--blue);
+}
+
+/* The following rules are pretty similar across themes, but feel free to adjust them */
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.namespace {
+	opacity: 0.7;
+}
+
+/* LANGUAGE-SPECIFIC OVERRIDES */
+/* If you'd like your theme to have overrides for specific languages, here's an example, you can remove it and/or add more overrides */
+/* .language-css .token.important {
+	color: unset;
+} */
