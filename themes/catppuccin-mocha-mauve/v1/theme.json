@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Catppuccin Mocha Mauve",
   "id": "catppuccin-mocha-mauve",
-  "version": 1.22,
+  "version": 1.0,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Catppuccin Mocha with a mauve accent",
