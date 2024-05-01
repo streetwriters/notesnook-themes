@@ -1,22 +1,22 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Catppuccin Mocha Blue",
-  "id": "catppuccin-mocha-blue",
-  "version": 1.22,
+  "name": "Catppuccin Mocha Mauve",
+  "id": "catppuccin-mocha-mauve",
+  "version": 1.0,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
-  "description": "Catppuccin Mocha with a blue accent",
+  "description": "Catppuccin Mocha with a mauve accent",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
     {
-      "name": "revsuine"
+      "name": "Gandalf-the-Blue"
     }
   ],
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#89b4fa",
+        "accent": "#cba6f7",
         "paragraph": "#cdd6f4",
         "background": "#1e1e2e",
         "border": "#313244",
@@ -29,7 +29,7 @@
         "backdrop": "#11111b99"
       },
       "secondary": {
-        "accent": "#89b4fa",
+        "accent": "#cba6f7",
         "paragraph": "#cdd6f4",
         "background": "#11111b",
         "border": "#6c7086",
@@ -42,7 +42,7 @@
         "backdrop": "#11111b99"
       },
       "disabled": {
-        "accent": "#89b4fa",
+        "accent": "#cba6f7",
         "paragraph": "#cdd6f4",
         "background": "#7f849c",
         "border": "#6c7086",
@@ -55,12 +55,12 @@
         "backdrop": "#11111b99"
       },
       "selected": {
-        "accent": "#89b4fa",
+        "accent": "#cba6f7",
         "paragraph": "#cdd6f4",
         "background": "#45475a",
-        "border": "#89b4fa",
+        "border": "#cba6f7",
         "heading": "#cdd6f4",
-        "icon": "#89b4fa",
+        "icon": "#cba6f7",
         "separator": "#6c7086",
         "placeholder": "#7f849c",
         "hover": "#313244",
