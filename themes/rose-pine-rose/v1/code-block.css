@@ -105,6 +105,7 @@ pre[class*="language-"] {
 
 .token.constant {
     color: var(--love); /* rosé pine spec doesn't specify, my decision */
+    font-style: italic;
 }
 
 .token.number {
@@ -177,6 +178,7 @@ pre[class*="language-"] {
 
 .token.function {
 	color: var(--rose);
+    font-style: italic;
 }
 
 .token.url {
