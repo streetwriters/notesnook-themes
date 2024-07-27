@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Rosé Pine Dawn",
+  "id": "rose-pine-dawn",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Rosé Pine Dawn variant",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#b4637a",
+        "paragraph": "#575279",
+        "background": "#faf4ed",
+        "border": "#faf4ed",
+        "heading": "#575279",
+        "icon": "#b4637a",
+        "separator": "#f2e9de",
+        "placeholder": "#9893a5",
+        "hover": "#e4dfde",
+        "accentForeground": "#faf4ed",
+        "backdrop": "#faf4ed99"
+      },
+      "secondary": {
+        "accent": "#b4637a",
+        "paragraph": "#575279",
+        "background": "#f2e9de",
+        "border": "#9893a5",
+        "heading": "#575279",
+        "icon": "#575279",
+        "separator": "#9893a5",
+        "placeholder": "#9893a5",
+        "hover": "#e4dfde",
+        "accentForeground": "#faf4ed",
+        "backdrop": "#faf4ed99"
+      },
+      "disabled": {
+        "accent": "#b4637a",
+        "paragraph": "#575279",
+        "background": "#9893a5",
+        "border": "#9893a5",
+        "heading": "#575279",
+        "icon": "#575279",
+        "separator": "#9893a5",
+        "placeholder": "#575279",
+        "hover": "#e4dfde",
+        "accentForeground": "#faf4ed",
+        "backdrop": "#faf4ed99"
+      },
+      "selected": {
+        "accent": "#b4637a",
+        "paragraph": "#575279",
+        "background": "#dcd7ca",
+        "border": "#b4637a",
+        "heading": "#575279",
+        "icon": "#b4637a",
+        "separator": "#9893a5",
+        "placeholder": "#9893a5",
+        "hover": "#e4dfde",
+        "accentForeground": "#faf4ed",
+        "backdrop": "#faf4ed99"
+      },
+      "error": {
+        "accent": "#eb6f92",
+        "paragraph": "#eb6f92",
+        "background": "#f2e9de",
+        "border": "#9893a5",
+        "heading": "#eb6f92",
+        "icon": "#eb6f92",
+        "separator": "#9893a5",
+        "placeholder": "#9893a5",
+        "hover": "#e4dfde",
+        "accentForeground": "#faf4ed",
+        "backdrop": "#faf4ed99"
+      },
+      "success": {
+        "accent": "#286983",
+        "paragraph": "#286983",
+        "background": "#f2e9de",
+        "border": "#9893a5",
+        "heading": "#286983",
+        "icon": "#286983",
+        "separator": "#9893a5",
+        "placeholder": "#9893a5",
+        "hover": "#e4dfde",
+        "accentForeground": "#faf4ed",
+        "backdrop": "#faf4ed99"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#575279",
+        "background": "#e4dfde",
+        "separator": "#e4dfde"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#575279",
+        "background": "#f2e9de",
+        "hover": "#e4dfde"
+      },
+      "secondary": {
+        "paragraph": "#575279"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#e4dfde",
+        "border": "#9893a5"
+      },
+      "secondary": {
+        "paragraph": "#9893a5",
+        "border": "#faf4ed"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#f2e9de",
+        "hover": "#9893a533"
+      },
+      "secondary": {
+        "background": "#9893a533"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#faf4ed"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#286983"
+      }
+    }
+  }
+}
