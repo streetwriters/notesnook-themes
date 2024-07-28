@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Midnight",
   "id": "midnight",
-  "version": 2,
+  "version": 2.1,
   "license": "MIT",
   "homepage": "https://notesnook.com",
   "description": "A dark theme inspired by the SN Midnight theme",
@@ -58,7 +58,7 @@
       "selected": {
         "accent": "#4CA3FF",
         "paragraph": "#D3D3D3",
-        "background": "#313142",
+        "background": "#4CA3FF65",
         "border": "#4CA3FF",
         "heading": "#e3e3e3",
         "icon": "#4CA3FF",
@@ -118,9 +118,6 @@
       "secondary": {
         "paragraph": "#D8D8D8",
         "placeholder": "#D8D8D8"
-      },
-      "selected": {
-        "background": "#4CA3FF"
       }
     },
     "editorToolbar": {
@@ -162,8 +159,8 @@
       }
     },
     "sheet": {
-      "selected": {
-        "paragraph": "#E84774"
+      "primary": {
+        "accent": "#4CA3FF"
       }
     }
   }
