@@ -120,11 +120,11 @@
       "editor": {
         "primary": {
           "background": "#f0f1f5",
-          "border": "#767c9d"
+          "border": "#d2d8ee"
         },
         "secondary": {
           "paragraph": "#767c9d",
-          "border": "#f7f8fc"
+          "border": "#d2d8ee"
         }
       },
       "editorToolbar": {
