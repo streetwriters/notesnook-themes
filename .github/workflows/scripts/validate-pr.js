@@ -1,6 +1,7 @@
 const { readFile } = require("fs/promises");
 const comment = require("./create-comment");
 const path = require("path");
+const { existsSync } = require("fs");
 
 module.exports = async ({ github, context, files }) => {
   const errors = [];
@@ -9,6 +10,13 @@ module.exports = async ({ github, context, files }) => {
       errors.push(
         "The JSON file must be named theme.json otherwise it won't work."
       );
+    }
+
+    if (!existsSync(file)) {
+      errors.push(
+        `You cannot change the ID or directory name of a theme. Since the ID is internal, you can leave it as is and just change the title. Otherwise, please create a new theme with the new id.`
+      );
+      continue;
     }
 
     const theme = JSON.parse(await readFile(file, "utf-8"));

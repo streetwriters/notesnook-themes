@@ -36,7 +36,7 @@ jobs:
           comment: "true"
           use_dot_match: "false"
           json_schema: ./schemas/v1.schema.json
-          files: ${{ steps.changed-files.outputs.all_changed_files }}
+          files: ${{ steps.changed-files.outputs.theme_all_changed_files }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run custom validations
@@ -49,7 +49,7 @@ jobs:
             return await script({ 
               github,
               context,
-              files: `${{ steps.changed-files.outputs.all_changed_files }}`
+              files: `${{ steps.changed-files.outputs.theme_all_changed_and_modified_files }}`
             });
 
       - name: Create preview comment
