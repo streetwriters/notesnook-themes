@@ -1,7 +1,7 @@
 {
   "name": "Notesnook Dark",
   "id": "default-dark",
-  "version": 1.9,
+  "version": 2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default dark theme for the Notesnook app",
@@ -27,9 +27,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#2b2b2b",
-        "shade": "#00883712",
-        "backdrop": "#35353580",
-        "textSelection": "#00883777"
+        "backdrop": "#35353580"
       },
       "secondary": {
         "accent": "#008837",
@@ -42,9 +40,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
-        "backdrop": "#35353580",
-        "textSelection": "#00883777"
+        "backdrop": "#35353580"
       },
       "disabled": {
         "accent": "#008837",
@@ -57,9 +53,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
-        "backdrop": "#35353580",
-        "textSelection": "#00883777"
+        "backdrop": "#35353580"
       },
       "selected": {
         "accent": "#008837",
@@ -72,9 +66,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
-        "backdrop": "#35353580",
-        "textSelection": "#00883777"
+        "backdrop": "#35353580"
       },
       "error": {
         "accent": "#f54b42",
@@ -87,9 +79,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#00883712",
-        "backdrop": "#35353580",
-        "textSelection": "#f54b4255"
+        "backdrop": "#35353580"
       },
       "success": {
         "accent": "#4F8A10",
@@ -102,9 +92,7 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "shade": "#4F8A1012",
-        "backdrop": "#35353580",
-        "textSelection": "#4F8A1055"
+        "backdrop": "#35353580"
       }
     },
     "list": { "selected": { "background": "#202020" } },

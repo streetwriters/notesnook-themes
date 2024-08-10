@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Tokyonight Light",
   "id": "tokyonight-light",
-  "version": 3,
+  "version": 3.1,
   "license": "GPL-3.0-or-later",
   "description": "Tokyonight light theme for Notesnook app",
   "colorScheme": "light",
@@ -26,9 +26,8 @@
         "separator": "#191A26",
         "placeholder": "#191A26",
         "hover": "#c8cff1",
-        "shade": "#C0C8F4",
         "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff"
       },
       "secondary": {
         "accent": "#191a26",
@@ -40,9 +39,8 @@
         "separator": "#191a26",
         "placeholder": "#191a26",
         "hover": "#c8cff1",
-        "shade": "#C0C8F4",
         "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff"
       },
       "disabled": {
         "accent": "#191a26",
@@ -54,9 +52,8 @@
         "separator": "#191a26",
         "placeholder": "#191a26",
         "hover": "#c8cff1",
-        "shade": "#C0C8F4",
         "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff"
       },
       "selected": {
         "accent": "#191a26",
@@ -68,9 +65,8 @@
         "separator": "#E8E8E8",
         "placeholder": "#191a26",
         "hover": "#00000010",
-        "shade": "#00883712",
         "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff"
       },
       "error": {
         "accent": "#191a26",
@@ -82,9 +78,8 @@
         "separator": "#E8E8E8",
         "placeholder": "#191a26",
         "hover": "#00000010",
-        "shade": "#00883712",
         "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff"
       },
       "success": {
         "accent": "#191a26",
@@ -96,9 +91,8 @@
         "separator": "#191a26",
         "placeholder": "#191a26",
         "hover": "#00000010",
-        "shade": "#4F8A1012",
         "backdrop": "#0000001a",
-        "textSelection": "#00883777"
+        "accentForeground": "#ffffff"
       }
     },
     "statusBar": {

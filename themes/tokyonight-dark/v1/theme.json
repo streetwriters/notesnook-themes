@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Tokyonight Dark",
   "id": "tokyonight-dark",
-  "version": 3,
+  "version": 3.1,
   "license": "GPL-3.0-or-later",
-  "description": "A Tokyonight dark theme for Notesnook app",
   "homepage": "https://notesnook.com",
+  "description": "A Tokyonight dark theme for Notesnook app",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
@@ -27,9 +27,8 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#00191a26",
-        "textSelection": "#62a0ea"
+        "accentForeground": "#000000",
+        "backdrop": "#00191a26"
       },
       "secondary": {
         "accent": "#c0caf5",
@@ -41,9 +40,8 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#62a0ea"
+        "accentForeground": "#000000",
+        "backdrop": "#191a26"
       },
       "disabled": {
         "accent": "#c0caf5",
@@ -55,23 +53,21 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#62a0ea"
+        "accentForeground": "#000000",
+        "backdrop": "#191a26"
       },
       "selected": {
         "accent": "#c0caf5",
-        "paragraph": "#c0caf5",
-        "background": "#191a26",
+        "paragraph": "#62a0ea",
+        "background": "#070d12",
         "border": "#c0caf5",
         "heading": "#c0caf5",
-        "icon": "#c0caf5",
+        "icon": "#62a0ea",
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#62a0ea"
+        "accentForeground": "#000000",
+        "backdrop": "#191a26"
       },
       "error": {
         "accent": "#c0caf5",
@@ -83,9 +79,8 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#62a0ea"
+        "accentForeground": "#000000",
+        "backdrop": "#191a26"
       },
       "success": {
         "accent": "#4f8a10",
@@ -97,9 +92,8 @@
         "separator": "#e8e8e8",
         "placeholder": "#a9a9a9",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#62a0ea"
+        "accentForeground": "#000000",
+        "backdrop": "#191a26"
       }
     },
     "statusBar": {
@@ -132,9 +126,8 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#c0caf5"
+        "accentForeground": "#ffffff",
+        "backdrop": "#191a26"
       },
       "secondary": {
         "accent": "#c0caf5",
@@ -146,9 +139,7 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#c0caf5"
+        "backdrop": "#191a26"
       },
       "disabled": {
         "accent": "#c0caf5",
@@ -160,23 +151,19 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#241f31",
-        "textSelection": "#d5d6e0"
+        "backdrop": "#241f31"
       },
       "selected": {
         "accent": "#c0caf5",
         "paragraph": "#c0caf5",
-        "background": "#191a26",
+        "background": "#0a2832",
         "border": "#c0caf5",
         "heading": "#c0caf5",
         "icon": "#c0caf5",
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#241f31",
-        "shade": "#241f31",
-        "backdrop": "#191a26",
-        "textSelection": "#d5d6e0"
+        "backdrop": "#191a26"
       },
       "error": {
         "accent": "#c0caf5",
@@ -223,9 +210,7 @@
         "separator": "#c0caf5",
         "placeholder": "#c0caf5",
         "hover": "#342d47",
-        "shade": "#403854",
-        "backdrop": "#e0e3f1",
-        "textSelection": "#e0e3f1"
+        "backdrop": "#e0e3f1"
       },
       "secondary": {
         "background": "#191a26"
