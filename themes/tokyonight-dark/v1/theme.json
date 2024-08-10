@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Tokyonight Dark",
   "id": "tokyonight-dark",
-  "version": 1.6,
+  "version": 3,
   "license": "GPL-3.0-or-later",
   "description": "A Tokyonight dark theme for Notesnook app",
   "homepage": "https://notesnook.com",
