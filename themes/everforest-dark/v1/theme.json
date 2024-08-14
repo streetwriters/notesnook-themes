@@ -106,8 +106,8 @@
     "list": {
       "primary": {
         "paragraph": "#d3c6aa",
-        "background": "#475258",
-        "hover": "#3c454a"
+        "background": "#3c474d",
+        "hover": "#54626b"
       },
       "secondary": {
         "paragraph": "#d3c6aa"
@@ -116,7 +116,7 @@
         "hover": "#3c454a"
       },
       "selected": {
-        "hover": "#3c454a"
+        "hover": "#54626b"
       }
     },
     "editor": {
