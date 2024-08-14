@@ -20,39 +20,39 @@
       "primary": {
         "accent": "#a7c080",
         "paragraph": "#5c6a72",
-        "background": "#f3efea",
-        "border": "#f3efea",
+        "background": "#f2e9d3",
+        "border": "#e1dbd7",
         "heading": "#5c6a72",
-        "icon": "#a7c080",
+        "icon": "#5c6a72",
         "separator": "#e1dbd7",
         "placeholder": "#859289",
-        "hover": "#e1dbd7",
+        "hover": "#939f91",
         "accentForeground": "#f3efea",
         "backdrop": "#f3efea99"
       },
       "secondary": {
         "accent": "#a7c080",
         "paragraph": "#5c6a72",
-        "background": "#e1dbd7",
+        "background": "#d8d3ba",
         "border": "#859289",
         "heading": "#5c6a72",
         "icon": "#5c6a72",
         "separator": "#859289",
         "placeholder": "#859289",
-        "hover": "#e1dbd7",
+        "hover": "#939f91",
         "accentForeground": "#f3efea",
         "backdrop": "#f3efea99"
       },
       "disabled": {
         "accent": "#a7c080",
-        "paragraph": "#5c6a72",
-        "background": "#859289",
-        "border": "#859289",
-        "heading": "#5c6a72",
-        "icon": "#5c6a72",
-        "separator": "#859289",
-        "placeholder": "#5c6a72",
-        "hover": "#859289",
+        "paragraph": "#859289",
+        "background": "#e1dbd7",
+        "border": "#e1dbd7",
+        "heading": "#859289",
+        "icon": "#859289",
+        "separator": "#e1dbd7",
+        "placeholder": "#859289",
+        "hover": "#a7c080",
         "accentForeground": "#f3efea",
         "backdrop": "#f3efea99"
       },
@@ -65,20 +65,20 @@
         "icon": "#a7c080",
         "separator": "#859289",
         "placeholder": "#859289",
-        "hover": "#f3efea",
+        "hover": "#a6b0a0",
         "accentForeground": "#f3efea",
         "backdrop": "#f3efea99"
       },
       "error": {
         "accent": "#e67e80",
         "paragraph": "#e67e80",
-        "background": "#e1dbd7",
-        "border": "#859289",
+        "background": "#f3efea",
+        "border": "#e1dbd7",
         "heading": "#e67e80",
         "icon": "#e67e80",
-        "separator": "#859289",
-        "placeholder": "#859289",
-        "hover": "#859289",
+        "separator": "#e1dbd7",
+        "placeholder": "#e67e80",
+        "hover": "#e1dbd7",
         "accentForeground": "#f3efea",
         "backdrop": "#f3efea99"
       },
@@ -99,34 +99,35 @@
     "statusBar": {
       "primary": {
         "paragraph": "#5c6a72",
-        "background": "#f3efea",
-        "separator": "#f3efea"
+        "background": "#d8d3ba",
+        "separator": "#e1dbd7"
       }
     },
     "list": {
       "primary": {
         "paragraph": "#5c6a72",
-        "background": "#e1dbd7",
-        "hover": "#f3efea"
+        "background": "#ddd8be",
+        "hover": "#a6b0a0"
       },
       "secondary": {
-        "paragraph": "#5c6a72"
+        "paragraph": "#5c6a72",
+        "background": "#f2e9d3"
       }
     },
     "editor": {
       "primary": {
-        "background": "#f3efea",
+        "background": "#f2e9d3",
         "border": "#859289"
       },
       "secondary": {
         "paragraph": "#859289",
-        "border": "#f3efea"
+        "border": "#d8d3ba"
       }
     },
     "editorToolbar": {
       "primary": {
-        "background": "#e1dbd7",
-        "hover": "#85928933"
+        "accent": "#5c6a72",
+        "background": "#d8d3ba"
       },
       "secondary": {
         "background": "#85928933"
@@ -134,7 +135,8 @@
     },
     "navigationMenu": {
       "primary": {
-        "background": "#f3efea"
+        "paragraph": "#5c6a72",
+        "background": "#f2e9d3"
       }
     },
     "sheet": {
