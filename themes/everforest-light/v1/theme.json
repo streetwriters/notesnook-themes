@@ -1,0 +1,146 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Everforest Light",
+  "id": "everforest-light",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Everforest Light theme",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@proton.me",
+      "url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#a7c080",
+        "paragraph": "#5c6a72",
+        "background": "#f3efea",
+        "border": "#f3efea",
+        "heading": "#5c6a72",
+        "icon": "#a7c080",
+        "separator": "#e1dbd7",
+        "placeholder": "#859289",
+        "hover": "#e1dbd7",
+        "accentForeground": "#f3efea",
+        "backdrop": "#f3efea99"
+      },
+      "secondary": {
+        "accent": "#a7c080",
+        "paragraph": "#5c6a72",
+        "background": "#e1dbd7",
+        "border": "#859289",
+        "heading": "#5c6a72",
+        "icon": "#5c6a72",
+        "separator": "#859289",
+        "placeholder": "#859289",
+        "hover": "#e1dbd7",
+        "accentForeground": "#f3efea",
+        "backdrop": "#f3efea99"
+      },
+      "disabled": {
+        "accent": "#a7c080",
+        "paragraph": "#5c6a72",
+        "background": "#859289",
+        "border": "#859289",
+        "heading": "#5c6a72",
+        "icon": "#5c6a72",
+        "separator": "#859289",
+        "placeholder": "#5c6a72",
+        "hover": "#859289",
+        "accentForeground": "#f3efea",
+        "backdrop": "#f3efea99"
+      },
+      "selected": {
+        "accent": "#a7c080",
+        "paragraph": "#5c6a72",
+        "background": "#d3c6aa",
+        "border": "#a7c080",
+        "heading": "#5c6a72",
+        "icon": "#a7c080",
+        "separator": "#859289",
+        "placeholder": "#859289",
+        "hover": "#f3efea",
+        "accentForeground": "#f3efea",
+        "backdrop": "#f3efea99"
+      },
+      "error": {
+        "accent": "#e67e80",
+        "paragraph": "#e67e80",
+        "background": "#e1dbd7",
+        "border": "#859289",
+        "heading": "#e67e80",
+        "icon": "#e67e80",
+        "separator": "#859289",
+        "placeholder": "#859289",
+        "hover": "#859289",
+        "accentForeground": "#f3efea",
+        "backdrop": "#f3efea99"
+      },
+      "success": {
+        "accent": "#a7c080",
+        "paragraph": "#a7c080",
+        "background": "#e1dbd7",
+        "border": "#859289",
+        "heading": "#a7c080",
+        "icon": "#a7c080",
+        "separator": "#859289",
+        "placeholder": "#859289",
+        "hover": "#859289",
+        "accentForeground": "#f3efea",
+        "backdrop": "#f3efea99"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#5c6a72",
+        "background": "#f3efea",
+        "separator": "#f3efea"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#5c6a72",
+        "background": "#e1dbd7",
+        "hover": "#f3efea"
+      },
+      "secondary": {
+        "paragraph": "#5c6a72"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#f3efea",
+        "border": "#859289"
+      },
+      "secondary": {
+        "paragraph": "#859289",
+        "border": "#f3efea"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#e1dbd7",
+        "hover": "#85928933"
+      },
+      "secondary": {
+        "background": "#85928933"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#f3efea"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#a7c080"
+      }
+    }
+  }
+}
