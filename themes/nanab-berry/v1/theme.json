@@ -26,7 +26,7 @@
         "icon": "#333333",
         "separator": "#AD88C6",
         "placeholder": "#999999",
-        "hover": "#e1afd1",
+        "hover": "#ffcdcd",
         "accentForeground": "#FFE6E6",
         "backdrop": "#FFE6E699"
       },
@@ -59,13 +59,13 @@
       "selected": {
         "accent": "#E1AFD1",
         "paragraph": "#5b5b5b",
-        "background": "#E6E6F2",
+        "background": "#FFE6E6",
         "border": "#E1AFD1",
         "heading": "#333333",
         "icon": "#E1AFD1",
         "separator": "#AD88C6",
         "placeholder": "#999999",
-        "hover": "#e1afd1",
+        "hover": "#ffcdcd",
         "accentForeground": "#FFE6E6",
         "backdrop": "#FFE6E699"
       },
@@ -107,7 +107,7 @@
       "primary": {
         "paragraph": "#5b5b5b",
         "background": "#FFDFD6",
-        "hover": "#FFE6E6"
+        "hover": "#ffcdcd"
       },
       "secondary": {
         "paragraph": "#333333"
@@ -126,7 +126,7 @@
     "editorToolbar": {
       "primary": {
         "background": "#FFDFD6",
-        "hover": "#AD88C633"
+        "hover": "#ffcdcd"
       },
       "secondary": {
         "background": "#AD88C633"

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Dracula",
   "id": "dracula",
-  "version": 1.1,
+  "version": 1.2,
   "license": "MIT",
   "homepage": "https://draculatheme.com",
   "description": "Dracula is a color scheme for code editors and terminal emulators such as Vim, Notepad++, iTerm, VSCode, Terminal.app, ZSH, and much more.",
@@ -27,9 +27,7 @@
         "separator": "#6272a4",
         "placeholder": "#6272a4",
         "hover": "#44475a",
-        "shade": "#282a3612",
-        "backdrop": "#282a3680",
-        "textSelection": "#44475a"
+        "backdrop": "#282a3680"
       },
       "secondary": {
         "accent": "#bd93f9",
@@ -42,9 +40,7 @@
         "separator": "#6272a4",
         "placeholder": "#6272a4",
         "hover": "#44475a",
-        "shade": "#282a3612",
-        "backdrop": "#282a3680",
-        "textSelection": "#44475a"
+        "backdrop": "#282a3680"
       },
       "disabled": {
         "accent": "#bd93f9",
@@ -57,9 +53,7 @@
         "separator": "#6272a4",
         "placeholder": "#6272a4",
         "hover": "#44475a",
-        "shade": "#282a3612",
-        "backdrop": "#282a3680",
-        "textSelection": "#44475a"
+        "backdrop": "#282a3680"
       },
       "selected": {
         "accent": "#bd93f9",
@@ -72,9 +66,7 @@
         "separator": "#6272a4",
         "placeholder": "#6272a4",
         "hover": "#44475a",
-        "shade": "#282a3612",
-        "backdrop": "#282a3680",
-        "textSelection": "#44475a"
+        "backdrop": "#282a3680"
       },
       "error": {
         "accent": "#ff5555",
@@ -87,9 +79,7 @@
         "separator": "#6272a4",
         "placeholder": "#6272a4",
         "hover": "#44475a",
-        "shade": "#282a3612",
-        "backdrop": "#282a3680",
-        "textSelection": "#44475a"
+        "backdrop": "#282a3680"
       },
       "success": {
         "accent": "#50fa7b",
@@ -102,9 +92,7 @@
         "separator": "#6272a4",
         "placeholder": "#6272a4",
         "hover": "#44475a",
-        "shade": "#282a3612",
-        "backdrop": "#282a3680",
-        "textSelection": "#44475a"
+        "backdrop": "#282a3680"
       }
     },
     "editor": {
