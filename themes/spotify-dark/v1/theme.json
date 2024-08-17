@@ -10,9 +10,9 @@
   "compatibilityVersion": 1,
   "authors": [
     {
-      "name": "AOSXAP",
-      "email": "aosxap@gmail.com",
-      "url": "https://github.com/AOSXAP"
+      "name": "Streetwriters",
+      "email": "support@streetwriters.co",
+      "url": "https://streetwriters.co"
     }
   ],
   "scopes": {
@@ -24,7 +24,7 @@
         "border": "#1ED760",
         "heading": "#ffffff",
         "icon": "#ffffff",
-        "separator": "#1ED760",
+        "separator": "#000000",
         "placeholder": "#ffffff",
         "hover": "#121212",
         "accentForeground": "#e8e8e8",
@@ -36,7 +36,7 @@
         "background": "#212121",
         "border": "#1ED760",
         "heading": "#ffffff",
-        "icon": "#1ed760",
+        "icon": "#ffffff",
         "separator": "#1ED760",
         "placeholder": "#212121",
         "hover": "#121212",
@@ -99,12 +99,14 @@
     "statusBar": {
       "primary": {
         "paragraph": "#ffffff",
-        "background": "#121212"
+        "background": "#121212",
+        "separator": "#1ed760"
       }
     },
     "list": {
       "selected": {
-        "paragraph": "#ffffff"
+        "paragraph": "#ffffff",
+        "background": "#121212"
       }
     },
     "editor": {
@@ -124,7 +126,8 @@
     },
     "navigationMenu": {
       "primary": {
-        "background": "#121212"
+        "background": "#121212",
+        "separator": "#1ed760"
       },
       "selected": {
         "background": "#121212"
