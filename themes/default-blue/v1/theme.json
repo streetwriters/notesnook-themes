@@ -1,7 +1,7 @@
 {
   "name": "Notesnook Blue",
   "id": "default-blue",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default light theme for Notesnook app",
@@ -27,9 +27,7 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "shade": "#1d4ed812",
-        "backdrop": "#0000001a",
-        "textSelection": "#1d4ed877"
+        "backdrop": "#0000001a"
       },
       "secondary": {
         "accent": "#1d4ed8",
@@ -42,9 +40,7 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#dbdbdb",
-        "shade": "#1d4ed812",
-        "backdrop": "#0000001a",
-        "textSelection": "#1d4ed877"
+        "backdrop": "#0000001a"
       },
       "disabled": {
         "accent": "#1d4ed8",
@@ -57,9 +53,7 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "shade": "#1d4ed812",
-        "backdrop": "#0000001a",
-        "textSelection": "#1d4ed877"
+        "backdrop": "#0000001a"
       },
       "selected": {
         "accent": "#1d4ed8",
@@ -72,9 +66,7 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "shade": "#1d4ed812",
-        "backdrop": "#0000001a",
-        "textSelection": "#1d4ed877"
+        "backdrop": "#0000001a"
       },
       "error": {
         "accent": "#f54b42",
@@ -87,9 +79,7 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "shade": "#1d4ed812",
-        "backdrop": "#0000001a",
-        "textSelection": "#1d4ed877"
+        "backdrop": "#0000001a"
       },
       "success": {
         "accent": "#4F8A10",
@@ -102,9 +92,7 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "shade": "#4F8A1012",
-        "backdrop": "#0000001a",
-        "textSelection": "#1d4ed877"
+        "backdrop": "#0000001a"
       }
     },
     "statusBar": {

@@ -1,0 +1,204 @@
+/**
+ * Rosé Pine by revsuine
+ * Licenced under the GPL v3
+ */
+
+/* COLOURS: */
+pre[class*="language-"] {
+    --base: #191724;
+    --surface: #1f1d2e;
+    --overlay: #26233a;
+    --muted: #6e6a86;
+    --subtle: #908caa;
+    --text: #e0def4;
+    --love: #eb6f92;
+    --gold: #f6c177;
+    --rose: #ebbcba;
+    --pine: #31748f;
+    --foam: #9ccfd8;
+    --iris: #c4a7e7;
+    --highlight-low: #21202e;
+    --highlight-med: #403d52;
+    --highlight-high: #524f67;
+}
+
+/* Set the main properties of the code, code blocks, and inline code */
+code[class*="language-"],
+pre[class*="language-"] {
+	background: var(--base);
+	color: var(--text);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* this is the default */
+	/* The following properties are standard, please leave them as they are */
+	font-size: 1em;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+	/* The default is 4, but you could change it if you really, really want to */
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	/* The following properties are also standard */
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Optional: What the code looks like when highlighted */
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection,
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection {
+	background: var(--highlight-med);
+}
+
+/* Properties specific to code blocks */
+pre[class*="language-"] {
+	padding: 1em; /* this is standard */
+	margin: 0.5em 0; /* this is the default */
+	overflow: auto; /* this is standard */
+	border-radius: unset;
+}
+
+/* Properties specific to inline code */
+:not(pre) > code[class*="language-"] {
+	padding: 0.1em; /* this is the default */
+	border-radius: unset;
+	white-space: normal; /* this is standard */
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata,
+.token.doctype {
+	color: var(--muted);
+}
+
+.token.punctuation {
+	color: var(--subtle);
+}
+
+/* keywords: */
+.token.entity /* rosé pine spec doesn't specify this so i've made this decision */ {
+	color: var(--pine); 
+}
+
+.token.boolean {
+    color: var(--rose);
+}
+
+.token.attr-name {
+	color: var(--foam);
+}
+
+/* variables: */
+.token.class-name {
+	color: var(--text);
+}
+
+.token.constant {
+    color: var(--love); /* rosé pine spec doesn't specify, my decision */
+    font-style: italic;
+}
+
+.token.number {
+	color: var(--foam); /* spec doesn't specify */
+}
+
+.token.atrule {
+	color: var(--love);
+}
+
+.token.keyword {
+	color: var(--pine);
+}
+
+.token.property {
+	color: var(--foam);
+}
+
+.token.tag {
+	color: var(--foam);
+}
+
+.token.symbol {
+	color: unset;
+}
+
+.token.deleted {
+	color: var(--love);
+}
+
+.token.important {
+	color: var(--love);
+}
+
+.token.selector {
+	color: var(--rose); /* spec doesn't specify */
+}
+
+.token.string {
+	color: var(--gold);
+}
+
+.token.char {
+	color: var(--gold);
+}
+
+.token.builtin {
+	color: var(--love);
+}
+
+.token.inserted {
+	color: var(--foam);
+}
+
+.token.regex {
+	color: var(--gold);
+}
+
+.token.attr-value {
+	color: var(--gold);
+}
+
+.token.variable {
+	color: var(--text);
+}
+
+.token.operator {
+	color: var(--subtle);
+}
+
+.token.function {
+	color: var(--rose);
+    font-style: italic;
+}
+
+.token.url {
+	color: var(--iris);
+}
+
+/* The following rules are pretty similar across themes, but feel free to adjust them */
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.namespace {
+	opacity: 0.7;
+}
+
