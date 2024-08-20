@@ -106,10 +106,14 @@
       "primary": {
         "paragraph": "#3e2723",
         "background": "#fafafa",
-        "hover": "#ffffff"
+        "hover": "#ededed"
       },
       "secondary": {
         "paragraph": "#3e2723"
+      },
+      "selected": {
+        "background": "#e0e0e0",
+        "hover": "#ededed"
       }
     },
     "editor": {
