@@ -107,10 +107,14 @@
       "primary": {
         "paragraph": "#5b5b5b",
         "background": "#FFDFD6",
-        "hover": "#ffcdcd"
+        "hover": "#FFE6E6"
       },
       "secondary": {
         "paragraph": "#333333"
+      },
+      "selected": {
+        "background": "#ffcdcd",
+        "hover": "#FFE6E6"
       }
     },
     "editor": {
