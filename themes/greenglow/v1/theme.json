@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Spotify Dark",
-  "id": "spotify-dark",
+  "name": "Green Glow",
+  "id": "green-glow",
   "version": 1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
@@ -12,7 +12,7 @@
     {
       "name": "AOSXAP",
       "email": "aosxap@gmail.com",
-      "url": "https://github.com/AOSXAP"
+      "url": "https://github.com/AOSXAP/"
     }
   ],
   "scopes": {
@@ -24,7 +24,7 @@
         "border": "#1ED760",
         "heading": "#ffffff",
         "icon": "#ffffff",
-        "separator": "#1ED760",
+        "separator": "#000000",
         "placeholder": "#ffffff",
         "hover": "#121212",
         "accentForeground": "#e8e8e8",
@@ -36,7 +36,7 @@
         "background": "#212121",
         "border": "#1ED760",
         "heading": "#ffffff",
-        "icon": "#1ed760",
+        "icon": "#ffffff",
         "separator": "#1ED760",
         "placeholder": "#212121",
         "hover": "#121212",
@@ -99,12 +99,14 @@
     "statusBar": {
       "primary": {
         "paragraph": "#ffffff",
-        "background": "#121212"
+        "background": "#121212",
+        "separator": "#1ed760"
       }
     },
     "list": {
       "selected": {
-        "paragraph": "#ffffff"
+        "paragraph": "#ffffff",
+        "background": "#121212"
       }
     },
     "editor": {
@@ -124,7 +126,8 @@
     },
     "navigationMenu": {
       "primary": {
-        "background": "#121212"
+        "background": "#121212",
+        "separator": "#1ed760"
       },
       "selected": {
         "background": "#121212"
