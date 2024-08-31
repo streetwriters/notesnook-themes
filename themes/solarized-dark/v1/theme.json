@@ -106,10 +106,14 @@
       "primary": {
         "paragraph": "#839496",
         "background": "#073642",
-        "hover": "#002b36"
+        "hover": "#05252e"
       },
       "secondary": {
         "paragraph": "#839496"
+      },
+      "selected": {
+        "background": "#002b36",
+        "hover": "#05252e"
       }
     },
     "editor": {
@@ -120,6 +124,9 @@
       "secondary": {
         "paragraph": "#586e75",
         "border": "#002b36"
+      },
+      "selected": {
+        "background": "#307530"
       }
     },
     "editorToolbar": {
@@ -133,7 +140,11 @@
     },
     "navigationMenu": {
       "primary": {
-        "background": "#002b36"
+        "background": "#002b36",
+        "hover": "#29404f"
+      },
+      "selected": {
+        "hover": "#29404f"
       }
     },
     "sheet": {
