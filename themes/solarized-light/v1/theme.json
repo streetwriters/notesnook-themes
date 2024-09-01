@@ -17,12 +17,12 @@
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#b48800",
+        "accent": "#b58900",
         "paragraph": "#586e75",
         "background": "#fdf6e3",
         "border": "#fdf6e3",
         "heading": "#586e75",
-        "icon": "#b48800",
+        "icon": "#b58900",
         "separator": "#eee8d5",
         "placeholder": "#93a1a1",
         "hover": "#eee8d5",
@@ -30,7 +30,7 @@
         "backdrop": "#fdf6e399"
       },
       "secondary": {
-        "accent": "#b48800",
+        "accent": "#b58900",
         "paragraph": "#586e75",
         "background": "#eee8d5",
         "border": "#93a1a1",
@@ -43,7 +43,7 @@
         "backdrop": "#fdf6e399"
       },
       "disabled": {
-        "accent": "#b48800",
+        "accent": "#b58900",
         "paragraph": "#586e75",
         "background": "#93a1a1",
         "border": "#93a1a1",
@@ -56,12 +56,12 @@
         "backdrop": "#fdf6e399"
       },
       "selected": {
-        "accent": "#b48800",
+        "accent": "#b58900",
         "paragraph": "#586e75",
-        "background": "#eee8d5",
-        "border": "#b48800",
+        "background": "#fdf6e3",
+        "border": "#b58900",
         "heading": "#586e75",
-        "icon": "#b48800",
+        "icon": "#b58900",
         "separator": "#93a1a1",
         "placeholder": "#93a1a1",
         "hover": "#eee8d5",
@@ -106,10 +106,14 @@
       "primary": {
         "paragraph": "#586e75",
         "background": "#eee8d5",
-        "hover": "#fdf6e3"
+        "hover": "#f5efdb"
       },
       "secondary": {
         "paragraph": "#586e75"
+      },
+      "selected": {
+        "background": "#fdf6e3",
+        "hover": "#f5efdb"
       }
     },
     "editor": {
@@ -120,6 +124,9 @@
       "secondary": {
         "paragraph": "#93a1a1",
         "border": "#fdf6e3"
+      },
+      "selected": {
+        "background": "#c4ddc4"
       }
     },
     "editorToolbar": {
@@ -133,7 +140,11 @@
     },
     "navigationMenu": {
       "primary": {
-        "background": "#fdf6e3"
+        "background": "#fdf6e3",
+        "hover": "#e8e1c8"
+      },
+      "selected": {
+        "hover": "#e8e1c8"
       }
     },
     "sheet": {
