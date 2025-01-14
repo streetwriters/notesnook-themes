@@ -123,6 +123,9 @@
       "primary": {
         "accent": "#008837",
         "paragraph": "#D3D3D3"
+      },
+      "selected": {
+        "background": "#5b5b5b"
       }
     },
     "navigationMenu": {
