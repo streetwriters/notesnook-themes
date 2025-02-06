@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Mystic Dawn",
   "id": "mystic-dawn",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Mystic Dawn for mystic notes",
@@ -17,7 +17,7 @@
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#6d4c41",
+        "accent": "#d1b59b",
         "paragraph": "#3e2723",
         "background": "#ffffff",
         "border": "#e0e0e0",
@@ -56,9 +56,9 @@
         "backdrop": "#ffffff99"
       },
       "selected": {
-        "accent": "#6d4c41",
+        "accent": "#756658",
         "paragraph": "#3e2723",
-        "background": "#f5f5f5",
+        "background": "#d1b59b",
         "border": "#6d4c41",
         "heading": "#3e2723",
         "icon": "#6d4c41",
