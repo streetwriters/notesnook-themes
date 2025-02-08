@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Kanagawa Dark",
   "id": "kanagawa-dark",
-  "version": 1.91,
+  "version": 2.0,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Notesnook theme inspired by the colors of the famous painting by Katsushika Hokusai",
@@ -17,115 +17,146 @@
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#c9bf96",
-        "paragraph": "#ddd6bc",
-        "background": "#1f1f27",
-        "border": "#2e2e33",
-        "heading": "#e8c289",
-        "icon": "#ddd6bc",
-        "separator": "#2e2e33",
-        "placeholder": "#c9bf96",
-        "hover": "#2e2e33",
-        "accentForeground": "#2e2e33",
-        "backdrop": "#2e2e33"
+        "accent": "#e6c384",
+        "paragraph": "#dcd7ba",
+        "background": "#1f1f28",
+        "border": "#2a2a37",
+        "heading": "#e6c384",
+        "icon": "#dcd7ba",
+        "separator": "#2a2a37",
+        "placeholder": "#54546d",
+        "hover": "#363646",
+        "accentForeground": "#1f1f28",
+        "backdrop": "#16161d99"
       },
       "secondary": {
-        "accent": "#c9bf96",
-        "paragraph": "#818589",
+        "accent": "#dcd7ba",
+        "paragraph": "#dcd7ba",
         "background": "#16161d",
-        "border": "#2b2b2b",
-        "heading": "#808080",
-        "icon": "#808080",
-        "separator": "#383838",
-        "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
-        "backdrop": "#35353580"
+        "border": "#2a2a37",
+        "heading": "#dcd7ba",
+        "icon": "#98956c",
+        "separator": "#2a2a37",
+        "placeholder": "#54546d",
+        "hover": "#363646",
+        "accentForeground": "#16161d",
+        "backdrop": "#16161d99"
       },
       "disabled": {
-        "accent": "#c9bf96",
-        "paragraph": "#505050",
-        "background": "#ffffff",
-        "border": "#383838",
-        "heading": "#212121",
-        "icon": "#808080",
-        "separator": "#383838",
-        "placeholder": "#404040",
-        "hover": "#ffffff10",
+        "accent": "#dcd7ba",
+        "paragraph": "#54546d",
+        "background": "#363646",
+        "border": "#2a2a37",
+        "heading": "#54546d",
+        "icon": "#54546d",
+        "separator": "#2a2a37",
+        "placeholder": "#54546d",
+        "hover": "#363646",
         "accentForeground": "#16161d",
-        "backdrop": "#35353580"
+        "backdrop": "#16161d99"
       },
       "selected": {
-        "accent": "#16161d",
-        "paragraph": "#c9bf96",
-        "background": "#2e2e33",
-        "border": "#c9bf96",
-        "heading": "#e8c289",
-        "icon": "#16161d",
-        "separator": "#c9bf96",
-        "placeholder": "#2e2e33",
-        "hover": "#2e2e33",
+        "accent": "#dcd7ba",
+        "paragraph": "#dcd7ba",
+        "background": "#16161d",
+        "border": "#2a2a37",
+        "heading": "#dcd7ba",
+        "icon": "#dcd7ba",
+        "separator": "#2a2a37",
+        "placeholder": "#54546d",
+        "hover": "#363646",
         "accentForeground": "#16161d",
-        "backdrop": "#35353580"
+        "backdrop": "#16161d99"
       },
       "error": {
-        "accent": "#f54b42",
-        "paragraph": "#f54b42",
-        "background": "#250b0a",
-        "border": "#383838",
-        "heading": "#f54b42",
-        "icon": "#f54b42",
-        "separator": "#383838",
-        "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
-        "backdrop": "#35353580"
+        "accent": "#e82424",
+        "paragraph": "#e82424",
+        "background": "#1f1f28",
+        "border": "#2a2a37",
+        "heading": "#e82424",
+        "icon": "#e82424",
+        "separator": "#2a2a37",
+        "placeholder": "#54546d",
+        "hover": "#363646",
+        "accentForeground": "#16161d",
+        "backdrop": "#16161d99"
       },
       "success": {
-        "accent": "#4F8A10",
-        "paragraph": "#4F8A10",
-        "background": "#132204",
-        "border": "#383838",
-        "heading": "#4F8A10",
-        "icon": "#4F8A10",
-        "separator": "#383838",
-        "placeholder": "#404040",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
-        "backdrop": "#35353580"
+        "accent": "#98bb6c",
+        "paragraph": "#98bb6c",
+        "background": "#1f1f28",
+        "border": "#2a2a37",
+        "heading": "#98bb6c",
+        "icon": "#98bb6c",
+        "separator": "#2a2a37",
+        "placeholder": "#54546d",
+        "hover": "#363646",
+        "accentForeground": "#16161d",
+        "backdrop": "#16161d99"
       }
     },
     "statusBar": {
       "primary": {
+        "paragraph": "#98956c",
         "background": "#16161d",
-        "border": "#2e2e33"
+        "separator": "#16161d"
       }
     },
     "list": {
       "primary": {
-        "border": "#2e2e33",
+        "paragraph": "#dcd7ba",
+        "background": "#1f1f28",
+        "icon": "#dcd7ba",
         "heading": "#c9bf96",
-        "hover": "#16161d",
-        "accentForeground": "#16161d"
+        "hover": "#2a2a37",
+        "accent": "#dcd7ba"
+      },
+      "secondary": {
+        "paragraph": "#e6e1d4",
+         "background": "#16161d"
       },
       "selected": {
         "background": "#16161d",
-        "border": "#c9bf96",
-        "hover": "#2e2e33"
+        "border": "#2a2a37",
+        "hover": "#2a2a37",
+        "paragraph": "#dcd7ba",
+        "heading": "#e8c289"
       }
     },
     "editor": {
       "primary": {
-        "border": "#2e2e33"
+        "background": "#1f1f28",
+        "border": "#2a2a37"
+      },
+      "secondary": {
+        "paragraph": "#dcd7ba",
+        "border": "#16161d",
+        "background": "#16161d"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#16161d",
+        "hover": "#363646"
       },
       "secondary": {
         "background": "#16161d"
       }
     },
     "navigationMenu": {
-      "selected": {
+      "primary": {
         "background": "#16161d",
-        "icon": "#c9bf96"
+        "icon": "#dcd7ba"
+      },
+      "selected": {
+        "background": "#2a2a37",
+        "icon": "#e6c384",
+        "paragraph": "#e6c384"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#dcd7ba"
       }
     },
     "contextMenu": {
@@ -133,5 +164,5 @@
         "hover": "#16161d"
       }
     }
-  }
+  } 
 }
