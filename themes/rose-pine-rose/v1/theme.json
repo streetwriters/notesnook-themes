@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Rosé Pine (Rose Accent)",
+  "id": "rose-pine-rose",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Rosé Pine with a rose accent",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "revsuine"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#ebbcba",
+        "paragraph": "#e0def4",
+        "background": "#26233a",
+        "border": "#26233a",
+        "heading": "#e0def4",
+        "icon": "#ebbcba",
+        "separator": "#1f1d2e",
+        "placeholder": "#908caa",
+        "hover": "#26233a",
+        "accentForeground": "#191724",
+        "backdrop": "#19172499"
+      },
+      "secondary": {
+        "accent": "#ebbcba",
+        "paragraph": "#e0def4",
+        "background": "#191724",
+        "border": "#6e6a86",
+        "heading": "#e0def4",
+        "icon": "#e0def4",
+        "separator": "#6e6a86",
+        "placeholder": "#6e6a86",
+        "hover": "#26233a",
+        "accentForeground": "#191724",
+        "backdrop": "#19172499"
+      },
+      "disabled": {
+        "accent": "#ebbcba",
+        "paragraph": "#e0def4",
+        "background": "#6e6a86",
+        "border": "#908caa",
+        "heading": "#e0def4",
+        "icon": "#e0def4",
+        "separator": "#6e6a86",
+        "placeholder": "#e0def4",
+        "hover": "#6e6a86",
+        "accentForeground": "#191724",
+        "backdrop": "#19172499"
+      },
+      "selected": {
+        "accent": "#ebbcba",
+        "paragraph": "#e0def4",
+        "background": "#403d52",
+        "border": "#ebbcba",
+        "heading": "#e0def4",
+        "icon": "#ebbcba",
+        "separator": "#6e6a86",
+        "placeholder": "#6e6a86",
+        "hover": "#26233a",
+        "accentForeground": "#191724",
+        "backdrop": "#19172499"
+      },
+      "error": {
+        "accent": "#eb6f92",
+        "paragraph": "#eb6f92",
+        "background": "#191724",
+        "border": "#6e6a86",
+        "heading": "#eb6f92",
+        "icon": "#eb6f92",
+        "separator": "#6e6a86",
+        "placeholder": "#908caa",
+        "hover": "#6e6a86",
+        "accentForeground": "#191724",
+        "backdrop": "#19172499"
+      },
+      "success": {
+        "accent": "#31748f",
+        "paragraph": "#31748f",
+        "background": "#191724",
+        "border": "#6e6a86",
+        "heading": "#31748f",
+        "icon": "#31748f",
+        "separator": "#6e6a86",
+        "placeholder": "#908caa",
+        "hover": "#6e6a86",
+        "accentForeground": "#191724",
+        "backdrop": "#19172499"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#e0def4",
+        "background": "#26233a",
+        "separator": "#26233a"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#e0def4",
+        "background": "#1f1d2e",
+        "hover": "#26233a"
+      },
+      "secondary": {
+        "paragraph": "#e0def4"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#26233a",
+        "border": "#6e6a86"
+      },
+      "secondary": {
+        "paragraph": "#908caa",
+        "border": "#191724"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#1f1d2e",
+        "hover": "#6e6a8633"
+      },
+      "secondary": {
+        "background": "#6e6a8633"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#191724"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#31748f"
+      }
+    }
+  }
+}
