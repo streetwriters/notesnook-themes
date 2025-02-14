@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Kanagawa Dark",
   "id": "kanagawa-dark",
-  "version": 2.0,
+  "version": 2.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Notesnook theme inspired by the colors of the famous painting by Katsushika Hokusai",
@@ -56,17 +56,17 @@
         "backdrop": "#16161d99"
       },
       "selected": {
-        "accent": "#dcd7ba",
+        "accent": "#e6c384",
         "paragraph": "#dcd7ba",
-        "background": "#16161d",
-        "border": "#2a2a37",
-        "heading": "#dcd7ba",
+        "background": "#2c3e50",
+        "border": "#34495e",
+        "heading": "#e6c384",
         "icon": "#dcd7ba",
-        "separator": "#2a2a37",
-        "placeholder": "#54546d",
-        "hover": "#363646",
-        "accentForeground": "#16161d",
-        "backdrop": "#16161d99"
+        "separator": "#34495e",
+        "placeholder": "#7f8c8d",
+        "hover": "#3f51b5",
+        "accentForeground": "#ffffff",
+        "backdrop": "#2c3e5099"
       },
       "error": {
         "accent": "#e82424",
