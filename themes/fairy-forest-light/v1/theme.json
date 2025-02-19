@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Fairy Forest Light",
   "id": "fairy-forest-light",
-  "version": 1,
+  "version": 1.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "A soft, natural Fairy Forest Light theme with earthy tones",
@@ -26,7 +26,7 @@
         "icon": "#2f2b27",
         "separator": "#cdc4bb",
         "placeholder": "#7b756d",
-        "hover": "#4a7961",
+        "hover": "#ccc9be",
         "accentForeground": "#f3efea",
         "backdrop": "#e6ded499"
       },
@@ -65,7 +65,7 @@
         "icon": "#5f8e76",
         "separator": "#7b756d",
         "placeholder": "#7b756d",
-        "hover": "#4a7961",
+        "hover": "#ccc9be",
         "accentForeground": "#f3efea",
         "backdrop": "#e6ded499"
       },
@@ -107,7 +107,7 @@
       "primary": {
         "paragraph": "#2f2b27",
         "background": "#d8d0c6",
-        "hover": "#4a7961"
+        "hover": "#ccc9be"
       },
       "secondary": {
         "paragraph": "#2f2b27",
@@ -130,7 +130,8 @@
         "background": "#d8d0c6"
       },
       "secondary": {
-        "background": "#7b756d33"
+        "background": "#ccc9be",
+        "hover": "#ccc9be"
       }
     },
     "navigationMenu": {
