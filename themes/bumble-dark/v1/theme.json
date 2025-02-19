@@ -28,7 +28,7 @@
         "placeholder": "#838377",
         "hover": "#312f1c",
         "accentForeground": "#272725",
-        "backdrop": "#100f0f"
+        "backdrop": "#100f0f80"
       },
       "secondary": {
         "accent": "#e5d56c",
