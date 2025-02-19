@@ -1,0 +1,130 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Cybernetic Punk",
+  "id": "cybernetic-punk",
+  "version": 1,
+  "license": "MIT",
+  "homepage": "https://github.com/dompolizzi",
+  "description": "Cybernetic Punk is a vibrant, high-contrast color scheme inspired by the Radical VSCode theme.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+        "name": "Dom Polizzi",
+        "email": "polizzi,dominic@gmail.com",
+        "url": "https://github.com/dompolizzi",
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#FA62B9",
+        "paragraph": "#FE428E",
+        "background": "#141321",
+        "border": "#2F317C",
+        "heading": "#FE428E",
+        "icon": "#9ad4e0",
+        "separator": "#2F317C",
+        "placeholder": "#58777f",
+        "hover": "#372d46",
+        "accentForeground": "#ffffff",
+        "backdrop": "#14132180"
+      },
+      "secondary": {
+        "accent": "#8c91fa",
+        "paragraph": "#736e7d",
+        "background": "#372d46",
+        "border": "#2F317C",
+        "heading": "#FE428E",
+        "icon": "#736e7d",
+        "separator": "#2F317C",
+        "placeholder": "#5a3f7f",
+        "hover": "#372d46",
+        "accentForeground": "#ffffff",
+        "backdrop": "#14132180"
+      },
+      "disabled": {
+        "accent": "#8c91fa",
+        "paragraph": "#505050",
+        "background": "#372d46",
+        "border": "#2F317C",
+        "heading": "#FE428E",
+        "icon": "#5a3f7f",
+        "separator": "#2F317C",
+        "placeholder": "#5a3f7f",
+        "hover": "#372d46",
+        "accentForeground": "#ffffff",
+        "backdrop": "#14132180"
+      },
+      "selected": {
+        "accent": "#8c91fa",
+        "paragraph": "#FE428E",
+        "background": "#372d46",
+        "border": "#2F317C",
+        "heading": "#FE428E",
+        "icon": "#8c91fa",
+        "separator": "#2F317C",
+        "placeholder": "#5a3f7f",
+        "hover": "#372d46",
+        "accentForeground": "#ffffff",
+        "backdrop": "#14132180"
+      },
+      "error": {
+        "accent": "#FF5395",
+        "paragraph": "#FF5395",
+        "background": "#141321",
+        "border": "#2F317C",
+        "heading": "#FF5395",
+        "icon": "#FF5395",
+        "separator": "#2F317C",
+        "placeholder": "#5a3f7f",
+        "hover": "#372d46",
+        "accentForeground": "#ffffff",
+        "backdrop": "#14132180"
+      },
+      "success": {
+        "accent": "#52e0c4",
+        "paragraph": "#52e0c4",
+        "background": "#141321",
+        "border": "#2F317C",
+        "heading": "#52e0c4",
+        "icon": "#52e0c4",
+        "separator": "#2F317C",
+        "placeholder": "#5a3f7f",
+        "hover": "#372d46",
+        "accentForeground": "#ffffff",
+        "backdrop": "#14132180"
+      }
+    },
+    "editor": {
+      "primary": {
+        "icon": "#8c91fa",
+        "placeholder": "#8c91fa"
+      },
+      "secondary": {
+        "paragraph": "#736e7d",
+        "heading": "#FE428E"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "accent": "#8c91fa",
+        "paragraph": "#8c91fa",
+        "icon": "#8c91fa"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "icon": "#8c91fa"
+      },
+      "selected": {
+        "icon": "#FE428E"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#A9D2D4"
+      }
+    }
+  }
+}
