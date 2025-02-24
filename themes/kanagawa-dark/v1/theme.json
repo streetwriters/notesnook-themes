@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Kanagawa Dark",
   "id": "kanagawa-dark",
-  "version": 2.1,
+  "version": 2.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Notesnook theme inspired by the colors of the famous painting by Katsushika Hokusai",
@@ -11,7 +11,8 @@
   "authors": [
     {
       "name": "ahbh",
-      "email": "ahbh@tuta.io"
+      "email": "ahbh@tuta.io",
+      "url": "https://streetwriters.co"
     }
   ],
   "scopes": {
@@ -35,7 +36,7 @@
         "background": "#16161d",
         "border": "#2a2a37",
         "heading": "#dcd7ba",
-        "icon": "#98956c",
+        "icon": "#525255",
         "separator": "#2a2a37",
         "placeholder": "#54546d",
         "hover": "#363646",
@@ -51,20 +52,20 @@
         "icon": "#54546d",
         "separator": "#2a2a37",
         "placeholder": "#54546d",
-        "hover": "#363646",
+        "hover": "#525255",
         "accentForeground": "#16161d",
         "backdrop": "#16161d99"
       },
       "selected": {
         "accent": "#e6c384",
         "paragraph": "#dcd7ba",
-        "background": "#2c3e50",
+        "background": "#525255",
         "border": "#34495e",
         "heading": "#e6c384",
         "icon": "#dcd7ba",
         "separator": "#34495e",
-        "placeholder": "#7f8c8d",
-        "hover": "#3f51b5",
+        "placeholder": "#dcd7ba",
+        "hover": "#525255",
         "accentForeground": "#ffffff",
         "backdrop": "#2c3e5099"
       },
@@ -97,30 +98,30 @@
     },
     "statusBar": {
       "primary": {
-        "paragraph": "#98956c",
+        "paragraph": "#c4bd96",
         "background": "#16161d",
         "separator": "#16161d"
       }
     },
     "list": {
       "primary": {
+        "accent": "#dcd7ba",
         "paragraph": "#dcd7ba",
         "background": "#1f1f28",
-        "icon": "#dcd7ba",
         "heading": "#c9bf96",
-        "hover": "#2a2a37",
-        "accent": "#dcd7ba"
+        "icon": "#dcd7ba",
+        "hover": "#2a2a37"
       },
       "secondary": {
         "paragraph": "#e6e1d4",
-         "background": "#16161d"
+        "background": "#16161d"
       },
       "selected": {
+        "paragraph": "#dcd7ba",
         "background": "#16161d",
         "border": "#2a2a37",
-        "hover": "#2a2a37",
-        "paragraph": "#dcd7ba",
-        "heading": "#e8c289"
+        "heading": "#e6c384",
+        "hover": "#2a2a37"
       }
     },
     "editor": {
@@ -130,8 +131,8 @@
       },
       "secondary": {
         "paragraph": "#dcd7ba",
-        "border": "#16161d",
-        "background": "#16161d"
+        "background": "#16161d",
+        "border": "#16161d"
       }
     },
     "editorToolbar": {
@@ -149,20 +150,20 @@
         "icon": "#dcd7ba"
       },
       "selected": {
+        "paragraph": "#e6c384",
         "background": "#2a2a37",
-        "icon": "#e6c384",
-        "paragraph": "#e6c384"
-      }
-    },
-    "sheet": {
-      "selected": {
-        "paragraph": "#dcd7ba"
+        "icon": "#e6c384"
       }
     },
     "contextMenu": {
       "primary": {
         "hover": "#16161d"
       }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#dcd7ba"
+      }
     }
-  } 
+  }
 }
