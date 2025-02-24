@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Catppuccin Latte Sky",
+  "id": "catppuccin-latte-sky",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Catppuccin Latte with a sky accent, forked from @Hakan's Latte Peach",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "axeuskie"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#04a5e5",
+        "paragraph": "#4c4f69",
+        "background": "#eff1f5",
+        "border": "#ccd0da",
+        "heading": "#4c4f69",
+        "icon": "#5c5f77",
+        "separator": "#e6e9ef",
+        "placeholder": "#8c8fa1",
+        "hover": "#bcc0cc",
+        "accentForeground": "#dce0e8",
+        "backdrop": "#dce0e899"
+      },
+      "secondary": {
+        "accent": "#04a5e5",
+        "paragraph": "#4c4f69",
+        "background": "#dce0e8",
+        "border": "#9ca0b0",
+        "heading": "#4c4f69",
+        "icon": "#4c4f69",
+        "separator": "#9ca0b0",
+        "placeholder": "#8c8fa1",
+        "hover": "#bcc0cc",
+        "accentForeground": "#dce0e8",
+        "backdrop": "#dce0e899"
+      },
+      "disabled": {
+        "accent": "#04a5e5",
+        "paragraph": "#4c4f69",
+        "background": "#8c8fa1",
+        "border": "#9ca0b0",
+        "heading": "#4c4f69",
+        "icon": "#4c4f69",
+        "separator": "#9ca0b0",
+        "placeholder": "#4c4f69",
+        "hover": "#bcc0cc",
+        "accentForeground": "#dce0e8",
+        "backdrop": "#dce0e899"
+      },
+      "selected": {
+        "accent": "#04a5e5",
+        "paragraph": "#4c4f69",
+        "background": "#bcc0cc",
+        "border": "#04a5e5",
+        "heading": "#4c4f69",
+        "icon": "#04a5e5",
+        "separator": "#9ca0b0",
+        "placeholder": "#8c8fa1",
+        "hover": "#ccd0da",
+        "accentForeground": "#dce0e8",
+        "backdrop": "#dce0e899"
+      },
+      "error": {
+        "accent": "#d20f39",
+        "paragraph": "#d20f39",
+        "background": "#eff1f5",
+        "border": "#9ca0b0",
+        "heading": "#d20f39",
+        "icon": "#d20f39",
+        "separator": "#9ca0b0",
+        "placeholder": "#d20f39",
+        "hover": "#bcc0cc",
+        "accentForeground": "#dce0e8",
+        "backdrop": "#dce0e899"
+      },
+      "success": {
+        "accent": "#40a02b",
+        "paragraph": "#40a02b",
+        "background": "#eff1f5",
+        "border": "#9ca0b0",
+        "heading": "#40a02b",
+        "icon": "#40a02b",
+        "separator": "#9ca0b0",
+        "placeholder": "#8c8fa1",
+        "hover": "#bcc0cc",
+        "accentForeground": "#dce0e8",
+        "backdrop": "#dce0e899"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#5c5f77",
+        "background": "#eff1f5",
+        "separator": "#eff1f5"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#6c6f85",
+        "background": "#e6e9ef",
+        "hover": "#ccd0da"
+      },
+      "secondary": {
+        "paragraph": "#5c5f77"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#eff1f5",
+        "border": "#ccd0da"
+      },
+      "secondary": {
+        "paragraph": "#6c6f85",
+        "border": "#dce0e8"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#e6e9ef",
+        "hover": "#bcc0cc"
+      },
+      "secondary": {
+        "background": "#ccd0da"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#dce0e8"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
+      }
+    }
+  }
+}
