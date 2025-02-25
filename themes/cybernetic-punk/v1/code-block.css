@@ -1,0 +1,124 @@
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #d84315;
+    /* Orange text for high contrast */
+    background: 0 0;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    background: #0E0C1D;
+    /* Darker deep navy background */
+}
+
+:not(pre)>code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+    white-space: normal;
+}
+
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+    color: #736e7d;
+    /* Muted grayish-purple */
+}
+
+.token.punctuation {
+    color: #d84315;
+    /* Keep punctuation consistent with main text */
+}
+
+.namespace {
+    opacity: 0.7;
+}
+
+.token.constant,
+.token.deleted,
+.token.property,
+.token.symbol,
+.token.tag {
+    color: #FA62B9;
+    /* Bright pink for standout properties/tags */
+}
+
+.token.boolean,
+.token.number {
+    color: #52e0c4;
+    /* Cyan-green for numbers and booleans */
+}
+
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string {
+    color: #8c91fa;
+    /* Soft blue for strings */
+}
+
+.language-css .token.string,
+.style .token.string,
+.token.entity,
+.token.operator,
+.token.url,
+.token.variable {
+    color: #A9D2D4;
+    /* Light teal */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.class-name,
+.token.function {
+    color: #e0c386;
+    /* Soft yellow */
+}
+
+.token.keyword {
+    color: #FA62B9;
+    /* Bright pink for keywords */
+}
+
+.token.important,
+.token.regex {
+    color: #e05167;
+    /* Deep pink-red */
+}
+
+.token.bold,
+.token.important {
+    font-weight: 700;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
