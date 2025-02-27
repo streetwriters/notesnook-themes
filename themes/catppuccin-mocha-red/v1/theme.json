@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Catppuccin Mocha Green",
-  "id": "catppuccin-mocha-green",
+  "name": "Catppuccin Mocha Red",
+  "id": "catppuccin-mocha-red",
   "version": 1,
   "license": "WTFPL license",
   "homepage": "https://notesnook.com",
-  "description": "Catppuccin Mocha with a green accent",
+  "description": "Catppuccin Mocha with a red accent",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
