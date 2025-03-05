@@ -1,0 +1,149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Fairy Forest Dark",
+  "id": "fairy-forest-dark",
+  "version": 1.1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A mystical Fairy Forest Dark theme with deep teal backgrounds and warm accents",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@pm.me",
+      "url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#5f8e76",
+        "paragraph": "#e9daca",
+        "background": "#000f10",
+        "border": "#1c2829",
+        "heading": "#e9daca",
+        "icon": "#e9daca",
+        "separator": "#1c2829",
+        "placeholder": "#a6988a",
+        "hover": "#264042",
+        "accentForeground": "#000f10",
+        "backdrop": "#000f1099"
+      },
+      "secondary": {
+        "accent": "#5f8e76",
+        "paragraph": "#e9daca",
+        "background": "#0a191a",
+        "border": "#1c2829",
+        "heading": "#e9daca",
+        "icon": "#e9daca",
+        "separator": "#1c2829",
+        "placeholder": "#a6988a",
+        "hover": "#70a589",
+        "accentForeground": "#000f10",
+        "backdrop": "#000f1099"
+      },
+      "disabled": {
+        "accent": "#4a7961",
+        "paragraph": "#a6988a",
+        "background": "#0a191a",
+        "border": "#1c2829",
+        "heading": "#a6988a",
+        "icon": "#a6988a",
+        "separator": "#1c2829",
+        "placeholder": "#a6988a",
+        "hover": "#4a7961",
+        "accentForeground": "#000f10",
+        "backdrop": "#000f1099"
+      },
+      "selected": {
+        "accent": "#5f8e76",
+        "paragraph": "#e9daca",
+        "background": "#1d3436",
+        "border": "#5f8e76",
+        "heading": "#e9daca",
+        "icon": "#5f8e76",
+        "separator": "#1c2829",
+        "placeholder": "#a6988a",
+        "hover": "#264042",
+        "accentForeground": "#000f10",
+        "backdrop": "#000f1099"
+      },
+      "error": {
+        "accent": "#e67e80",
+        "paragraph": "#e67e80",
+        "background": "#0a191a",
+        "border": "#1c2829",
+        "heading": "#e67e80",
+        "icon": "#e67e80",
+        "separator": "#1c2829",
+        "placeholder": "#e67e80",
+        "hover": "#d0686a",
+        "accentForeground": "#000f10",
+        "backdrop": "#000f1099"
+      },
+      "success": {
+        "accent": "#5f8e76",
+        "paragraph": "#5f8e76",
+        "background": "#0a191a",
+        "border": "#1c2829",
+        "heading": "#5f8e76",
+        "icon": "#5f8e76",
+        "separator": "#1c2829",
+        "placeholder": "#5f8e76",
+        "hover": "#70a589",
+        "accentForeground": "#000f10",
+        "backdrop": "#000f1099"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#e9daca",
+        "background": "#0a191a",
+        "separator": "#1c2829"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#e9daca",
+        "background": "#0a191a",
+        "hover": "#132223"
+      },
+      "secondary": {
+        "paragraph": "#e9daca",
+        "background": "#000f10"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#000f10",
+        "border": "#1c2829"
+      },
+      "secondary": {
+        "paragraph": "#a6988a",
+        "border": "#0a191a"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "accent": "#e9daca",
+        "background": "#0a191a"
+      },
+      "secondary": {
+        "background": "#264042",
+        "hover": "#264042"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#e9daca",
+        "background": "#000f10"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#5f8e76"
+      }
+    }
+  }
+}

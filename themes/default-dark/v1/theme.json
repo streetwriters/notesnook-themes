@@ -1,7 +1,7 @@
 {
   "name": "Notesnook Dark",
   "id": "default-dark",
-  "version": 2,
+  "version": 2.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default dark theme for the Notesnook app",
@@ -58,8 +58,8 @@
       "selected": {
         "accent": "#008837",
         "accentForeground": "#ffffff",
-        "paragraph": "#D3D3D3",
-        "background": "#303030",
+        "paragraph": "#FBFBFB",
+        "background": "#494949",
         "border": "#008837",
         "heading": "#e3e3e3",
         "icon": "#008837",
