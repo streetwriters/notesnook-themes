@@ -19,7 +19,7 @@
     "base": {
       "primary": {
         "accent": "#80E0A7",
-        "paragraph": "#80E0A7",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "border": "#425563",
         "heading": "#FFFFFF",
@@ -32,7 +32,7 @@
       },
       "secondary": {
         "accent": "#80E0A7",
-        "paragraph": "#80E0A7",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "border": "#425563",
         "heading": "#FFFFFF",
@@ -45,7 +45,7 @@
       },
       "disabled": {
         "accent": "#80E0A7",
-        "paragraph": "#80E0A7",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "border": "#425563",
         "heading": "#FFFFFF",
@@ -58,7 +58,7 @@
       },
       "selected": {
         "accent": "#80E0A7",
-        "paragraph": "#80E0A7",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "border": "#425563",
         "heading": "#FFFFFF",
@@ -70,8 +70,8 @@
         "backdrop": "#2f383e99"
       },
       "error": {
-        "accent": "#FF9287",
-        "paragraph": "#80E0A7",
+        "accent": "#F15D4E",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "border": "#425563",
         "heading": "#FFFFFF",
@@ -83,8 +83,8 @@
         "backdrop": "#2f383e99"
       },
       "success": {
-        "accent": "#A3E9F1",
-        "paragraph": "#80E0A7",
+        "accent": "#38B068",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "border": "#425563",
         "heading": "#FFFFFF",
@@ -98,19 +98,19 @@
     },
     "statusBar": {
       "primary": {
-        "paragraph": "#80E0A7",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "separator": "#425563"
       }
     },
     "list": {
       "primary": {
-        "paragraph": "#80E0A7",
+        "paragraph": "#ffffff",
         "background": "#252a36",
         "hover": "#252a36"
       },
       "secondary": {
-        "paragraph": "#80E0A7"
+        "paragraph": "#ffffff"
       },
       "disabled": {
         "hover": "#252a36"
