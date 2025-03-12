@@ -21,10 +21,10 @@
         "accent": "#8ACCA1",
         "paragraph": "#ffffff",
         "background": "#0c0c0c",
-        "border": "#252A36",
+        "border": "#435664",
         "heading": "#ffffff",
         "icon": "#8ACCA1",
-        "separator": "#252A36",
+        "separator": "#435664",
         "placeholder": "#B4B4B5",
         "hover": "#252A36",
         "accentForeground": "#252A36",
@@ -97,8 +97,28 @@
       }
     },
     "list": {
+      "primary": {
+        "paragraph": "#8ACCA1",
+        "hover": "#435664"
+      },
       "selected": {
-        "background": "#252A36"
+        "paragraph": "#8ACCA1",
+        "background": "#252A36",
+        "hover": "#435664"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#252A36",
+        "border": "#0c0c0c",
+        "icon": "#8ACCA1",
+        "separator": "#435664",
+        "hover": "#0c0c0c"
+      },
+      "selected": {
+        "paragraph": "#A9DEE9",
+        "icon": "#A9DEE9",
+        "hover": "#0c0c0c"
       }
     },
     "contextMenu": {
