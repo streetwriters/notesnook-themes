@@ -26,34 +26,34 @@
         "icon": "#8ACCA1",
         "separator": "#435664",
         "placeholder": "#B4B4B5",
-        "hover": "#252A36",
+        "hover": "#435664",
         "accentForeground": "#252A36",
         "backdrop": "#0c0c0c"
       },
       "secondary": {
         "accent": "#8ACCA1",
-        "paragraph": "#B4B4B5",
-        "background": "#252A36",
-        "border": "#252A36",
-        "heading": "#B4B4B5",
-        "icon": "#252A36",
-        "separator": "#252A36",
-        "placeholder": "#252A36",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "paragraph": "#ffffff",
+        "background": "#0c0c0c",
+        "border": "#435664",
+        "heading": "#ffffff",
+        "icon": "#8ACCA1",
+        "separator": "#435664",
+        "placeholder": "#B4B4B5",
+        "hover": "#252A36",
+        "accentForeground": "#252A36",
         "backdrop": "#0c0c0c"
       },
       "disabled": {
         "accent": "#FFDE31",
-        "paragraph": "#F59188",
+        "paragraph": "#FFDE31",
         "background": "#ffffff",
         "border": "#252A36",
         "heading": "#252A36",
         "icon": "#B4B4B5",
-        "separator": "#F59188",
-        "placeholder": "#F59188",
+        "separator": "#FFDE31",
+        "placeholder": "#FFDE31",
         "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "accentForeground": "#435664",
         "backdrop": "#0c0c0c"
       },
       "selected": {
@@ -63,34 +63,34 @@
         "border": "#B4B4B5",
         "heading": "#ffffff",
         "icon": "#B4B4B5",
-        "separator": "#252A36",
-        "placeholder": "#252A36",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "separator": "#435664",
+        "placeholder": "#435664",
+        "hover": "#252A36",
+        "accentForeground": "#252A36",
         "backdrop": "#0c0c0c"
       },
       "error": {
         "accent": "#F15D4E",
         "paragraph": "#F15D4E",
         "background": "#250b0a",
-        "border": "#252A36",
+        "border": "#B4B4B5",
         "heading": "#F15D4E",
         "icon": "#F15D4E",
-        "separator": "#252A36",
-        "placeholder": "#252A36",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "separator": "#435664",
+        "placeholder": "#435664",
+        "hover": "#252A36",
+        "accentForeground": "#252A36",
         "backdrop": "#0c0c0c"
       },
       "success": {
         "accent": "#38B068",
         "paragraph": "#38B068",
-        "background": "#252A36",
-        "border": "#252A36",
+        "background": "#0c0c0c",
+        "border": "#0c0c0c",
         "heading": "#38B068",
         "icon": "#38B068",
-        "separator": "#252A36",
-        "placeholder": "#252A36",
+        "separator": "#0c0c0c",
+        "placeholder": "#0c0c0c",
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
         "backdrop": "#0c0c0c"
@@ -98,35 +98,28 @@
     },
     "list": {
       "primary": {
-        "background": "#252A36",
-        "border": "#8ACCA1",
-        "icon": "#8ACCA1",
-        "separator": "#8ACCA1",
-        "hover": "#0c0c0c"
+        "paragraph": "#8ACCA1",
+        "border": "#435664",
+        "separator": "#435664",
+        "hover": "#435664"
       },
       "selected": {
         "paragraph": "#8ACCA1",
-        "icon": "#8ACCA1",
-        "hover": "#0c0c0c"
+        "background": "#252A36",
+        "hover": "#435664"
       }
     },
     "navigationMenu": {
       "primary": {
-        "background": "#252A36",
-        "border": "#8ACCA1",
+        "border": "#435664",
         "icon": "#8ACCA1",
-        "separator": "#8ACCA1",
-        "hover": "#0c0c0c"
+        "separator": "#435664",
+        "hover": "#435664"
       },
       "selected": {
         "paragraph": "#A9DEE9",
         "icon": "#A9DEE9",
-        "hover": "#0c0c0c"
-      }
-    },
-    "contextMenu": {
-      "primary": {
-        "background": "#252A36"
+        "hover": "#435664"
       }
     },
     "sheet": {
