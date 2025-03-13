@@ -19,10 +19,10 @@
     "base": {
       "primary": {
         "accent": "#8ACCA1",
-        "paragraph": "#ffffff",
+        "paragraph": "#E3F2E7",
         "background": "#252A36",
         "border": "#435664",
-        "heading": "#ffffff",
+        "heading": "#E3F2E7",
         "icon": "#8ACCA1",
         "separator": "#435664",
         "placeholder": "#B4B4B5",
@@ -39,21 +39,21 @@
         "icon": "#B4B4B5",
         "separator": "#252A36",
         "placeholder": "#252A36",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#E3F2E710",
+        "accentForeground": "#E3F2E7",
         "backdrop": "#0c0c0c"
       },
       "disabled": {
         "accent": "#FFDE31",
         "paragraph": "#F59188",
-        "background": "#ffffff",
+        "background": "#E3F2E7",
         "border": "#252A36",
         "heading": "#252A36",
         "icon": "#B4B4B5",
         "separator": "#F59188",
         "placeholder": "#F59188",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#E3F2E710",
+        "accentForeground": "#E3F2E7",
         "backdrop": "#0c0c0c"
       },
       "selected": {
@@ -61,12 +61,12 @@
         "paragraph": "#B4B4B5",
         "background": "#0c0c0c",
         "border": "#B4B4B5",
-        "heading": "#ffffff",
+        "heading": "#E3F2E7",
         "icon": "#B4B4B5",
         "separator": "#252A36",
         "placeholder": "#252A36",
         "hover": "#435664",
-        "accentForeground": "#ffffff",
+        "accentForeground": "#E3F2E7",
         "backdrop": "#0c0c0c"
       },
       "error": {
@@ -78,8 +78,8 @@
         "icon": "#F15D4E",
         "separator": "#252A36",
         "placeholder": "#252A36",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#E3F2E710",
+        "accentForeground": "#E3F2E7",
         "backdrop": "#0c0c0c"
       },
       "success": {
@@ -91,8 +91,8 @@
         "icon": "#38B068",
         "separator": "#252A36",
         "placeholder": "#252A36",
-        "hover": "#ffffff10",
-        "accentForeground": "#ffffff",
+        "hover": "#E3F2E710",
+        "accentForeground": "#E3F2E7",
         "backdrop": "#0c0c0c"
       }
     },
