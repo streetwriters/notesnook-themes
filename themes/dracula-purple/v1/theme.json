@@ -124,32 +124,5 @@
         "paragraph": "#F8F8F2"
       }
     }
-  },
-  "sourceURL": "https://github.com/streetwriters/notesnook-themes/tree/main/themes/dracula-purple/v1/",
-  "totalInstalls": 0,
-  "previewColors": {
-    "navigationMenu": {
-      "shade": "#BD93F9",
-      "accent": "#BD93F9",
-      "background": "#282A36",
-      "icon": "#F8F8F2"
-    },
-    "statusBar": {
-      "paragraph": "#F8F8F2",
-      "background": "#282A36",
-      "icon": "#BD93F9"
-    },
-    "editor": "#282A36",
-    "list": {
-      "heading": "#f9f1c8",
-      "background": "#282A36",
-      "accent": "#BD93F9",
-      "accentForeground": "#F8F8F2"
-    },
-    "border": "#44475A",
-    "paragraph": "#F8F8F2",
-    "background": "#282A36",
-    "accent": "#BD93F9",
-    "accentForeground": "#F8F8F2"
   }
 }
