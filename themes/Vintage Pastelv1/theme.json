@@ -1,0 +1,201 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Ideaspace Obsidian",
+  "id": "ideaspace-obsidian-theme",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A Notesnook theme inspired by Obsidian with a darker blue interface, soft cream background, and subtle sidebar contrast.",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Custom Obsidian Theme"
+    }
+  ],
+  "typography": {
+    "fontFamily": "'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "fontSize": "16px",
+    "lineHeight": "1.8"
+  },
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#0B192C",
+        "paragraph": "#333333",
+        "background": "#f8f6f2",
+        "border": "#f8f6f2",
+        "heading": "#3f3f5f",
+        "icon": "#444444",
+        "separator": "#f8f6f2",
+        "placeholder": "#9b9a97",
+        "hover": "#f2efe9",
+        "accentForeground": "#ffffff",
+        "backdrop": "#00000014"
+      },
+      "secondary": {
+        "accent": "#0B192C",
+        "paragraph": "#444444",
+        "background": "#f2efe9",
+        "border": "#f8f6f2",
+        "heading": "#3f3f5f",
+        "icon": "#444444",
+        "separator": "#f8f6f2",
+        "placeholder": "#9b9a97",
+        "hover": "#ece8e0",
+        "accentForeground": "#ffffff",
+        "backdrop": "#00000014"
+      },
+      "disabled": {
+        "accent": "#0B192C",
+        "paragraph": "#9b9a97",
+        "background": "#f8f6f2",
+        "border": "#f8f6f2",
+        "heading": "#3f3f5f",
+        "icon": "#9b9a97",
+        "separator": "#f8f6f2",
+        "placeholder": "#9b9a97",
+        "hover": "#f2efe9",
+        "accentForeground": "#ffffff",
+        "backdrop": "#00000014"
+      },
+      "selected": {
+        "accent": "#0B192C",
+        "paragraph": "#333333",
+        "background": "#ece8e0",
+        "border": "#0B192C",
+        "heading": "#3f3f5f",
+        "icon": "#0B192C",
+        "separator": "#f8f6f2",
+        "placeholder": "#9b9a97",
+        "hover": "#e6e1d6",
+        "accentForeground": "#ffffff",
+        "backdrop": "#00000014"
+      },
+      "error": {
+        "accent": "#eb5757",
+        "paragraph": "#eb5757",
+        "background": "#fce8e8",
+        "border": "#f8f6f2",
+        "heading": "#eb5757",
+        "icon": "#eb5757",
+        "separator": "#f8f6f2",
+        "placeholder": "#9b9a97",
+        "hover": "#f2efe9",
+        "accentForeground": "#ffffff",
+        "backdrop": "#00000014"
+      },
+      "success": {
+        "accent": "#4F8A10",
+        "paragraph": "#4F8A10",
+        "background": "#e8f5f3",
+        "border": "#f8f6f2",
+        "heading": "#4F8A10",
+        "icon": "#4F8A10",
+        "separator": "#f8f6f2",
+        "placeholder": "#9b9a97",
+        "hover": "#f2efe9",
+        "accentForeground": "#ffffff",
+        "backdrop": "#00000014"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#0B192C",
+        "background": "#f8f6f2",
+        "icon": "#0B192C",
+        "separator": "#f2efe9"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#444444",
+        "heading": "#3f3f5f",
+        "background": "#f8f6f2"
+      },
+      "selected": {
+        "background": "#ece8e0"
+      }
+    },
+    "editor": {
+      "primary": {
+        "paragraph": "#333333",
+        "background": "#f8f6f2",
+        "heading": "#3f3f5f"
+      },
+      "selected": {
+        "background": "#d1e6f5"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#ffffff",
+        "background": "#0B192C",
+        "icon": "#ffffff",
+        "separator": "#0B192C",
+        "hover": "#142B44"
+      },
+      "secondary": {
+        "paragraph": "#ffffff",
+        "background": "#af5c7b",
+        "icon": "#ffffff",
+        "hover": "#b86c8a"
+      },
+      "selected": {
+        "paragraph": "#ffffff",
+        "background": "#e07a5f",
+        "icon": "#ffffff",
+        "hover": "#e3896f"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#f8f6f2"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#f8f6f2"
+      },
+      "selected": {
+        "paragraph": "#0B192C"
+      }
+    },
+    "sidebarGroups": {
+      "calendar": {
+        "background": "#e07a5f",
+        "paragraph": "#ffffff",
+        "icon": "#ffffff",
+        "hover": "#e3896f"
+      },
+      "atlas": {
+        "background": "#af5c7b",
+        "paragraph": "#ffffff",
+        "icon": "#ffffff",
+        "hover": "#b86c8a"
+      },
+      "efforts": {
+        "background": "#e9a03f",
+        "paragraph": "#ffffff",
+        "icon": "#ffffff",
+        "hover": "#ecaa55"
+      }
+    },
+    "sidebarViewer": {
+      "primary": {
+        "background": "#d6e1f0",
+        "paragraph": "#0B192C",
+        "border": "#e0e6f5"
+      }
+    }
+  },
+  "customStyles": {
+    "sidebarCategories": "div.sidebar-category { border-radius: 5px; margin: 4px 0; overflow: hidden; }",
+    "sidebarCalendar": "div.sidebar-category.calendar { background-color: #e07a5f; color: white; }",
+    "sidebarAtlas": "div.sidebar-category.atlas { background-color: #af5c7b; color: white; }",
+    "sidebarEfforts": "div.sidebar-category.efforts { background-color: #e9a03f; color: white; }",
+    "topBar": "div.app-topbar { background-color: #0B192C; color: white; }",
+    "categoryIcons": "div.sidebar-category .icon { color: white; }",
+    "statusBar": "div.app-statusbar { background-color: #f8f6f2; color: #0B192C; }"
+  }
+}
