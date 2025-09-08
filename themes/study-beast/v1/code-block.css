@@ -1,0 +1,65 @@
+/* Base text */
+code[class*="language-"],
+pre[class*="language-"] {
+  background: var(--background-secondary); /* keep original */
+  color: #D4D4D4; /* VS Code editor foreground */
+  font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  line-height: 1.5;
+  tab-size: 2;
+  hyphens: none;
+}
+
+/* Comments */
+.token.comment,
+.token.prolog,
+.token.cdata {
+  color: #6A9955; /* VS Code comment green */
+  font-style: italic;
+}
+
+/* Keywords (def, class, import, return, if, else, try, except...) */
+.token.keyword {
+  color: #569CD6; /* VS Code keyword blue */
+  font-weight: 500;
+}
+
+/* Strings */
+.token.string,
+.token.char {
+  color: #CE9178; /* VS Code string orange */
+}
+
+/* Numbers, booleans, constants */
+.token.number,
+.token.boolean,
+.token.constant {
+  color: #B5CEA8; /* VS Code number light green */
+}
+
+/* Functions and class names */
+.token.function,
+.token.class-name {
+  color: #DCDCAA; /* VS Code function yellow */
+}
+
+/* Variables, operators, punctuation */
+.token.operator,
+.token.punctuation,
+.token.variable {
+  color: #D4D4D4; /* VS Code default text */
+}
+
+/* Tags, properties, deleted, errors */
+.token.deleted,
+.token.symbol,
+.token.tag,
+.token.property {
+  color: #F44747; /* VS Code error red */
+}
+
+/* Important, regex, special */
+.token.important,
+.token.regex {
+  color: #D7BA7D; /* VS Code regex/special yellow-brown */
+  font-weight: bold;
+}
