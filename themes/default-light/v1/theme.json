@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Notesnook Light",
   "id": "default-light",
-  "version": 1.9,
+  "version": 2.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "The default light theme for Notesnook app.",
@@ -20,24 +20,24 @@
       "primary": {
         "accent": "#008837",
         "accentForeground": "#ffffff",
-        "paragraph": "#303030",
+        "paragraph": "#505050",
         "background": "#ffffff",
         "border": "#E8E8E8",
-        "heading": "#212121",
-        "icon": "#303030",
+        "heading": "#202020",
+        "icon": "#505050",
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
-        "hover": "#00000010",
+        "hover": "#eee",
         "backdrop": "#0000001a"
       },
       "secondary": {
         "accent": "#008837",
         "accentForeground": "#ffffff",
-        "paragraph": "#666",
+        "paragraph": "#777",
         "background": "#f7f7f7",
         "border": "#E8E8E8",
-        "heading": "#808080",
-        "icon": "#666",
+        "heading": "#666",
+        "icon": "#777",
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#dbdbdb",
@@ -59,14 +59,14 @@
       "selected": {
         "accent": "#008837",
         "accentForeground": "#ffffff",
-        "paragraph": "#303030",
-        "background": "#ebebeb",
+        "paragraph": "#212121",
+        "background": "#eee",
         "border": "#008837",
         "heading": "#212121",
-        "icon": "#008837",
+        "icon": "#212121",
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
-        "hover": "#00000010",
+        "hover": "#eee",
         "backdrop": "#0000001a"
       },
       "error": {
@@ -97,40 +97,23 @@
       }
     },
     "statusBar": {
-      "primary": {
-        "paragraph": "#5E5E5E",
-        "background": "#f7f7f7"
-      }
-    },
-    "list": {
-      "selected": {
-        "background": "#f7f7f7"
-      }
+      "primary": { "paragraph": "#5E5E5E", "background": "#f7f7f7" }
     },
     "navigationMenu": {
       "primary": {
-        "paragraph": "#303030",
         "background": "#f7f7f7",
-        "icon": "#303030"
+        "paragraph": "#666",
+        "icon": "#666",
+        "hover": "#eee"
       },
-      "secondary": {
-        "background": "#EEEEEE"
-      }
-    },
-    "contextMenu": {
-      "primary": {
-        "background": "#f7f7f7"
-      }
-    },
-    "editor": {
+      "secondary": { "background": "#EEEEEE" },
       "selected": {
-        "background": "#e1e1e1"
+        "background": "#ddd",
+        "hover": "#eee"
       }
     },
-    "sheet": {
-      "selected": {
-        "paragraph": "#008837"
-      }
-    }
+    "contextMenu": { "primary": { "background": "#f7f7f7" } },
+    "editor": { "selected": { "background": "#e1e1e1" } },
+    "sheet": { "selected": { "paragraph": "#008837" } }
   }
 }
