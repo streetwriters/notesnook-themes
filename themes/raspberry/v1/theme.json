@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Raspberry",
   "id": "raspberry",
-  "version": 1,
+  "version": 1.5,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": " ",
@@ -113,6 +113,7 @@
     "list": {
       "primary": {
         "paragraph": "#666666",
+        "border": "#c9c9c9",
         "icon": "#666666"
       },
       "selected": {
@@ -124,6 +125,9 @@
       "primary": {
         "border": "#c9c9c9"
       },
+      "secondary": {
+        "background": "#ffffff"
+      },
       "selected": {
         "paragraph": "#c5496c",
         "background": "#f8e2e7"
@@ -133,8 +137,12 @@
       "primary": {
         "accent": "#202020",
         "paragraph": "#202020",
+        "border": "#c9c9c9",
         "icon": "#202020",
         "hover": "#f2eded"
+      },
+      "secondary": {
+        "background": "#f8e2e7"
       },
       "selected": {
         "background": "#f8e2e7"
@@ -154,7 +162,7 @@
       "primary": {
         "accent": "#c5496c",
         "paragraph": "#666666",
-        "border": "#e6e6e6",
+        "border": "#c9c9c9",
         "heading": "#202020",
         "icon": "#666666"
       },
@@ -174,7 +182,7 @@
         "accent": "#b8b8b8",
         "paragraph": "#202020",
         "background": "#fbf8f8",
-        "border": "#e6e6e6",
+        "border": "#c9c9c9",
         "icon": "#666666",
         "separator": "#fbf8f8"
       },
