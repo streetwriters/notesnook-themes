@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Embers",
   "id": "embers",
-  "version": 1.5,
+  "version": 1.6,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": " ",
@@ -59,7 +59,7 @@
       "selected": {
         "accent": "#de4c4a",
         "paragraph": "#ffffff",
-        "background": "#472525",
+        "background": "#4725254a",
         "border": "#ffffff",
         "heading": "#ffffff",
         "icon": "#de4c4a",
@@ -119,15 +119,13 @@
       },
       "selected": {
         "paragraph": "#c2c2c2",
-        "background": "#4725257a"
+        "background": "#4725254a"
       }
     },
     "editor": {
       "primary": {
-        "border": "#444444"
-      },
-      "secondary": {
-        "background": "#1e1e1e"
+        "border": "#444444",
+        "separator": "#444444"
       },
       "selected": {
         "paragraph": "#de4c4a",
@@ -138,12 +136,8 @@
       "primary": {
         "accent": "#ffffff",
         "paragraph": "#ffffff",
-        "border": "#444444",
         "icon": "#ffffff",
         "hover": "#322f2a"
-      },
-      "secondary": {
-        "background": "#472525"
       },
       "selected": {
         "background": "#472525",
@@ -161,14 +155,14 @@
     },
     "titleBar": {
       "primary": {
-        "background": "#1e1e1e"
+        "background": "#262626"
       }
     },
     "dialog": {
       "primary": {
         "accent": "#de4c4a",
         "paragraph": "#c2c2c2",
-        "border": "#444444",
+        "border": "#3d3d3d",
         "heading": "#ffffff",
         "icon": "#d1d1d1"
       },
@@ -188,7 +182,7 @@
         "accent": "#707070",
         "paragraph": "#ffffff",
         "background": "#262626",
-        "border": "#444444",
+        "border": "#3d3d3d",
         "icon": "#d1d1d1",
         "separator": "#262626",
         "hover": "#322f2a"
