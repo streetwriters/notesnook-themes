@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Tangerine",
   "id": "tangerine",
-  "version": 1,
+  "version": 1.5,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": " ",
@@ -113,6 +113,7 @@
     "list": {
       "primary": {
         "paragraph": "#666666",
+        "border": "#c9c9c9",
         "icon": "#666666"
       },
       "selected": {
@@ -122,7 +123,8 @@
     },
     "editor": {
       "primary": {
-        "border": "#c9c9c9"
+        "border": "#c9c9c9",
+        "separator": "#c9c9c9"
       },
       "selected": {
         "paragraph": "#d68400",
