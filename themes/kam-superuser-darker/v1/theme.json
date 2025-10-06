@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "KAM Superuser Darker",
+  "id": "kam-superuser-darker",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://winstongfx.com",
+  "description": "KAM Superuser Darker theme. Inspired by KAM Superuser keycaps designed by FreshFromTheGrave.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Mike Winston",
+      "email": "WinstonGFX@proton.me",
+      "url": "https://winstongfx.com"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#8ACCA1",
+        "paragraph": "#E3F2E7",
+        "background": "#0c0c0c",
+        "border": "#435664",
+        "heading": "#E3F2E7",
+        "icon": "#8ACCA1",
+        "separator": "#435664",
+        "placeholder": "#B4B4B5",
+        "hover": "#435664",
+        "accentForeground": "#252A36",
+        "backdrop": "#0c0c0c"
+      },
+      "secondary": {
+        "accent": "#8ACCA1",
+        "paragraph": "#B4B4B5",
+        "background": "#0c0c0c",
+        "border": "#435664",
+        "heading": "#E3F2E7",
+        "icon": "#B4B4B5",
+        "separator": "#435664",
+        "placeholder": "#B4B4B5",
+        "hover": "#252A36",
+        "accentForeground": "#252A36",
+        "backdrop": "#0c0c0c"
+      },
+      "disabled": {
+        "accent": "#FFDE31",
+        "paragraph": "#FFDE31",
+        "background": "#E3F2E7",
+        "border": "#252A36",
+        "heading": "#252A36",
+        "icon": "#B4B4B5",
+        "separator": "#FFDE31",
+        "placeholder": "#FFDE31",
+        "hover": "#E3F2E710",
+        "accentForeground": "#435664",
+        "backdrop": "#0c0c0c"
+      },
+      "selected": {
+        "accent": "#8ACCA1",
+        "paragraph": "#B4B4B5",
+        "background": "#252A36",
+        "border": "#B4B4B5",
+        "heading": "#E3F2E7",
+        "icon": "#B4B4B5",
+        "separator": "#435664",
+        "placeholder": "#435664",
+        "hover": "#252A36",
+        "accentForeground": "#252A36",
+        "backdrop": "#0c0c0c"
+      },
+      "error": {
+        "accent": "#F15D4E",
+        "paragraph": "#F15D4E",
+        "background": "#250b0a",
+        "border": "#B4B4B5",
+        "heading": "#F15D4E",
+        "icon": "#F15D4E",
+        "separator": "#435664",
+        "placeholder": "#435664",
+        "hover": "#252A36",
+        "accentForeground": "#252A36",
+        "backdrop": "#0c0c0c"
+      },
+      "success": {
+        "accent": "#38B068",
+        "paragraph": "#38B068",
+        "background": "#0c0c0c",
+        "border": "#0c0c0c",
+        "heading": "#38B068",
+        "icon": "#38B068",
+        "separator": "#0c0c0c",
+        "placeholder": "#0c0c0c",
+        "hover": "#E3F2E710",
+        "accentForeground": "#E3F2E7",
+        "backdrop": "#0c0c0c"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#8ACCA1",
+        "border": "#435664",
+        "separator": "#435664",
+        "hover": "#435664"
+      },
+      "selected": {
+        "paragraph": "#8ACCA1",
+        "background": "#252A36",
+        "hover": "#435664"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "border": "#435664",
+        "icon": "#8ACCA1",
+        "separator": "#435664",
+        "hover": "#435664"
+      },
+      "selected": {
+        "paragraph": "#A9DEE9",
+        "icon": "#A9DEE9",
+        "hover": "#435664"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
+      }
+    }
+  }
+}
