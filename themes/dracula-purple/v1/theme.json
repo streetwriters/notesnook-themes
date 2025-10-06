@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Dracula Purple",
+  "id": "dracula-purple",
+  "version": 1,
+  "license": "MIT",
+  "homepage": "https://draculatheme.com",
+  "description": "Dracula is a color scheme for code editors and terminal emulators such as Vim, Notepad++, iTerm, VSCode, Terminal.app, ZSH, and much more.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "CJ Sabijon"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#BD93F9",
+        "paragraph": "#F8F8F2",
+        "background": "#282A36",
+        "border": "#44475A",
+        "heading": "#BD93F9",
+        "icon": "#BD93F9",
+        "separator": "#44475A",
+        "placeholder": "#44475A",
+        "hover": "#44475A",
+        "accentForeground": "#F8F8F2",
+        "backdrop": "#282A36"
+      },
+      "secondary": {
+        "accent": "#BD93F9",
+        "paragraph": "#F8F8F2",
+        "background": "#282A36",
+        "border": "#44475A",
+        "heading": "#BD93F9",
+        "icon": "#44475A",
+        "separator": "#44475A",
+        "placeholder": "#44475A",
+        "hover": "#44475A",
+        "accentForeground": "#F8F8F2",
+        "backdrop": "#282A36"
+      },
+      "disabled": {
+        "accent": "#44475A",
+        "paragraph": "#F8F8F2",
+        "background": "#282A36",
+        "border": "#44475A",
+        "heading": "#BD93F9",
+        "icon": "#44475A",
+        "separator": "#44475A",
+        "placeholder": "#44475A",
+        "hover": "#44475A",
+        "accentForeground": "#F8F8F2",
+        "backdrop": "#282A36"
+      },
+      "selected": {
+        "accent": "#BD93F9",
+        "paragraph": "#F8F8F2",
+        "background": "#282A36",
+        "border": "#44475A",
+        "heading": "#BD93F9",
+        "icon": "#F8F8F2",
+        "separator": "#44475A",
+        "placeholder": "#44475A",
+        "hover": "#44475A",
+        "accentForeground": "#F8F8F2",
+        "backdrop": "#282A36"
+      },
+      "error": {
+        "accent": "#FF5555",
+        "paragraph": "#FF5555",
+        "background": "#282A36",
+        "border": "#44475A",
+        "heading": "#FF5555",
+        "icon": "#FF5555",
+        "separator": "#44475A",
+        "placeholder": "#FF5555",
+        "hover": "#44475A",
+        "accentForeground": "#F8F8F2",
+        "backdrop": "#282A36"
+      },
+      "success": {
+        "accent": "#50FA7B",
+        "paragraph": "#50FA7B",
+        "background": "#282A36",
+        "border": "#44475A",
+        "heading": "#50FA7B",
+        "icon": "#50FA7B",
+        "separator": "#44475A",
+        "placeholder": "#44475A",
+        "hover": "#44475A",
+        "accentForeground": "#F8F8F2",
+        "backdrop": "#282A36"
+      }
+    },
+    "editor": {
+      "primary": {
+        "icon": "#BD93F9",
+        "placeholder": "#44475A"
+      },
+      "secondary": {
+        "paragraph": "#F8F8F2",
+        "heading": "#BD93F9"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "accent": "#BD93F9",
+        "paragraph": "#F8F8F2",
+        "icon": "#BD93F9"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "icon": "#BD93F9"
+      },
+      "selected": {
+        "icon": "#F8F8F2"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#F8F8F2"
+      }
+    }
+  }
+}
