@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Embers",
   "id": "embers",
-  "version": 1,
+  "version": 1.6,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": " ",
@@ -114,6 +114,7 @@
     "list": {
       "primary": {
         "paragraph": "#c2c2c2",
+        "border": "#444444",
         "icon": "#d1d1d1"
       },
       "selected": {
@@ -123,7 +124,8 @@
     },
     "editor": {
       "primary": {
-        "border": "#444444"
+        "border": "#444444",
+        "separator": "#444444"
       },
       "selected": {
         "paragraph": "#de4c4a",
