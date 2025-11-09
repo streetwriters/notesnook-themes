@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Embers",
   "id": "embers",
-  "version": 1.6,
+  "version": 1.7,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": " ",
@@ -118,7 +118,7 @@
         "icon": "#d1d1d1"
       },
       "selected": {
-        "paragraph": "#c2c2c2",
+        "paragraph": "#aa422c",
         "background": "#4725254a"
       }
     },
