@@ -127,7 +127,7 @@
     "editorToolbar": {
       "primary": {
         "accent": "#e9daca",
-        "background": "#0a191a"
+        "background": "#000f10"
       },
       "secondary": {
         "background": "#264042",
