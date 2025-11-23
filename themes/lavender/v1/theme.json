@@ -117,7 +117,7 @@
         "icon": "#666666"
       },
       "secondary": {
-        "accent": "#e9e5f5",
+        "accent": "#dad3f3",
         "accentForeground": "#766bbd"
       },
       "selected": {
@@ -129,6 +129,10 @@
       "primary": {
         "border": "#c9c9c9",
         "separator": "#c9c9c9"
+      },
+      "secondary": {
+        "accent": "#dad3f3",
+        "accentForeground": "#766bbd"
       },
       "selected": {
         "paragraph": "#766bbd",
