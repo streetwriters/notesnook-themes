@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Blueberry",
-  "id": "blueberry",
+  "name": "Arborleaf",
+  "id": "arborleaf",
   "version": 1.8,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
-  "description": " ",
+  "description": "Sunlight filtered pages where thoughts unfurl like new leaves.",
   "colorScheme": "light",
   "compatibilityVersion": 1,
   "authors": [
@@ -18,55 +18,55 @@
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#297abc",
+        "accent": "#4c7a45",
         "paragraph": "#444444",
-        "background": "#ffffff",
-        "border": "#ffffff",
+        "background": "#fffdf2",
+        "border": "#fffdf2",
         "heading": "#444444",
         "icon": "#666666",
-        "separator": "#ffffff",
+        "separator": "#fffdf2",
         "placeholder": "#999999",
-        "hover": "#eef2f6",
-        "accentForeground": "#ffffff",
+        "hover": "#ECF2DB",
+        "accentForeground": "#fffdf2",
         "backdrop": "#0000007a"
       },
       "secondary": {
         "accent": "#a9a9a9",
         "paragraph": "#999999",
-        "background": "#f8fafb",
-        "border": "#ffffff",
+        "background": "#f7f5e8",
+        "border": "#fffdf2",
         "heading": "#444444",
         "icon": "#666666",
-        "separator": "#ffffff",
+        "separator": "#fffdf2",
         "placeholder": "#a9a9a9",
-        "hover": "#eef2f6",
-        "accentForeground": "#ffffff",
+        "hover": "#ECF2DB",
+        "accentForeground": "#fffdf2",
         "backdrop": "#0000007a"
       },
       "disabled": {
-        "accent": "#297abc",
+        "accent": "#4c7a45",
         "paragraph": "#444444",
-        "background": "#ffffff",
+        "background": "#fffdf2",
         "border": "#e6e6e6",
         "heading": "#444444",
         "icon": "#666666",
-        "separator": "#ffffff",
+        "separator": "#fffdf2",
         "placeholder": "#999999",
-        "hover": "#eef2f6",
-        "accentForeground": "#ffffff",
+        "hover": "#f2f2e9",
+        "accentForeground": "#fffdf2",
         "backdrop": "#0000007a"
       },
       "selected": {
-        "accent": "#297abc",
+        "accent": "#4c7a45",
         "paragraph": "#444444",
-        "background": "#dfedfb6a",
-        "border": "#dfedfb",
+        "background": "#D8DEC7",
+        "border": "#D8DEC7",
         "heading": "#444444",
-        "icon": "#297abc",
-        "separator": "#ffffff",
-        "placeholder": "#dfedfb",
-        "hover": "#dfedfb",
-        "accentForeground": "#ffffff",
+        "icon": "#4c7a45",
+        "separator": "#fffdf2",
+        "placeholder": "#D8DEC7",
+        "hover": "#D8DEC7",
+        "accentForeground": "#fffdf2",
         "backdrop": "#0000007a"
       },
       "error": {
@@ -79,7 +79,7 @@
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "accentForeground": "#ffffff",
+        "accentForeground": "#fffdf2",
         "backdrop": "#0000007a"
       },
       "success": {
@@ -88,11 +88,11 @@
         "background": "#85ce68",
         "border": "#E8E8E8",
         "heading": "#4F8A10",
-        "icon": "#297abc",
+        "icon": "#4c7a45",
         "separator": "#E8E8E8",
         "placeholder": "#a9a9a9",
         "hover": "#00000010",
-        "accentForeground": "#ffffff",
+        "accentForeground": "#fffdf2",
         "backdrop": "#0000007a"
       }
     },
@@ -100,11 +100,12 @@
       "primary": {
         "accent": "#444444",
         "paragraph": "#444444",
-        "background": "#f8fafb",
-        "icon": "#666666"
+        "background": "#f7f5e8",
+        "icon": "#666666",
+        "hover": "#D8DEC7"
       },
       "selected": {
-        "paragraph": "#297abc"
+        "paragraph": "#4c7a45"
       },
       "success": {
         "icon": "#666666"
@@ -114,15 +115,16 @@
       "primary": {
         "paragraph": "#666666",
         "border": "#c9c9c9",
-        "icon": "#666666"
+        "icon": "#666666",
+        "hover": "#F1F5E4"
       },
       "secondary": {
-        "accent": "#dfedfb",
-        "accentForeground": "#297abc"
+        "accent": "#D8DEC7",
+        "accentForeground": "#4c7a45"
       },
       "selected": {
-        "paragraph": "#297abc",
-        "background": "#dfedfb6a"
+        "paragraph": "#4c7a45",
+        "background": "#ecf2db"
       }
     },
     "editor": {
@@ -131,12 +133,13 @@
         "separator": "#c9c9c9"
       },
       "secondary": {
-        "accent": "#dfedfb",
-        "accentForeground": "#297abc"
+        "accent": "#D8DEC7",
+        "hover": "#D8DEC7",
+        "accentForeground": "#4c7a45"
       },
       "selected": {
-        "paragraph": "#297abc",
-        "background": "#dfedfb"
+        "paragraph": "#4c7a45",
+        "background": "#D8DEC7"
       }
     },
     "editorToolbar": {
@@ -144,10 +147,13 @@
         "accent": "#444444",
         "paragraph": "#444444",
         "icon": "#444444",
-        "hover": "#eef2f6"
+        "hover": "#f2f2e9"
+      },
+      "secondary": {
+        "hover": "#ecf2db"
       },
       "selected": {
-        "background": "#dfedfb"
+        "background": "#D8DEC7"
       }
     },
     "editorSidebar": {
@@ -157,12 +163,12 @@
     },
     "titleBar": {
       "primary": {
-        "background": "#f8fafb"
+        "background": "#f7f5e8"
       }
     },
     "dialog": {
       "primary": {
-        "accent": "#297abc",
+        "accent": "#4c7a45",
         "paragraph": "#666666",
         "border": "#e6e6e6",
         "heading": "#444444",
@@ -170,42 +176,44 @@
       },
       "secondary": {
         "paragraph": "#888888",
-        "background": "#f8fafb",
+        "background": "#f7f5e8",
         "border": "#e6e6e6",
-        "icon": "#b3b3b3"
+        "icon": "#b3b3b3",
+        "hover": "#E2E6D5"
       },
       "selected": {
-        "paragraph": "#297abc",
-        "background": "#dfedfb"
+        "paragraph": "#4c7a45",
+        "background": "#D8DEC7"
       }
     },
     "navigationMenu": {
       "primary": {
         "accent": "#b8b8b8",
         "paragraph": "#444444",
-        "background": "#f8fafb",
+        "background": "#f7f5e8",
         "border": "#e6e6e6",
         "icon": "#666666",
-        "separator": "#f8fafb"
+        "separator": "#f7f5e8",
+        "hover": "#E2E6D5"
       },
       "secondary": {
         "paragraph": "#c1c1c1",
-        "background": "#f8fafb"
+        "background": "#f7f5e8"
       },
       "selected": {
-        "paragraph": "#1e5480",
-        "background": "#dfedfb",
-        "icon": "#297abc"
+        "paragraph": "#344f30",
+        "background": "#D8DEC7",
+        "icon": "#344f30"
       }
     },
     "contextMenu": {
       "primary": {
         "paragraph": "#444444",
         "icon": "#666666",
-        "hover": "#dfedfb"
+        "hover": "#F1F5E4"
       },
       "selected": {
-        "background": "#dfedfb"
+        "background": "#D8DEC7"
       }
     },
     "sheet": {
