@@ -133,7 +133,9 @@
         "separator": "#c9c9c9"
       },
       "secondary": {
-        "hover": "#D8DEC7"
+        "accent": "#D8DEC7",
+        "hover": "#D8DEC7",
+        "accentForeground": "#4c7a45"
       },
       "selected": {
         "paragraph": "#4c7a45",
