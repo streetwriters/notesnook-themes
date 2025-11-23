@@ -130,6 +130,10 @@
         "border": "#c9c9c9",
         "separator": "#c9c9c9"
       },
+      "secondary": {
+        "accent": "#e0e2e5",
+        "accentForeground": "#39485e"
+      },
       "selected": {
         "paragraph": "#39485e",
         "background": "#e0e2e5"
