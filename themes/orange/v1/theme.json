@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Orange",
   "id": "orange",
-  "version": 1.7,
+  "version": 1.8,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": " ",
@@ -19,10 +19,10 @@
     "base": {
       "primary": {
         "accent": "#dc4c3e",
-        "paragraph": "#202020",
+        "paragraph": "#444444",
         "background": "#ffffff",
         "border": "#ffffff",
-        "heading": "#202020",
+        "heading": "#444444",
         "icon": "#666666",
         "separator": "#ffffff",
         "placeholder": "#999999",
@@ -35,7 +35,7 @@
         "paragraph": "#999999",
         "background": "#fcfaf8",
         "border": "#ffffff",
-        "heading": "#202020",
+        "heading": "#444444",
         "icon": "#666666",
         "separator": "#ffffff",
         "placeholder": "#a9a9a9",
@@ -45,10 +45,10 @@
       },
       "disabled": {
         "accent": "#dc4c3e",
-        "paragraph": "#202020",
+        "paragraph": "#444444",
         "background": "#ffffff",
         "border": "#e6e6e6",
-        "heading": "#202020",
+        "heading": "#444444",
         "icon": "#666666",
         "separator": "#ffffff",
         "placeholder": "#999999",
@@ -58,10 +58,10 @@
       },
       "selected": {
         "accent": "#dc4c3e",
-        "paragraph": "#202020",
+        "paragraph": "#444444",
         "background": "#ffefe56a",
         "border": "#ffefe5",
-        "heading": "#202020",
+        "heading": "#444444",
         "icon": "#dc4c3e",
         "separator": "#ffffff",
         "placeholder": "#ffefe5",
@@ -98,8 +98,8 @@
     },
     "statusBar": {
       "primary": {
-        "accent": "#202020",
-        "paragraph": "#202020",
+        "accent": "#444444",
+        "paragraph": "#444444",
         "background": "#fcfaf8",
         "icon": "#666666"
       },
@@ -115,6 +115,10 @@
         "paragraph": "#666666",
         "border": "#c9c9c9",
         "icon": "#666666"
+      },
+      "secondary": {
+        "accent": "#ffefe5",
+        "accentForeground": "#dc4c3e"
       },
       "selected": {
         "paragraph": "#dc4c3e",
@@ -133,9 +137,9 @@
     },
     "editorToolbar": {
       "primary": {
-        "accent": "#202020",
-        "paragraph": "#202020",
-        "icon": "#202020",
+        "accent": "#444444",
+        "paragraph": "#444444",
+        "icon": "#444444",
         "hover": "#f2efed"
       },
       "selected": {
@@ -157,7 +161,7 @@
         "accent": "#dc4c3e",
         "paragraph": "#666666",
         "border": "#e6e6e6",
-        "heading": "#202020",
+        "heading": "#444444",
         "icon": "#666666"
       },
       "secondary": {
@@ -174,7 +178,7 @@
     "navigationMenu": {
       "primary": {
         "accent": "#b8b8b8",
-        "paragraph": "#202020",
+        "paragraph": "#444444",
         "background": "#fcfaf8",
         "border": "#e6e6e6",
         "icon": "#666666",
@@ -192,7 +196,7 @@
     },
     "contextMenu": {
       "primary": {
-        "paragraph": "#202020",
+        "paragraph": "#444444",
         "icon": "#666666",
         "hover": "#ffefe5"
       },
