@@ -117,7 +117,7 @@
     "editor": {
       "primary": {
         "background": "#f2e9d3",
-        "border": "#859289"
+        "border": "#ddd8be"
       },
       "secondary": {
         "paragraph": "#859289",
@@ -127,7 +127,7 @@
     "editorToolbar": {
       "primary": {
         "accent": "#5c6a72",
-        "background": "#d8d3ba"
+        "background": "#f2e9d3"
       },
       "secondary": {
         "background": "#85928933"

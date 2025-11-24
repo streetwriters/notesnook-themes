@@ -122,7 +122,7 @@
     "editor": {
       "primary": {
         "background": "#2f383e",
-        "border": "#859289"
+        "border": "#3c474d"
       },
       "secondary": {
         "paragraph": "#859289",
@@ -131,7 +131,7 @@
     },
     "editorToolbar": {
       "primary": {
-        "background": "#475258",
+        "background": "#2f383e",
         "hover": "#85928933"
       },
       "secondary": {
