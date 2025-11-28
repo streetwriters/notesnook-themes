@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Caramel Macchiato",
+  "id": "caramel-macchiato",
+  "version": 1.0,
+  "license": "MIT",
+  "homepage": "https://notesnook.com",
+  "description": "Deep, smooth, and ready for late-night note sessions. Sleep is optional, style isn't.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@pm.me",
+			"url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#D4A574",
+        "paragraph": "#E8D5C4",
+        "background": "#2A1F1A",
+        "border": "#4A3D35",
+        "heading": "#F5E6D3",
+        "icon": "#B8A090",
+        "separator": "#3D322A",
+        "placeholder": "#6B5C52",
+        "hover": "#352B23",
+        "accentForeground": "#1F1612",
+        "backdrop": "#1A120D80"
+      },
+      "secondary": {
+        "accent": "#D4A574",
+        "paragraph": "#B5A094",
+        "background": "#322820",
+        "border": "#4A3D35",
+        "heading": "#D4C2B3",
+        "icon": "#9B8777",
+        "separator": "#3D322A",
+        "placeholder": "#6B5C52",
+        "hover": "#3D322A",
+        "accentForeground": "#1F1612",
+        "backdrop": "#1A120D70"
+      },
+      "disabled": {
+        "accent": "#6B5C52",
+        "paragraph": "#6B5C52",
+        "background": "#2A1F1A",
+        "border": "#3D322A",
+        "heading": "#7D6F65",
+        "icon": "#5C4F45",
+        "separator": "#3D322A",
+        "placeholder": "#524539",
+        "hover": "#322820",
+        "accentForeground": "#B5A094",
+        "backdrop": "#1A120D50"
+      },
+      "selected": {
+        "accent": "#D4A574",
+        "paragraph": "#F5E6D3",
+        "background": "#3D322A",
+        "border": "#D4A574",
+        "heading": "#F5E6D3",
+        "icon": "#C4B5A7",
+        "separator": "#524539",
+        "placeholder": "#6B5C52",
+        "hover": "#473C32",
+        "accentForeground": "#1F1612",
+        "backdrop": "#1A120D70"
+      },
+      "error": {
+        "accent": "#D97C76",
+        "paragraph": "#D97C76",
+        "background": "#3A2523",
+        "border": "#4A3D35",
+        "heading": "#E89B95",
+        "icon": "#D97C76",
+        "separator": "#3D322A",
+        "placeholder": "#6B5C52",
+        "hover": "#442D2B",
+        "accentForeground": "#1F1612",
+        "backdrop": "#1A120D70"
+      },
+      "success": {
+        "accent": "#9DBD8F",
+        "paragraph": "#9DBD8F",
+        "background": "#273025",
+        "border": "#4A3D35",
+        "heading": "#B3D4A5",
+        "icon": "#9DBD8F",
+        "separator": "#3D322A",
+        "placeholder": "#6B5C52",
+        "hover": "#303A2D",
+        "accentForeground": "#1F1612",
+        "backdrop": "#1A120D70"
+      }
+    }
+  }
+}

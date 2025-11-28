@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Vanilla Latte",
+  "id": "vanilla-latte",
+  "version": 1.0,
+  "license": "MIT",
+  "homepage": "https://notesnook.com",
+  "description": "Light, warm, and easy on the eyes. Your notes deserve a coffee break too.'",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@pm.me",
+			"url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#B8885F",
+        "paragraph": "#4A3428",
+        "background": "#FFF8F0",
+        "border": "#E8D5C4",
+        "heading": "#3D2817",
+        "icon": "#9B7C5F",
+        "separator": "#E8D5C4",
+        "placeholder": "#C4B5A7",
+        "hover": "#F5EDE3",
+        "accentForeground": "#FFFFFF",
+        "backdrop": "#4A342880"
+      },
+      "secondary": {
+        "accent": "#B8885F",
+        "paragraph": "#8B7264",
+        "background": "#F9F3EB",
+        "border": "#E0CCBA",
+        "heading": "#5C473A",
+        "icon": "#A68972",
+        "separator": "#E0CCBA",
+        "placeholder": "#C4B5A7",
+        "hover": "#F0E6DC",
+        "accentForeground": "#FFFFFF",
+        "backdrop": "#4A342860"
+      },
+      "disabled": {
+        "accent": "#D4C2B3",
+        "paragraph": "#B5A599",
+        "background": "#F5F0EB",
+        "border": "#E8DDD2",
+        "heading": "#B5A599",
+        "icon": "#C9BDB1",
+        "separator": "#E8DDD2",
+        "placeholder": "#D4C9BF",
+        "hover": "#F0E8E0",
+        "accentForeground": "#8B7D71",
+        "backdrop": "#4A342840"
+      },
+      "selected": {
+        "accent": "#B8885F",
+        "paragraph": "#3D2817",
+        "background": "#F5EDE3",
+        "border": "#B8885F",
+        "heading": "#3D2817",
+        "icon": "#9B7C5F",
+        "separator": "#D4C2B3",
+        "placeholder": "#C4B5A7",
+        "hover": "#EFE3D6",
+        "accentForeground": "#FFFFFF",
+        "backdrop": "#4A342860"
+      },
+      "error": {
+        "accent": "#C85A54",
+        "paragraph": "#C85A54",
+        "background": "#FDF3F2",
+        "border": "#E8D5C4",
+        "heading": "#B84843",
+        "icon": "#C85A54",
+        "separator": "#E8D5C4",
+        "placeholder": "#C4B5A7",
+        "hover": "#F9E6E4",
+        "accentForeground": "#FFFFFF",
+        "backdrop": "#4A342860"
+      },
+      "success": {
+        "accent": "#7A9B6F",
+        "paragraph": "#5C7D51",
+        "background": "#F4F8F3",
+        "border": "#E8D5C4",
+        "heading": "#4F6A45",
+        "icon": "#7A9B6F",
+        "separator": "#E8D5C4",
+        "placeholder": "#C4B5A7",
+        "hover": "#E9F0E7",
+        "accentForeground": "#FFFFFF",
+        "backdrop": "#4A342860"
+      }
+    }
+  }
+}
