@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Flexoki Dark",
   "id": "flexoki-dark",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "An inky color scheme for prose and code.",
@@ -18,53 +18,53 @@
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#7D9726",
-        "paragraph": "#CCC5B3",
+        "accent": "#879A39",
+        "paragraph": "#CECDC3",
         "background": "#100F0F",
         "border": "#282726",
         "heading": "#FFFCF0",
         "icon": "#878580",
         "separator": "#403E3C",
-        "placeholder": "#4F4C48",
+        "placeholder": "#575653",
         "hover": "#282726",
         "accentForeground": "#FFFCF0",
         "backdrop": "#403E3C80"
       },
       "secondary": {
-        "accent": "#7D9726",
+        "accent": "#879A39",
         "paragraph": "#878580",
         "background": "#1C1B1A",
         "border": "#282726",
         "heading": "#878580",
         "icon": "#878580",
         "separator": "#403E3C",
-        "placeholder": "#4F4C48",
+        "placeholder": "#575653",
         "hover": "#FFFCF010",
         "accentForeground": "#FFFCF0",
         "backdrop": "#403E3C80"
       },
       "disabled": {
-        "accent": "#7D9726",
-        "paragraph": "#4F4C48",
+        "accent": "#879A39",
+        "paragraph": "#575653",
         "background": "#FFFCF0",
         "border": "#403E3C",
         "heading": "#100F0F",
         "icon": "#878580",
         "separator": "#403E3C",
-        "placeholder": "#4F4C48",
+        "placeholder": "#575653",
         "hover": "#FFFCF010",
         "accentForeground": "#FFFCF0",
         "backdrop": "#403E3C80"
       },
       "selected": {
-        "accent": "#7D9726",
+        "accent": "#879A39",
         "paragraph": "#FFFCF0",
-        "background": "#4F4C48",
-        "border": "#7D9726",
+        "background": "#575653",
+        "border": "#879A39",
         "heading": "#FFFCF0",
-        "icon": "#7D9726",
+        "icon": "#879A39",
         "separator": "#403E3C",
-        "placeholder": "#4F4C48",
+        "placeholder": "#575653",
         "hover": "#FFFCF010",
         "accentForeground": "#FFFCF0",
         "backdrop": "#403E3C80"
@@ -72,12 +72,12 @@
       "error": {
         "accent": "#AF3029",
         "paragraph": "#AF3029",
-        "background": "#241312",
+        "background": "#261312",
         "border": "#403E3C",
         "heading": "#AF3029",
         "icon": "#AF3029",
         "separator": "#403E3C",
-        "placeholder": "#4F4C48",
+        "placeholder": "#575653",
         "hover": "#FFFCF010",
         "accentForeground": "#FFFCF0",
         "backdrop": "#403E3C80"
@@ -85,12 +85,12 @@
       "success": {
         "accent": "#66800B",
         "paragraph": "#66800B",
-        "background": "#1C1F13",
+        "background": "#1A1E0C",
         "border": "#403E3C",
         "heading": "#66800B",
         "icon": "#66800B",
         "separator": "#403E3C",
-        "placeholder": "#4F4C48",
+        "placeholder": "#575653",
         "hover": "#FFFCF010",
         "accentForeground": "#FFFCF0",
         "backdrop": "#403E3C80"
@@ -108,7 +108,7 @@
     },
     "sheet": {
       "selected": {
-        "paragraph": "#7D9726"
+        "paragraph": "#879A39"
       }
     }
   }
