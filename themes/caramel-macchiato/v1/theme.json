@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Caramel Macchiato",
   "id": "caramel-macchiato",
-  "version": 1.0,
+  "version": 1.1,
   "license": "MIT",
   "homepage": "https://notesnook.com",
-  "description": "Deep, smooth, and ready for late-night note sessions. Sleep is optional, style isn't.",
+  "description": "Deep, smooth, and coffee-ready for late-night note sessions. Sleep is optional, style isn't.",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
