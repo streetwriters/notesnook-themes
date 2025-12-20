@@ -118,8 +118,7 @@
     },
     "editor": {
       "primary": {
-        "background": "#FFF2F6",
-        "border": "#FFF0F5"
+        "background": "#FFF2F6"
       },
       "secondary": {
         "paragraph": "#7D6D80",
