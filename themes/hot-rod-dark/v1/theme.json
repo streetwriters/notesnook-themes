@@ -32,7 +32,7 @@
       },
       "secondary": {
         "accent": "#e6b570",
-        "paragraph": "#818589",
+        "paragraph": "#8f8270",
         "background": "#231e1a",
         "border": "#2b2b2b",
         "heading": "#808080",
@@ -94,11 +94,6 @@
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
         "backdrop": "#35353580"
-      }
-    },
-    "editor": {
-      "secondary": {
-        "paragraph": "#8f8270"
       }
     },
     "sheet": {
