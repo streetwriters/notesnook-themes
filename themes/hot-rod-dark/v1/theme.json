@@ -1,0 +1,105 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Hot Rod Dark",
+  "id": "hot-rod-dark",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "An orange dark theme inspired by Bumble dark.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Ibaraki",
+      "email": "ibaraki@ibaraki.app",
+      "url": "https://ibaraki.app"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#d68a1f",
+        "paragraph": "#f9e4c8",
+        "background": "#191510",
+        "border": "#2b2b2b",
+        "heading": "#f9e0c8",
+        "icon": "#ff9b3d",
+        "separator": "#392c18",
+        "placeholder": "#838377",
+        "hover": "#31281c",
+        "accentForeground": "#272725",
+        "backdrop": "#100f0f80"
+      },
+      "secondary": {
+        "accent": "#e6b570",
+        "paragraph": "#8f8270",
+        "background": "#231e1a",
+        "border": "#2b2b2b",
+        "heading": "#808080",
+        "icon": "#393832",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "disabled": {
+        "accent": "#8a5000",
+        "paragraph": "#505050",
+        "background": "#ffffff",
+        "border": "#383838",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "selected": {
+        "accent": "#f29f2c",
+        "paragraph": "#D3D3D3",
+        "background": "#362c21",
+        "border": "#8a5700",
+        "heading": "#e3e3e3",
+        "icon": "#8a5e00",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "error": {
+        "accent": "#f54b42",
+        "paragraph": "#f54b42",
+        "background": "#250b0a",
+        "border": "#383838",
+        "heading": "#f54b42",
+        "icon": "#f54b42",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "success": {
+        "accent": "#4F8A10",
+        "paragraph": "#4F8A10",
+        "background": "#132204",
+        "border": "#383838",
+        "heading": "#4F8A10",
+        "icon": "#4F8A10",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#008837"
+      }
+    }
+  }
+}
