@@ -1,0 +1,167 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Corretto",
+  "id": "corretto",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Equal parts cozy and technical.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "possdog",
+      "email": "reilly@poss.dog",
+      "url": "https://poss.dog"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#F78A6C",
+        "paragraph": "#FFF3F1",
+        "background": "#221D1B",
+        "border": "#413A37",
+        "heading": "#FFF3F1",
+        "icon": "#958C89",
+        "separator": "#5C5552",
+        "placeholder": "#736A68",
+        "hover": "#413A37AA",
+        "accentForeground": "#191515",
+        "backdrop": "#19151580"
+      },
+      "secondary": {
+        "accent": "#F78A6C",
+        "paragraph": "#958C89",
+        "background": "#2D2624",
+        "border": "#413A37",
+        "heading": "#C4B9B6",
+        "icon": "#958C89",
+        "separator": "#5C5552",
+        "placeholder": "#736A68",
+        "hover": "#413A37",
+        "accentForeground": "#191515",
+        "backdrop": "#19151580"
+      },
+      "disabled": {
+        "accent": "#F78A6C",
+        "paragraph": "#736A68",
+        "background": "#FFF3F1",
+        "border": "#5C5552",
+        "heading": "#191515",
+        "icon": "#958C89",
+        "separator": "#5C5552",
+        "placeholder": "#736A68",
+        "hover": "#FFF3F110",
+        "accentForeground": "#191515",
+        "backdrop": "#19151580"
+      },
+      "selected": {
+        "accent": "#F78A6C",
+        "paragraph": "#C4B9B6",
+        "background": "#221D1B",
+        "border": "#F78A6C",
+        "heading": "#FFF3F1",
+        "icon": "#958C89",
+        "separator": "#5C5552",
+        "placeholder": "#736A68",
+        "hover": "#FFF3F110",
+        "accentForeground": "#191515",
+        "backdrop": "#19151580"
+      },
+      "error": {
+        "accent": "#F6505B",
+        "paragraph": "#F6505B",
+        "background": "#191515",
+        "border": "#5C5552",
+        "heading": "#F6505B",
+        "icon": "#F6505B",
+        "separator": "#5C5552",
+        "placeholder": "#736A68",
+        "hover": "#221D1B",
+        "accentForeground": "#FFF3F1",
+        "backdrop": "#19151580"
+      },
+      "success": {
+        "accent": "#A4DD75",
+        "paragraph": "#A4DD75",
+        "background": "#191515",
+        "border": "#5C5552",
+        "heading": "#A4DD75",
+        "icon": "#A4DD75",
+        "separator": "#5C5552",
+        "placeholder": "#736A68",
+        "hover": "#221D1B",
+        "accentForeground": "#191515",
+        "backdrop": "#19151580"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#C4B9B6",
+        "background": "#2D2624",
+        "border": "#5C5552",
+        "icon": "#C4B9B6"
+      }
+    },
+    "list": {
+      "secondary": {
+        "background": "#191515"
+      },
+      "selected": {
+        "background": "#221D1B"
+      }
+    },
+    "editor": {
+      "primary": {
+        "paragraph": "#FFF3F1",
+        "background": "#2D2624"
+      },
+      "secondary": {
+        "background": "#221D1B"
+      },
+      "selected": {
+        "background": "#413A37",
+        "icon": "#F78A6C"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "paragraph": "#FFF3F1",
+        "background": "#221D1B",
+        "border": "#2D2624"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "accent": "#F78A6C",
+        "background": "#191515"
+      },
+      "secondary": {
+        "background": "#221D1B"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#191515"
+      },
+      "selected": {
+        "background": "#221D1B",
+        "icon": "#F78A6C"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#191515"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#191515"
+      },
+      "selected": {
+        "paragraph": "#F78A6C"
+      }
+    }
+  }
+}
