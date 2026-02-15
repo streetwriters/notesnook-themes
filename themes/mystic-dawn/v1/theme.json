@@ -107,7 +107,8 @@
       "primary": {
         "paragraph": "#3e2723",
         "background": "#f5f1ed",
-        "hover": "#ebe5e0"
+        "hover": "#ebe5e0",
+        "border": "#cac0bc"
       },
       "secondary": {
         "paragraph": "#5d4a40"
