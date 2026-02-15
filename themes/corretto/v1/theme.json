@@ -1,0 +1,181 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Corretto",
+  "id": "corretto",
+  "version": 1.1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Equal parts cozy and technical.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "possdog",
+      "email": "reilly@poss.dog",
+      "url": "https://poss.dog"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#f78a6c",
+        "paragraph": "#fff3f1",
+        "background": "#221d1b",
+        "border": "#413a37",
+        "heading": "#fff3f1",
+        "icon": "#c4b9b6",
+        "separator": "#413A37",
+        "placeholder": "#736a68",
+        "hover": "#413a37AA",
+        "accentForeground": "#191515",
+        "backdrop": "#413A3780"
+      },
+      "secondary": {
+        "accent": "#f78a6c",
+        "paragraph": "#958C89",
+        "background": "#2d2624",
+        "border": "#413A37",
+        "heading": "#958C89",
+        "icon": "#958C89",
+        "separator": "#413A37",
+        "placeholder": "#736a68",
+        "hover": "#2d2624",
+        "accentForeground": "#191515",
+        "backdrop": "#413A3780"
+      },
+      "disabled": {
+        "accent": "#f78a6c",
+        "paragraph": "#5C5552",
+        "background": "#fff3f1",
+        "border": "#413A37",
+        "heading": "#221D1B",
+        "icon": "#958C89",
+        "separator": "#413A37",
+        "placeholder": "#736a68",
+        "hover": "#fff3f110",
+        "accentForeground": "#191515",
+        "backdrop": "#413A3780"
+      },
+      "selected": {
+        "accent": "#f78a6c",
+        "paragraph": "#E1D6D3",
+        "background": "#2d2624",
+        "border": "#f78a6c",
+        "heading": "#e1d6d3",
+        "icon": "#958C89",
+        "separator": "#413A37",
+        "placeholder": "#736a68",
+        "hover": "#fff3f110",
+        "accentForeground": "#191515",
+        "backdrop": "#413A3780"
+      },
+      "error": {
+        "accent": "#f6505b",
+        "paragraph": "#f6505b",
+        "background": "#191515",
+        "border": "#413A37",
+        "heading": "#f6505b",
+        "icon": "#f6505b",
+        "separator": "#413A37",
+        "placeholder": "#736a68",
+        "hover": "#191515",
+        "accentForeground": "#fff3f1",
+        "backdrop": "#413A3780"
+      },
+      "success": {
+        "accent": "#a4dd75",
+        "paragraph": "#a4dd75",
+        "background": "#191515",
+        "border": "#413A37",
+        "heading": "#a4dd75",
+        "icon": "#a4dd75",
+        "separator": "#413A37",
+        "placeholder": "#736a68",
+        "hover": "#191515",
+        "accentForeground": "#191515",
+        "backdrop": "#413A3780"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#e1d6d3",
+        "background": "#413A37",
+        "border": "#413A37",
+        "icon": "#e1d6d3"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#958c89"
+      },
+      "secondary": {
+        "background": "#191515"
+      },
+      "selected": {
+        "paragraph": "#958c89",
+        "background": "#2d2624"
+      }
+    },
+    "editor": {
+      "primary": {
+        "paragraph": "#fff3f1",
+        "background": "#2D2624"
+      },
+      "secondary": {
+        "background": "#221d1b"
+      },
+      "selected": {
+        "background": "#413a37",
+        "icon": "#f78a6c"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "paragraph": "#c4b9b6",
+        "background": "#221d1b",
+        "border": "#2D2624",
+        "heading": "#c4b9b6",
+        "icon": "#c4b9b6"
+      },
+      "secondary": {
+        "background": "#221d1b",
+        "hover": "#413a37"
+      },
+      "selected": {
+        "background": "#191515",
+        "icon": "#f78a6c"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "accent": "#f78a6c",
+        "background": "#191515"
+      },
+      "secondary": {
+        "background": "#221d1b"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#191515"
+      },
+      "selected": {
+        "background": "#2d2624",
+        "icon": "#f78a6c"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#191515"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#191515"
+      },
+      "selected": {
+        "paragraph": "#f78a6c"
+      }
+    }
+  }
+}
