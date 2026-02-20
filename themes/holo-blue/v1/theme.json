@@ -1,0 +1,138 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Holo Blue",
+  "id": "holo-blue",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://xstefen.dev",
+  "description": "The default pitch black theme for Notesnook app modified for some tasty Ice Cream Sandwich accent inspired by Android 4.0 by Google",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Streetwriters",
+      "email": "support@streetwriters.co",
+      "url": "https://streetwriters.co"
+    },
+    {
+      "name": "xstefen",
+      "email": "me@xstefen.dev",
+      "url": "https://xstefen.dev"
+    },
+    {
+      "name": "Google Android",
+      "email": "android@google.com",
+      "url": "https://android.com"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#33b5e5",
+        "paragraph": "#D3D3D3",
+        "background": "#000000",
+        "border": "#161616",
+        "heading": "#e3e3e3",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#141414",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "secondary": {
+        "accent": "#33b5e5",
+        "paragraph": "#818589",
+        "background": "#141414",
+        "border": "#202020",
+        "heading": "#808080",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#141414",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "disabled": {
+        "accent": "#33b5e5",
+        "paragraph": "#505050",
+        "background": "#000000",
+        "border": "#202020",
+        "heading": "#212121",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "selected": {
+        "accent": "#33b5e5",
+        "paragraph": "#33b5e5",
+        "background": "#1b1b1b",
+        "border": "#202020",
+        "heading": "#33b5e5",
+        "icon": "#33b5e5",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#141414",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "error": {
+        "accent": "#dc2626",
+        "paragraph": "#dc2626",
+        "background": "#140504",
+        "border": "#202020",
+        "heading": "#dc2626",
+        "icon": "#dc2626",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      },
+      "success": {
+        "accent": "#178ab4",
+        "paragraph": "#178ab4",
+        "background": "#77ceee",
+        "border": "#202020",
+        "heading": "#178ab4",
+        "icon": "#178ab4",
+        "separator": "#383838",
+        "placeholder": "#404040",
+        "hover": "#ffffff10",
+        "accentForeground": "#ffffff",
+        "backdrop": "#35353580"
+      }
+    },
+    "editor": {
+      "primary": {
+        "border": "#303030"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#141414",
+        "border": "#1f1f1f"
+      },
+      "secondary": {
+        "background": "#1a1a1a",
+        "border": "#202020"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#141414",
+        "border": "#1f1f1f"
+      },
+      "secondary": {
+        "background": "#1a1a1a",
+        "border": "#202020"
+      },
+      "selected": {
+        "paragraph": "#33b5e5"
+      }
+    }
+  }
+}
