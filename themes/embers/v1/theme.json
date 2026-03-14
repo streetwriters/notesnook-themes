@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Embers",
   "id": "embers",
-  "version": 1.7,
+  "version": 1.8,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": " ",
@@ -117,6 +117,10 @@
         "border": "#444444",
         "icon": "#d1d1d1"
       },
+      "secondary": {
+        "accent": "#472525",
+        "accentForeground": "#de4c4a"
+      },
       "selected": {
         "paragraph": "#aa422c",
         "background": "#4725254a"
@@ -126,6 +130,10 @@
       "primary": {
         "border": "#444444",
         "separator": "#444444"
+      },
+      "secondary": {
+        "accent": "#472525",
+        "accentForeground": "#de4c4a"
       },
       "selected": {
         "paragraph": "#de4c4a",

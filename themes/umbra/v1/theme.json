@@ -1,0 +1,158 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Umbra",
+  "id": "umbra",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A deep, high-contrast dark theme inspired by the core of a celestial shadow.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@proton.me",
+      "url": "https://riiku.fun"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#7C7C7C",
+        "paragraph": "#B5B5B5",
+        "background": "#0B0B0B",
+        "border": "#1A1A1A",
+        "heading": "#D4D4D4",
+        "icon": "#7C7C7C",
+        "separator": "#1A1A1A",
+        "placeholder": "#5C5C5C",
+        "hover": "#141414",
+        "accentForeground": "#0B0B0B",
+        "backdrop": "#0B0B0B99"
+      },
+      "secondary": {
+        "accent": "#7C7C7C",
+        "paragraph": "#9E9E9E",
+        "background": "#0F0F0F",
+        "border": "#242424",
+        "heading": "#B5B5B5",
+        "icon": "#8A8A8A",
+        "separator": "#242424",
+        "placeholder": "#5C5C5C",
+        "hover": "#1A1A1A",
+        "accentForeground": "#0B0B0B",
+        "backdrop": "#0B0B0B99"
+      },
+      "disabled": {
+        "accent": "#4A4A4A",
+        "paragraph": "#5C5C5C",
+        "background": "#0F0F0F",
+        "border": "#1A1A1A",
+        "heading": "#5C5C5C",
+        "icon": "#5C5C5C",
+        "separator": "#1A1A1A",
+        "placeholder": "#3E3E3E",
+        "hover": "#0F0F0F",
+        "accentForeground": "#0B0B0B",
+        "backdrop": "#0B0B0B99"
+      },
+      "selected": {
+        "accent": "#9E9E9E",
+        "paragraph": "#D4D4D4",
+        "background": "#1A1A1A",
+        "border": "#7C7C7C",
+        "heading": "#E8E8E8",
+        "icon": "#9E9E9E",
+        "separator": "#2E2E2E",
+        "placeholder": "#5C5C5C",
+        "hover": "#242424",
+        "accentForeground": "#0B0B0B",
+        "backdrop": "#0B0B0B99"
+      },
+      "error": {
+        "accent": "#D17B7B",
+        "paragraph": "#D17B7B",
+        "background": "#1A1212",
+        "border": "#3A2424",
+        "heading": "#D17B7B",
+        "icon": "#D17B7B",
+        "separator": "#2E2E2E",
+        "placeholder": "#5C5C5C",
+        "hover": "#1A1A1A",
+        "accentForeground": "#0B0B0B",
+        "backdrop": "#0B0B0B99"
+      },
+      "success": {
+        "accent": "#7BC17B",
+        "paragraph": "#7BC17B",
+        "background": "#12191A",
+        "border": "#243A3A",
+        "heading": "#7BC17B",
+        "icon": "#7BC17B",
+        "separator": "#2E2E2E",
+        "placeholder": "#5C5C5C",
+        "hover": "#1A1A1A",
+        "accentForeground": "#0B0B0B",
+        "backdrop": "#0B0B0B99"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#B5B5B5",
+        "background": "#0F0F0F",
+        "separator": "#1A1A1A"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#B5B5B5",
+        "background": "#0F0F0F",
+        "hover": "#141414"
+      },
+      "secondary": {
+        "paragraph": "#9E9E9E"
+      },
+      "selected": {
+        "background": "#1A1A1A",
+        "hover": "#242424"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#0B0B0B",
+        "border": "#1A1A1A"
+      },
+      "secondary": {
+        "paragraph": "#8A8A8A",
+        "border": "#1A1A1A"
+      },
+      "selected": {
+        "background": "#1A1A1A"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#0B0B0B",
+        "hover": "#1A1A1A"
+      },
+      "secondary": {
+        "background": "#1A1A1A"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#0F0F0F",
+        "hover": "#141414"
+      },
+      "selected": {
+        "background": "#1A1A1A",
+        "hover": "#242424"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#7C7C7C"
+      }
+    }
+  }
+}
