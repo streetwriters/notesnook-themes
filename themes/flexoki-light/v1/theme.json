@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Flexoki Light",
   "id": "flexoki-light",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "An inky color scheme for prose and code.",
@@ -21,23 +21,23 @@
         "accent": "#66800B",
         "paragraph": "#100F0F",
         "background": "#FFFCF0",
-        "border": "#E6E4E1",
+        "border": "#E6E4D9",
         "heading": "#100F0F",
         "icon": "#878580",
-        "separator": "#CECDC9",
+        "separator": "#CECDC3",
         "placeholder": "#878580",
-        "hover": "#F2F0ED",
+        "hover": "#F2F0E5",
         "accentForeground": "#FFFCF0",
         "backdrop": "#87858080"
       },
       "secondary": {
         "accent": "#66800B",
         "paragraph": "#878580",
-        "background": "#F2F0ED",
-        "border": "#E6E4E1",
+        "background": "#F2F0E5",
+        "border": "#E6E4D9",
         "heading": "#878580",
         "icon": "#878580",
-        "separator": "#CECDC9",
+        "separator": "#CECDC3",
         "placeholder": "#878580",
         "hover": "#10100F10",
         "accentForeground": "#FFFCF0",
@@ -46,11 +46,11 @@
       "disabled": {
         "accent": "#66800B",
         "paragraph": "#878580",
-        "background": "#F2F0ED",
-        "border": "#CECDC9",
+        "background": "#F2F0E5",
+        "border": "#CECDC3",
         "heading": "#878580",
         "icon": "#878580",
-        "separator": "#CECDC9",
+        "separator": "#CECDC3",
         "placeholder": "#878580",
         "hover": "#10100F10",
         "accentForeground": "#FFFCF0",
@@ -59,11 +59,11 @@
       "selected": {
         "accent": "#66800B",
         "paragraph": "#100F0F",
-        "background": "#E6E4E1",
+        "background": "#E6E4D9",
         "border": "#66800B",
         "heading": "#100F0F",
         "icon": "#66800B",
-        "separator": "#CECDC9",
+        "separator": "#CECDC3",
         "placeholder": "#878580",
         "hover": "#10100F10",
         "accentForeground": "#FFFCF0",
@@ -72,11 +72,11 @@
       "error": {
         "accent": "#AF3029",
         "paragraph": "#AF3029",
-        "background": "#F9E3E2",
-        "border": "#CECDC9",
+        "background": "#FFE1D5",
+        "border": "#CECDC3",
         "heading": "#AF3029",
         "icon": "#AF3029",
-        "separator": "#CECDC9",
+        "separator": "#CECDC3",
         "placeholder": "#878580",
         "hover": "#10100F10",
         "accentForeground": "#FFFCF0",
@@ -85,11 +85,11 @@
       "success": {
         "accent": "#66800B",
         "paragraph": "#66800B",
-        "background": "#EEF0E5",
-        "border": "#CECDC9",
+        "background": "#EDEECF",
+        "border": "#CECDC3",
         "heading": "#66800B",
         "icon": "#66800B",
-        "separator": "#CECDC9",
+        "separator": "#CECDC3",
         "placeholder": "#878580",
         "hover": "#10100F10",
         "accentForeground": "#FFFCF0",
@@ -98,12 +98,12 @@
     },
     "list": {
       "selected": {
-        "background": "#F2F0ED"
+        "background": "#F2F0E5"
       }
     },
     "contextMenu": {
       "primary": {
-        "background": "#F2F0ED"
+        "background": "#F2F0E5"
       }
     },
     "sheet": {

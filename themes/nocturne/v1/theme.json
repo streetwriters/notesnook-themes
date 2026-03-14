@@ -1,0 +1,157 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Nocturne",
+  "id": "nocturne",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A soothing dark theme with muted colors for night owls and gentle souls",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@pm.me",
+      "url": "https://riiku.fun"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#7FA99B",
+        "paragraph": "#C5C9D1",
+        "background": "#1A1D23",
+        "border": "#2A2F3A",
+        "heading": "#E8EBF0",
+        "icon": "#7FA99B",
+        "separator": "#2A2F3A",
+        "placeholder": "#6B7280",
+        "hover": "#252932",
+        "accentForeground": "#1A1D23",
+        "backdrop": "#0F111580"
+      },
+      "secondary": {
+        "accent": "#7FA99B",
+        "paragraph": "#9CA3AF",
+        "background": "#21252E",
+        "border": "#2F3441",
+        "heading": "#D1D5DB",
+        "icon": "#9CA3AF",
+        "separator": "#2F3441",
+        "placeholder": "#6B7280",
+        "hover": "#2A2F3A",
+        "accentForeground": "#1A1D23",
+        "backdrop": "#0F111580"
+      },
+      "disabled": {
+        "accent": "#7FA99B",
+        "paragraph": "#5B6370",
+        "background": "#21252E",
+        "border": "#2F3441",
+        "heading": "#6B7280",
+        "icon": "#5B6370",
+        "separator": "#2F3441",
+        "placeholder": "#5B6370",
+        "hover": "#2A2F3A",
+        "accentForeground": "#1A1D23",
+        "backdrop": "#0F111580"
+      },
+      "selected": {
+        "accent": "#88B3A6",
+        "paragraph": "#E8EBF0",
+        "background": "#2F3441",
+        "border": "#7FA99B",
+        "heading": "#E8EBF0",
+        "icon": "#88B3A6",
+        "separator": "#3A3F4C",
+        "placeholder": "#6B7280",
+        "hover": "#353A47",
+        "accentForeground": "#1A1D23",
+        "backdrop": "#0F111580"
+      },
+      "error": {
+        "accent": "#CC7A7A",
+        "paragraph": "#CC7A7A",
+        "background": "#2A2022",
+        "border": "#3D2F30",
+        "heading": "#CC7A7A",
+        "icon": "#CC7A7A",
+        "separator": "#2F3441",
+        "placeholder": "#6B7280",
+        "hover": "#2A2F3A",
+        "accentForeground": "#1A1D23",
+        "backdrop": "#0F111580"
+      },
+      "success": {
+        "accent": "#8EAA8B",
+        "paragraph": "#8EAA8B",
+        "background": "#1F2621",
+        "border": "#2F3D31",
+        "heading": "#8EAA8B",
+        "icon": "#8EAA8B",
+        "separator": "#2F3441",
+        "placeholder": "#6B7280",
+        "hover": "#2A2F3A",
+        "accentForeground": "#1A1D23",
+        "backdrop": "#0F111580"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#C5C9D1",
+        "background": "#1A1D23",
+        "separator": "#2A2F3A"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#C5C9D1",
+        "background": "#21252E",
+        "hover": "#2A2F3A"
+      },
+      "secondary": {
+        "paragraph": "#9CA3AF"
+      },
+      "selected": {
+        "background": "#2F3441",
+        "hover": "#353A47"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#1A1D23",
+        "border": "#2A2F3A"
+      },
+      "secondary": {
+        "paragraph": "#9CA3AF",
+        "border": "#2A2F3A"
+      },
+      "selected": {
+        "background": "#2F4441"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#1A1D23",
+        "hover": "#2A2F3A"
+      },
+      "secondary": {
+        "background": "#2A2F3A"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#1A1D23",
+        "hover": "#252932"
+      },
+      "selected": {
+        "hover": "#2A2F3A"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#7FA99B"
+      }
+    }
+  }
+}
