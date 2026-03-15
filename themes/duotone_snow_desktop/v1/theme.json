@@ -7,7 +7,7 @@
   "homepage": "https://notesnook.com",
   "description": "Only for Desktop apps. DO NOT use for mobile apps. Enjoy 🎉",
   "colorScheme": "light",
-  "compatibilityVersion": 1,
+  "compatibilityVersion": 1.1,
   "authors": [
     {
       "name": "MONARCH",
@@ -120,7 +120,7 @@
         "border": "#e0e0e0"
       },
       "secondary": {
-        "paragraph": "#989ea6",
+        "paragraph": "#6483b2",
         "background": "#ffffff",
         "icon": "#6483b2",
         "hover": "#f5f6fa"
@@ -148,7 +148,9 @@
       },
       "secondary": {
         "accent": "#dfedfb",
+        "paragraph": "#6483b2",
         "background": "#fafbfe",
+        "border": "#EFF2F7",
         "hover": "#ebeef5",
         "accentForeground": "#6483b2"
       },
@@ -201,7 +203,7 @@
         "icon": "#666666"
       },
       "secondary": {
-        "paragraph": "#888888",
+        "paragraph": "#6483b2",
         "background": "#f8fafb",
         "border": "#e6e6e6",
         "icon": "#E9E9EA",
@@ -223,7 +225,7 @@
         "hover": "#455e70"
       },
       "secondary": {
-        "paragraph": "#73828e",
+        "paragraph": "#6483b2",
         "background": "#24435a",
         "border": "#24435a",
         "heading": "#ffffff",
