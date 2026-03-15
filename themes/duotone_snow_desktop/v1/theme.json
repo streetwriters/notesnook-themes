@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Duotone Snow [Desktop]",
   "id": "duotone_snow_desktop",
-  "version": 1,
+  "version": 1.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Only for Desktop apps. DO NOT use for mobile apps. Enjoy 🎉",
   "colorScheme": "light",
-  "compatibilityVersion": 1.1,
+  "compatibilityVersion": 1,
   "authors": [
     {
       "name": "MONARCH",
