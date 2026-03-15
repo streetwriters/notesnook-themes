@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Duotone Snow [Mobile]",
   "id": "duotone_snow_mobile",
-  "version": 1.1,
+  "version": 1.2,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Only for Mobile apps. DO NOT use for Desktop apps. Enjoy 🎉",
@@ -120,7 +120,7 @@
         "border": "#e0e0e0"
       },
       "secondary": {
-        "paragraph": "#6483b2",
+        "paragraph": "#73828e",
         "background": "#ffffff",
         "icon": "#6483b2",
         "hover": "#f5f6fa"
@@ -139,7 +139,7 @@
       },
       "secondary": {
         "accent": "#dfedfb",
-        "paragraph": "#6483b2",
+        "paragraph": "#73828e",
         "background": "#fafbfe",
         "border": "#EFF2F7",
         "hover": "#ebeef5",
@@ -185,7 +185,7 @@
         "icon": "#6483b2"
       },
       "secondary": {
-        "paragraph": "#6483b2",
+        "paragraph": "#73828e",
         "background": "#f8fafb",
         "border": "#e6e6e6",
         "icon": "#E9E9EA",
