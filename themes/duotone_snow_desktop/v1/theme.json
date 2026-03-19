@@ -129,7 +129,7 @@
         "background": "#ffffff"
       },
       "selected": {
-        "paragraph": "#6e7681",
+        "paragraph": "#7d98c1",
         "background": "#f5f6fa",
         "hover": "#f5f6fa"
       },
@@ -169,6 +169,7 @@
         "hover": "#eef2f6"
       },
       "secondary": {
+        "paragraph": "#6483b2",
         "hover": "#ebeef5"
       },
       "selected": {
