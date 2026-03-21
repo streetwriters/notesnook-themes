@@ -1,0 +1,170 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Lovelace Cold",
+  "id": "lovelacecold",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A soft purple color scheme based on the iTerm2 Lovelace theme.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "k49",
+      "email": "eog3@pm.me",
+      "url": "https://github.com/hollymocked"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#8897f4",
+        "paragraph": "#fcfcfc",
+        "background": "#393552",
+        "border": "#87579d",
+        "heading": "#78e5f2",
+        "icon": "#78e5f2",
+        "separator": "#232136",
+        "placeholder": "#fcffcf",
+        "hover": "#151421",
+        "accentForeground": "#fcfcfc",
+        "backdrop": "#0f0f0faa"
+      },
+      "secondary": {
+        "accent": "#8897f4",
+        "paragraph": "#fcffcf",
+        "background": "#232136",
+        "border": "#c574dc",
+        "heading": "#fcffcf",
+        "icon": "#78e5f2",
+        "separator": "#232136",
+        "placeholder": "#fcffcf",
+        "hover": "#151421",
+        "accentForeground": "#fcffcf",
+        "backdrop": "#232136"
+      },
+      "disabled": {
+        "accent": "#8897f4",
+        "paragraph": "#fcfcfc",
+        "background": "#232136",
+        "border": "#87579d",
+        "heading": "#e3e3e3",
+        "icon": "#8897f4",
+        "separator": "#232136",
+        "placeholder": "#fcffcf",
+        "hover": "#232136",
+        "accentForeground": "#fcffcf",
+        "backdrop": "#232136"
+      },
+      "selected": {
+        "accent": "#8897f4",
+        "paragraph": "#fcfcfc",
+        "background": "#232136",
+        "border": "#87579d",
+        "heading": "#e3e3e3",
+        "icon": "#8897f4",
+        "separator": "#232136",
+        "placeholder": "#fcffcf",
+        "hover": "#232136",
+        "accentForeground": "#fcffcf",
+        "backdrop": "#232136"
+      },
+      "error": {
+        "accent": "#f8537a",
+        "paragraph": "#f8537a",
+        "background": "#34161d",
+        "border": "#87579d",
+        "heading": "#f8537a",
+        "icon": "#f8537a",
+        "separator": "#232136",
+        "placeholder": "#fcffcf",
+        "hover": "#151421",
+        "accentForeground": "#fcfcfc",
+        "backdrop": "#232136"
+      },
+      "success": {
+        "accent": "#75b173",
+        "paragraph": "#75b173",
+        "background": "#374b34",
+        "border": "#87579d",
+        "heading": "#75b173",
+        "icon": "#75b173",
+        "separator": "#232136",
+        "placeholder": "#fcffcf",
+        "hover": "#151421",
+        "accentForeground": "#fcfcfc",
+        "backdrop": "#232136"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "background": "#232136",
+        "hover": "#151421"
+      }
+    },
+    "list": {
+      "primary": {
+        "hover": "#151421"
+      },
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#393552"
+      },
+      "selected": {
+        "background": "#232136",
+        "hover": "#151421"
+      }
+    },
+    "editor": {
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#393552"
+      },
+      "selected": {
+        "paragraph": "#fcffcf",
+        "background": "#8897f4"
+      }
+    },
+    "editorToolbar": {
+      "secondary": {
+        "paragraph": "#8897f4"
+      }
+    },
+    "editorSidebar": {
+      "secondary": {
+        "icon": "#2a273e"
+      }
+    },
+    "dialog": {
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#393552",
+        "icon": "#2a273e"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#232136",
+        "hover": "#393552"
+      },
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#232136",
+        "icon": "#78e5f2"
+      },
+      "selected": {
+        "background": "#393552"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#232136"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#8897f4"
+      }
+    }
+  }
+}
