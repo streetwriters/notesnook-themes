@@ -11,7 +11,7 @@
   "authors": [
     {
       "name": "k49",
-      "email": "",
+      "email": "eog3@pm.me",
       "url": "https://github.com/hollymocked"
     }
   ],
@@ -28,7 +28,7 @@
         "placeholder": "#fcffcf",
         "hover": "#151421",
         "accentForeground": "#fcfcfc",
-        "backdrop": "#232136"
+        "backdrop": "#0f0f0faa"
       },
       "secondary": {
         "accent": "#8897f4",
@@ -36,7 +36,7 @@
         "background": "#232136",
         "border": "#c574dc",
         "heading": "#fcffcf",
-        "icon": "#fcffcf",
+        "icon": "#78e5f2",
         "separator": "#232136",
         "placeholder": "#fcffcf",
         "hover": "#151421",
@@ -106,15 +106,51 @@
       "primary": {
         "hover": "#151421"
       },
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#393552"
+      },
       "selected": {
         "background": "#232136",
         "hover": "#151421"
+      }
+    },
+    "editor": {
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#393552"
+      },
+      "selected": {
+        "paragraph": "#fcffcf",
+        "background": "#8897f4"
+      }
+    },
+    "editorToolbar": {
+      "secondary": {
+        "paragraph": "#8897f4"
+      }
+    },
+    "editorSidebar": {
+      "secondary": {
+        "icon": "#2a273e"
+      }
+    },
+    "dialog": {
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#393552",
+        "icon": "#2a273e"
       }
     },
     "navigationMenu": {
       "primary": {
         "background": "#232136",
         "hover": "#393552"
+      },
+      "secondary": {
+        "paragraph": "#8897f4",
+        "border": "#232136",
+        "icon": "#78e5f2"
       },
       "selected": {
         "background": "#393552"
