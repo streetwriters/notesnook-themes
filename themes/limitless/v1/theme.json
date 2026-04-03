@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Limitless",
   "id": "limitless",
-  "version": 1.8,
+  "version": 1.9,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Dark theme without any separators. Made for PC/Web App",
@@ -42,7 +42,7 @@
         "backdrop": "#35353580"
       },
       "disabled": {
-        "accent": "#008837",
+        "accent": "#D3D3D3",
         "paragraph": "#505050",
         "background": "#000000",
         "border": "#202020",

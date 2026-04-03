@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Hot Rod Dark",
   "id": "hot-rod-dark",
-  "version": 1,
+  "version": 1.01,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "An orange dark theme inspired by Bumble dark.",
@@ -94,11 +94,6 @@
         "hover": "#ffffff10",
         "accentForeground": "#ffffff",
         "backdrop": "#35353580"
-      }
-    },
-    "sheet": {
-      "selected": {
-        "paragraph": "#008837"
       }
     }
   }
