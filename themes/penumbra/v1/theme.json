@@ -1,0 +1,158 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Penumbra",
+  "id": "penumbra",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A soft, airy light theme inspired by the gentle diffusion of starlight.",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@proton.me",
+      "url": "https://riiku.fun"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#8A8A8A",
+        "paragraph": "#4A4A4A",
+        "background": "#FAFAFA",
+        "border": "#E8E8E8",
+        "heading": "#2E2E2E",
+        "icon": "#8A8A8A",
+        "separator": "#E8E8E8",
+        "placeholder": "#ADADAD",
+        "hover": "#F0F0F0",
+        "accentForeground": "#FAFAFA",
+        "backdrop": "#FAFAFA99"
+      },
+      "secondary": {
+        "accent": "#8A8A8A",
+        "paragraph": "#5C5C5C",
+        "background": "#F0F0F0",
+        "border": "#D9D9D9",
+        "heading": "#4A4A4A",
+        "icon": "#7C7C7C",
+        "separator": "#D9D9D9",
+        "placeholder": "#ADADAD",
+        "hover": "#E8E8E8",
+        "accentForeground": "#FAFAFA",
+        "backdrop": "#FAFAFA99"
+      },
+      "disabled": {
+        "accent": "#C4C4C4",
+        "paragraph": "#ADADAD",
+        "background": "#F0F0F0",
+        "border": "#E8E8E8",
+        "heading": "#ADADAD",
+        "icon": "#ADADAD",
+        "separator": "#E8E8E8",
+        "placeholder": "#C9C9C9",
+        "hover": "#F0F0F0",
+        "accentForeground": "#FAFAFA",
+        "backdrop": "#FAFAFA99"
+      },
+      "selected": {
+        "accent": "#5C5C5C",
+        "paragraph": "#2E2E2E",
+        "background": "#E8E8E8",
+        "border": "#8A8A8A",
+        "heading": "#1A1A1A",
+        "icon": "#5C5C5C",
+        "separator": "#D4D4D4",
+        "placeholder": "#ADADAD",
+        "hover": "#D9D9D9",
+        "accentForeground": "#FAFAFA",
+        "backdrop": "#FAFAFA99"
+      },
+      "error": {
+        "accent": "#C74D4D",
+        "paragraph": "#C74D4D",
+        "background": "#FDF5F5",
+        "border": "#F0D4D4",
+        "heading": "#B03838",
+        "icon": "#C74D4D",
+        "separator": "#D4D4D4",
+        "placeholder": "#ADADAD",
+        "hover": "#E8E8E8",
+        "accentForeground": "#FAFAFA",
+        "backdrop": "#FAFAFA99"
+      },
+      "success": {
+        "accent": "#4DAF4D",
+        "paragraph": "#4DAF4D",
+        "background": "#F5FDF5",
+        "border": "#D4F0D4",
+        "heading": "#389638",
+        "icon": "#4DAF4D",
+        "separator": "#D4D4D4",
+        "placeholder": "#ADADAD",
+        "hover": "#E8E8E8",
+        "accentForeground": "#FAFAFA",
+        "backdrop": "#FAFAFA99"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#4A4A4A",
+        "background": "#F0F0F0",
+        "separator": "#E8E8E8"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#4A4A4A",
+        "background": "#F0F0F0",
+        "hover": "#EBEBEB"
+      },
+      "secondary": {
+        "paragraph": "#5C5C5C"
+      },
+      "selected": {
+        "background": "#E8E8E8",
+        "hover": "#D9D9D9"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#FAFAFA",
+        "border": "#E8E8E8"
+      },
+      "secondary": {
+        "paragraph": "#7C7C7C",
+        "border": "#E8E8E8"
+      },
+      "selected": {
+        "background": "#E8E8E8"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#FAFAFA",
+        "hover": "#E8E8E8"
+      },
+      "secondary": {
+        "background": "#E8E8E8"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#F0F0F0",
+        "hover": "#EBEBEB"
+      },
+      "selected": {
+        "background": "#E8E8E8",
+        "hover": "#D9D9D9"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#8A8A8A"
+      }
+    }
+  }
+}
