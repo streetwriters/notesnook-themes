@@ -10,14 +10,14 @@
   "compatibilityVersion": 1,
   "authors": [
     {
-      "name": "riiku",
-      "email": "ricardo.ars@pm.me",
-      "url": "https://tech.lgbt/@riiku"
-    },
-    {
       "name": "possdog",
       "email": "reilly@poss.dog",
       "url": "https://poss.dog"
+    },
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@pm.me",
+      "url": "https://tech.lgbt/@riiku"
     }
   ],
   "scopes": {
