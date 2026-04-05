@@ -1,35 +1,47 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
-  "name": "Limitless",
-  "id": "limitless",
-  "version": 1.9,
+  "name": "Holo Blue",
+  "id": "holo-blue",
+  "version": 1,
   "license": "GPL-3.0-or-later",
-  "homepage": "https://notesnook.com",
-  "description": "Dark theme without any separators. Made for PC/Web App",
+  "homepage": "https://xstefen.dev",
+  "description": "The default pitch black theme for Notesnook app modified for some tasty Ice Cream Sandwich accent inspired by Android 4.0 by Google",
   "colorScheme": "dark",
   "compatibilityVersion": 1,
   "authors": [
     {
-      "name": "MONARCH"
+      "name": "Streetwriters",
+      "email": "support@streetwriters.co",
+      "url": "https://streetwriters.co"
+    },
+    {
+      "name": "xstefen",
+      "email": "me@xstefen.dev",
+      "url": "https://xstefen.dev"
+    },
+    {
+      "name": "Google Android",
+      "email": "android@google.com",
+      "url": "https://android.com"
     }
   ],
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#D3D3D3",
+        "accent": "#33b5e5",
         "paragraph": "#D3D3D3",
         "background": "#000000",
         "border": "#161616",
-        "heading": "#D3D3D3",
-        "icon": "#D3D3D3",
-        "separator": "#000000",
-        "placeholder": "#757575",
+        "heading": "#e3e3e3",
+        "icon": "#808080",
+        "separator": "#383838",
+        "placeholder": "#404040",
         "hover": "#141414",
-        "accentForeground": "#000000",
+        "accentForeground": "#ffffff",
         "backdrop": "#35353580"
       },
       "secondary": {
-        "accent": "#757575",
+        "accent": "#33b5e5",
         "paragraph": "#818589",
         "background": "#141414",
         "border": "#202020",
@@ -38,11 +50,11 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#141414",
-        "accentForeground": "#000000",
+        "accentForeground": "#ffffff",
         "backdrop": "#35353580"
       },
       "disabled": {
-        "accent": "#D3D3D3",
+        "accent": "#33b5e5",
         "paragraph": "#505050",
         "background": "#000000",
         "border": "#202020",
@@ -51,20 +63,20 @@
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
-        "accentForeground": "#000000",
+        "accentForeground": "#ffffff",
         "backdrop": "#35353580"
       },
       "selected": {
-        "accent": "#D3D3D3",
-        "paragraph": "#b1b1b1",
+        "accent": "#33b5e5",
+        "paragraph": "#33b5e5",
         "background": "#1b1b1b",
         "border": "#202020",
-        "heading": "#D3D3D3",
-        "icon": "#D3D3D3",
+        "heading": "#33b5e5",
+        "icon": "#33b5e5",
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#141414",
-        "accentForeground": "#000000",
+        "accentForeground": "#ffffff",
         "backdrop": "#35353580"
       },
       "error": {
@@ -81,12 +93,12 @@
         "backdrop": "#35353580"
       },
       "success": {
-        "accent": "#4F8A10",
-        "paragraph": "#4F8A10",
-        "background": "#00FF00",
+        "accent": "#178ab4",
+        "paragraph": "#178ab4",
+        "background": "#77ceee",
         "border": "#202020",
-        "heading": "#4F8A10",
-        "icon": "#4F8A10",
+        "heading": "#178ab4",
+        "icon": "#178ab4",
         "separator": "#383838",
         "placeholder": "#404040",
         "hover": "#ffffff10",
@@ -94,47 +106,9 @@
         "backdrop": "#35353580"
       }
     },
-    "statusBar": {
-      "primary": {
-        "paragraph": "#b1b1b1",
-        "icon": "#b1b1b1"
-      }
-    },
-    "list": {
-      "primary": {
-        "paragraph": "#b1b1b1",
-        "icon": "#D3D3D3"
-      }
-    },
     "editor": {
       "primary": {
         "border": "#303030"
-      },
-      "selected": {
-        "background": "#3b3b3b"
-      }
-    },
-    "editorSidebar": {
-      "primary": {
-        "accent": "#5b5b5b"
-      }
-    },
-    "dialog": {
-      "primary": {
-        "paragraph": "#b1b1b1"
-      },
-      "selected": {
-        "background": "#5b5b5b"
-      }
-    },
-    "navigationMenu": {
-      "primary": {
-        "paragraph": "#b1b1b1",
-        "icon": "#b1b1b1"
-      },
-      "selected": {
-        "paragraph": "#D3D3D3",
-        "icon": "#D3D3D3"
       }
     },
     "contextMenu": {
@@ -157,7 +131,7 @@
         "border": "#202020"
       },
       "selected": {
-        "background": "#5b5b5b"
+        "paragraph": "#33b5e5"
       }
     }
   }
