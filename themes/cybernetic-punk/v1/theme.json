@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Cybernetic Punk",
   "id": "cybernetic-punk",
-  "version": 1,
+  "version": 2.1,
   "license": "MIT",
   "homepage": "https://github.com/dompolizzi",
   "description": "Cybernetic Punk is a vibrant, high-contrast color scheme inspired by the Radical VSCode theme.",
@@ -10,9 +10,9 @@
   "compatibilityVersion": 1,
   "authors": [
     {
-        "name": "Dom Polizzi",
-        "email": "polizzi,dominic@gmail.com",
-        "url": "https://github.com/dompolizzi"
+      "name": "Dom Polizzi",
+      "email": "polizzi.dominic@gmail.com",
+      "url": "https://github.com/dompolizzi"
     }
   ],
   "scopes": {
@@ -119,6 +119,16 @@
       },
       "selected": {
         "icon": "#FE428E"
+      }
+    },
+    "list": {
+      "selected": {
+        "background": "#372d46"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#372d46"
       }
     },
     "sheet": {
