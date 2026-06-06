@@ -1,0 +1,216 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Bureau Light",
+  "id": "bureau-light",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "The case file in daylight.",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "ricardo.ars@pm.me",
+      "url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#e23b2c",
+        "paragraph": "#1e1a14",
+        "background": "#e7e0cd",
+        "border": "#cabfa6",
+        "heading": "#0d0a06",
+        "icon": "#5c5444",
+        "separator": "#b8ad93",
+        "placeholder": "#6a6252",
+        "hover": "#e23b2c20",
+        "accentForeground": "#ffffff",
+        "backdrop": "#1e1a1499"
+      },
+      "secondary": {
+        "accent": "#e23b2c",
+        "paragraph": "#5c5444",
+        "background": "#e7e0cf",
+        "border": "#b3a787",
+        "heading": "#6a6252",
+        "icon": "#6a6252",
+        "separator": "#b8ad93",
+        "placeholder": "#8a8069",
+        "hover": "#e23b2c20",
+        "accentForeground": "#ffffff",
+        "backdrop": "#1e1a1499"
+      },
+      "disabled": {
+        "accent": "#e23b2c",
+        "paragraph": "#8a8069",
+        "background": "#e7e0cf",
+        "border": "#cabfa6",
+        "heading": "#8a8069",
+        "icon": "#8a8069",
+        "separator": "#cabfa6",
+        "placeholder": "#b8ad93",
+        "hover": "#e8e1d040",
+        "accentForeground": "#ffffff",
+        "backdrop": "#1e1a1499"
+      },
+      "selected": {
+        "accent": "#e23b2c",
+        "paragraph": "#1e1a14",
+        "background": "#f4efe4",
+        "border": "#e23b2c",
+        "heading": "#0d0a06",
+        "icon": "#e23b2c",
+        "separator": "#b8ad93",
+        "placeholder": "#6a6252",
+        "hover": "#e23b2c20",
+        "accentForeground": "#ffffff",
+        "backdrop": "#1e1a1499"
+      },
+      "error": {
+        "accent": "#dc2626",
+        "paragraph": "#b91c1c",
+        "background": "#fce8e8",
+        "border": "#cabfa6",
+        "heading": "#b91c1c",
+        "icon": "#b91c1c",
+        "separator": "#cabfa6",
+        "placeholder": "#b8ad93",
+        "hover": "#fad0d080",
+        "accentForeground": "#ffffff",
+        "backdrop": "#1e1a1499"
+      },
+      "success": {
+        "accent": "#2f6058",
+        "paragraph": "#2f6058",
+        "background": "#edf5f3",
+        "border": "#cabfa6",
+        "heading": "#2f6058",
+        "icon": "#2f6058",
+        "separator": "#cabfa6",
+        "placeholder": "#b8ad93",
+        "hover": "#d5eae880",
+        "accentForeground": "#ffffff",
+        "backdrop": "#1e1a1499"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#5c5444",
+        "background": "#ddd4bf",
+        "border": "#cabfa6",
+        "icon": "#6a6252"
+      }
+    },
+    "list": {
+      "primary": {
+        "background": "#e7e0cd"
+      },
+      "secondary": {
+        "background": "#e4dcc9"
+      },
+      "selected": {
+        "background": "#f4efe4",
+        "border": "#e23b2c"
+      }
+    },
+    "editor": {
+      "primary": {
+        "paragraph": "#1e1a14",
+        "background": "#e7e0cd",
+        "border": "#cabfa6"
+      },
+      "secondary": {
+        "background": "#dcd4c1"
+      },
+      "selected": {
+        "background": "#b93426",
+        "icon": "#e23b2c"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "paragraph": "#1e1a14",
+        "background": "#e6dfce",
+        "border": "#cabfa6",
+        "icon": "#5c5444"
+      },
+      "secondary": {
+        "background": "#ddd4bf",
+        "hover": "#e23b2c20"
+      },
+      "selected": {
+        "accent": "#e23b2c",
+        "icon": "#e23b2c"
+      }
+    },
+    "editorSidebar": {
+      "primary": {
+        "paragraph": "#1e1a14",
+        "background": "#e7e0cf",
+        "border": "#cabfa6",
+        "icon": "#5c5444"
+      },
+      "secondary": {
+        "paragraph": "#5c5444",
+        "background": "#e4dcc9"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "accent": "#e23b2c",
+        "paragraph": "#1e1a14",
+        "background": "#e4dcc9",
+        "border": "#cabfa6",
+        "heading": "#0d0a06"
+      },
+      "secondary": {
+        "paragraph": "#5c5444",
+        "background": "#e7e0cf"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#1e1a14",
+        "background": "#e4dcc9",
+        "border": "#cabfa6",
+        "icon": "#5c5444"
+      },
+      "secondary": {
+        "paragraph": "#6a6252",
+        "background": "#e4dcc9"
+      },
+      "selected": {
+        "paragraph": "#1e1a14",
+        "background": "#f4efe4",
+        "border": "#e23b2c",
+        "icon": "#e23b2c"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "paragraph": "#1e1a14",
+        "background": "#e4dcc9",
+        "border": "#cabfa6",
+        "icon": "#5c5444"
+      },
+      "selected": {
+        "accent": "#e23b2c",
+        "background": "#f4efe4"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "paragraph": "#1e1a14",
+        "background": "#e4dcc9",
+        "border": "#cabfa6"
+      },
+      "selected": {
+        "accent": "#e23b2c",
+        "paragraph": "#e23b2c"
+      }
+    }
+  }
+}
