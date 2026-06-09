@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Caramel Macchiato",
   "id": "caramel-macchiato",
-  "version": 1.1,
+  "version": 1.2,
   "license": "MIT",
   "homepage": "https://notesnook.com",
   "description": "Deep, smooth, and coffee-ready for late-night note sessions. Sleep is optional, style isn't.",
@@ -11,8 +11,8 @@
   "authors": [
     {
       "name": "riiku",
-      "email": "ricardo.ars@pm.me",
-			"url": "https://tech.lgbt/@riiku"
+      "email": "pixelated@posteo.org",
+      "url": "https://tech.lgbt/@riiku"
     }
   ],
   "scopes": {
