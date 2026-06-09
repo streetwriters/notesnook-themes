@@ -59,7 +59,7 @@
       "selected": {
         "accent": "#e23b2c",
         "paragraph": "#1e1a14",
-        "background": "#f4efe4",
+        "background": "#ddd5c0",
         "border": "#e23b2c",
         "heading": "#0d0a06",
         "icon": "#e23b2c",
@@ -112,7 +112,7 @@
         "background": "#e4dcc9"
       },
       "selected": {
-        "background": "#f4efe4",
+        "background": "#ddd5c0",
         "border": "#e23b2c"
       }
     },
@@ -126,7 +126,7 @@
         "background": "#dcd4c1"
       },
       "selected": {
-        "background": "#b93426",
+        "background": "#d4a090",
         "icon": "#e23b2c"
       }
     },
@@ -184,7 +184,7 @@
       },
       "selected": {
         "paragraph": "#1e1a14",
-        "background": "#f4efe4",
+        "background": "#ddd5c0",
         "border": "#e23b2c",
         "icon": "#e23b2c"
       }
@@ -198,7 +198,7 @@
       },
       "selected": {
         "accent": "#e23b2c",
-        "background": "#f4efe4"
+        "background": "#ddd5c0"
       }
     },
     "sheet": {
