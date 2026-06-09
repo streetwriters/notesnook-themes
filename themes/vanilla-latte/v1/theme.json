@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Vanilla Latte",
   "id": "vanilla-latte",
-  "version": 1.0,
+  "version": 1.1,
   "license": "MIT",
   "homepage": "https://notesnook.com",
   "description": "Light, warm, and easy on the eyes. Your notes deserve a coffee break too.'",
@@ -11,8 +11,8 @@
   "authors": [
     {
       "name": "riiku",
-      "email": "ricardo.ars@pm.me",
-			"url": "https://tech.lgbt/@riiku"
+      "email": "pixelated@posteo.org",
+      "url": "https://tech.lgbt/@riiku"
     }
   ],
   "scopes": {

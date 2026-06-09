@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Flexoki Dark Blue",
   "id": "flexoki-dark-blue",
-  "version": 1.0,
+  "version": 1.1,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "An inky color scheme for prose and code.",
@@ -16,7 +16,7 @@
     },
     {
       "name": "riiku",
-      "email": "ricardo.ars@pm.me",
+      "email": "pixelated@posteo.org",
       "url": "https://tech.lgbt/@riiku"
     }
   ],
