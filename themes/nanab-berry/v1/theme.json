@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Nanab Berry",
   "id": "nanab-berry",
-  "version": 1.3,
+  "version": 1.4,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
-  "description": "A refined pastel theme inspired by the Nanab Berry.",
+  "description": "A refined pastel theme inspired by the Nanab Berry",
   "colorScheme": "light",
   "compatibilityVersion": 1,
   "authors": [
@@ -26,7 +26,7 @@
         "icon": "#8E6DA3",
         "separator": "#EBD0E0",
         "placeholder": "#9CA3AF",
-        "hover": "#FFF0F5",
+        "hover": "#FFE9F2",
         "accentForeground": "#ffffff",
         "backdrop": "#E1AFD166"
       },
@@ -37,35 +37,35 @@
         "border": "#EBD0E0",
         "heading": "#3a3a3a",
         "icon": "#9B7BB0",
-        "separator": "#f0d4e6",
+        "separator": "#EBD0E0",
         "placeholder": "#b0b0b0",
-        "hover": "#FFE4EF",
+        "hover": "#FFD9E8",
         "accentForeground": "#ffffff",
         "backdrop": "#E1AFD166"
       },
       "disabled": {
-        "accent": "#c9c9c9",
-        "paragraph": "#a0a0a0",
-        "background": "#f5f5f5",
-        "border": "#e0e0e0",
-        "heading": "#b0b0b0",
-        "icon": "#c0c0c0",
-        "separator": "#e5e5e5",
-        "placeholder": "#c0c0c0",
-        "hover": "#f0f0f0",
+        "accent": "#D4B4C4",
+        "paragraph": "#C4A4B4",
+        "background": "#FFF5F9",
+        "border": "#EECCE0",
+        "heading": "#C4A4B4",
+        "icon": "#C4A4B4",
+        "separator": "#EECCE0",
+        "placeholder": "#C4A4B4",
+        "hover": "#FFF5F9",
         "accentForeground": "#ffffff",
-        "backdrop": "#00000033"
+        "backdrop": "#E1AFD166"
       },
       "selected": {
-        "accent": "#E1AFD1",
+        "accent": "#C48CB3",
         "paragraph": "#2d2d2d",
-        "background": "#FFE9F0",
+        "background": "#FFD9E8",
         "border": "#C48CB3",
         "heading": "#2d2d2d",
         "icon": "#C48CB3",
-        "separator": "#f0d4e6",
+        "separator": "#EBD0E0",
         "placeholder": "#a8a8a8",
-        "hover": "#ffd9e6",
+        "hover": "#F5C4D8",
         "accentForeground": "#ffffff",
         "backdrop": "#E1AFD166"
       },
@@ -83,62 +83,65 @@
         "backdrop": "#E5737366"
       },
       "success": {
-        "accent": "#388E3C",
-        "paragraph": "#2E7D32",
-        "background": "#F1F8E9",
-        "border": "#A5D6A7",
-        "heading": "#388E3C",
-        "icon": "#388E3C",
-        "separator": "#c8e6c9",
-        "placeholder": "#81c784",
-        "hover": "#C8E6C9",
+        "accent": "#5B9E70",
+        "paragraph": "#4A8A5E",
+        "background": "#F0F9F2",
+        "border": "#A8D4B4",
+        "heading": "#5B9E70",
+        "icon": "#5B9E70",
+        "separator": "#C4E4CC",
+        "placeholder": "#8EBE9E",
+        "hover": "#E0F2E8",
         "accentForeground": "#ffffff",
-        "backdrop": "#81C78466"
+        "backdrop": "#8EBE9E66"
       }
     },
     "statusBar": {
       "primary": {
         "paragraph": "#5D4E60",
-        "background": "#FFE4EF",
+        "background": "#FFE9F2",
         "separator": "#E6C6DA"
       }
     },
     "list": {
       "primary": {
         "paragraph": "#2E2E2E",
-        "background": "#FFF5F9",
-        "hover": "#FFF0F5"
+        "background": "#FFEAF2",
+        "hover": "#FFD9E8"
       },
       "secondary": {
         "paragraph": "#6A5A6A"
       },
+      "disabled": {
+        "hover": "#FFEAF2"
+      },
       "selected": {
-        "background": "#FFE4EF"
+        "background": "#F5C4D8",
+        "hover": "#EDB8CC"
       }
     },
     "editor": {
       "primary": {
-        "background": "#FFF2F6"
+        "background": "#FFF8FB"
       },
       "secondary": {
         "paragraph": "#7D6D80",
-        "background": "#FFF0F4",
-        "border": "#f0d4e6"
+        "background": "#ffeaf2",
+        "border": "#EBD0E0"
       }
     },
     "editorToolbar": {
       "primary": {
-        "background": "#FFF0F4",
-        "hover": "#FFE4EF"
+        "background": "#FFF5F9",
+        "hover": "#FFE9F2"
       },
       "secondary": {
-        "background": "#FFE4EF"
+        "background": "#E1AFD133"
       }
     },
     "navigationMenu": {
       "primary": {
-        "background": "#FFF0F4",
-        "hover": "#FFE4EF"
+        "background": "#FFF0F5"
       }
     },
     "contextMenu": {
@@ -148,7 +151,7 @@
     },
     "sheet": {
       "selected": {
-        "paragraph": "#388E3C"
+        "paragraph": "#C48CB3"
       }
     }
   }
