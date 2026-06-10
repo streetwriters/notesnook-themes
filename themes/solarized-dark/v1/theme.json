@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Solarized Dark",
   "id": "solarized-dark",
-  "version": 1.5,
+  "version": 1.6,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Solarized Dark theme",
@@ -37,7 +37,7 @@
         "border": "#094556",
         "heading": "#93a1a1",
         "icon": "#839496",
-        "separator": "#586e75",
+        "separator": "#094556",
         "placeholder": "#586e75",
         "hover": "#094556",
         "accentForeground": "#fdf6e3",
@@ -50,7 +50,7 @@
         "border": "#094556",
         "heading": "#657b83",
         "icon": "#657b83",
-        "separator": "#586e75",
+        "separator": "#094556",
         "placeholder": "#586e75",
         "hover": "#094556",
         "accentForeground": "#fdf6e3",
@@ -124,10 +124,12 @@
       },
       "secondary": {
         "paragraph": "#657b83",
-        "border": "#073642"
+        "background": "#073642",
+        "border": "#094556"
       },
       "selected": {
-        "background": "#094556"
+        "background": "#094556",
+        "hover": "#0b5468"
       }
     },
     "editorToolbar": {

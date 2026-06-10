@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Gruvbox Dark",
   "id": "gruvbox-dark",
-  "version": 1.4,
+  "version": 1.5,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Gruvbox Dark theme",
@@ -26,7 +26,7 @@
         "icon": "#fe8019",
         "separator": "#3c3836",
         "placeholder": "#665c54",
-        "hover": "#3c3836",
+        "hover": "#32302f",
         "accentForeground": "#282828",
         "backdrop": "#28282899"
       },
@@ -46,20 +46,20 @@
       "disabled": {
         "accent": "#928374",
         "paragraph": "#665c54",
-        "background": "#32302f",
+        "background": "#282828",
         "border": "#3c3836",
         "heading": "#928374",
         "icon": "#928374",
         "separator": "#3c3836",
         "placeholder": "#504945",
-        "hover": "#32302f",
+        "hover": "#282828",
         "accentForeground": "#282828",
         "backdrop": "#28282899"
       },
       "selected": {
         "accent": "#fe8019",
         "paragraph": "#fbf1c7",
-        "background": "#504945",
+        "background": "#3c3836",
         "border": "#fe8019",
         "heading": "#fbf1c7",
         "icon": "#fe8019",
@@ -112,8 +112,12 @@
       "secondary": {
         "paragraph": "#d5c4a1"
       },
+      "disabled": {
+        "hover": "#282828"
+      },
       "selected": {
-        "background": "#32302f"
+        "background": "#3c3836",
+        "hover": "#504945"
       }
     },
     "editor": {
@@ -124,7 +128,7 @@
       "secondary": {
         "paragraph": "#a89984",
         "background": "#282828",
-        "border": "#282828"
+        "border": "#3c3836"
       }
     },
     "editorToolbar": {
