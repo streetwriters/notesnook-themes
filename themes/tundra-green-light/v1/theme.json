@@ -1,0 +1,152 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Tundra Green Light",
+  "id": "tundra-green-light",
+  "version": 1.1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "Crisp winter mornings on the taiga forest",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "pixelated@posteo.org",
+      "url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#6b8e73",
+        "paragraph": "#4d5c53",
+        "background": "#e6ece6",
+        "border": "#cbd6cc",
+        "heading": "#4d5c53",
+        "icon": "#6b8e73",
+        "separator": "#cbd6cc",
+        "placeholder": "#899c8f",
+        "hover": "#d8e2d9",
+        "accentForeground": "#e6ece6",
+        "backdrop": "#e6ece6cc"
+      },
+      "secondary": {
+        "accent": "#6b8e73",
+        "paragraph": "#4d5c53",
+        "background": "#d8e2d9",
+        "border": "#cbd6cc",
+        "heading": "#4d5c53",
+        "icon": "#4d5c53",
+        "separator": "#cbd6cc",
+        "placeholder": "#899c8f",
+        "hover": "#cbd6cc",
+        "accentForeground": "#e6ece6",
+        "backdrop": "#e6ece6cc"
+      },
+      "disabled": {
+        "accent": "#899c8f",
+        "paragraph": "#899c8f",
+        "background": "#e6ece6",
+        "border": "#cbd6cc",
+        "heading": "#899c8f",
+        "icon": "#899c8f",
+        "separator": "#cbd6cc",
+        "placeholder": "#899c8f",
+        "hover": "#d8e2d9",
+        "accentForeground": "#e6ece6",
+        "backdrop": "#e6ece6cc"
+      },
+      "selected": {
+        "accent": "#6b8e73",
+        "paragraph": "#4d5c53",
+        "background": "#cbd6cc",
+        "border": "#6b8e73",
+        "heading": "#4d5c53",
+        "icon": "#6b8e73",
+        "separator": "#cbd6cc",
+        "placeholder": "#899c8f",
+        "hover": "#bdcabc",
+        "accentForeground": "#e6ece6",
+        "backdrop": "#e6ece6cc"
+      },
+      "error": {
+        "accent": "#bf6f71",
+        "paragraph": "#bf6f71",
+        "background": "#d8e2d9",
+        "border": "#cbd6cc",
+        "heading": "#bf6f71",
+        "icon": "#bf6f71",
+        "separator": "#cbd6cc",
+        "placeholder": "#bf6f71",
+        "hover": "#cbd6cc",
+        "accentForeground": "#e6ece6",
+        "backdrop": "#e6ece6cc"
+      },
+      "success": {
+        "accent": "#6b8e73",
+        "paragraph": "#6b8e73",
+        "background": "#d8e2d9",
+        "border": "#cbd6cc",
+        "heading": "#6b8e73",
+        "icon": "#6b8e73",
+        "separator": "#cbd6cc",
+        "placeholder": "#899c8f",
+        "hover": "#cbd6cc",
+        "accentForeground": "#e6ece6",
+        "backdrop": "#e6ece6cc"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#899c8f",
+        "background": "#e6ece6",
+        "separator": "#cbd6cc"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#4d5c53",
+        "background": "#e0e7e1",
+        "hover": "#d8e2d9"
+      },
+      "secondary": {
+        "paragraph": "#899c8f",
+        "background": "#e0e7e1"
+      },
+      "selected": {
+        "background": "#cbd6cc"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#e6ece6",
+        "border": "#cbd6cc"
+      },
+      "secondary": {
+        "paragraph": "#899c8f",
+        "border": "#d8e2d9"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "accent": "#4d5c53",
+        "background": "#e6ece6",
+        "hover": "#d8e2d9"
+      },
+      "secondary": {
+        "background": "#d8e2d9"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#4d5c53",
+        "background": "#e6ece6"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#6b8e73"
+      }
+    }
+  }
+}
