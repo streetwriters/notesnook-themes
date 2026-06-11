@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Solarized Light",
   "id": "solarized-light",
-  "version": 1.5,
+  "version": 1.6,
   "license": "GPL-3.0-or-later",
   "homepage": "https://notesnook.com",
   "description": "Solarized Light theme",
@@ -18,12 +18,12 @@
   "scopes": {
     "base": {
       "primary": {
-        "accent": "#2aa198",
+        "accent": "#268bd2",
         "paragraph": "#657b83",
         "background": "#fdf6e3",
         "border": "#eee8d5",
         "heading": "#586e75",
-        "icon": "#2aa198",
+        "icon": "#268bd2",
         "separator": "#eee8d5",
         "placeholder": "#93a1a1",
         "hover": "#eee8d5",
@@ -31,7 +31,7 @@
         "backdrop": "#fdf6e399"
       },
       "secondary": {
-        "accent": "#2aa198",
+        "accent": "#268bd2",
         "paragraph": "#657b83",
         "background": "#eee8d5",
         "border": "#e4dcc9",
@@ -44,7 +44,7 @@
         "backdrop": "#fdf6e399"
       },
       "disabled": {
-        "accent": "#2aa198",
+        "accent": "#268bd2",
         "paragraph": "#93a1a1",
         "background": "#eee8d5",
         "border": "#e4dcc9",
@@ -57,12 +57,12 @@
         "backdrop": "#fdf6e399"
       },
       "selected": {
-        "accent": "#268bd2",
+        "accent": "#2aa198",
         "paragraph": "#586e75",
         "background": "#e4dcc9",
-        "border": "#268bd2",
+        "border": "#2aa198",
         "heading": "#586e75",
-        "icon": "#268bd2",
+        "icon": "#2aa198",
         "separator": "#e4dcc9",
         "placeholder": "#93a1a1",
         "hover": "#dcd3bc",
@@ -124,10 +124,12 @@
       },
       "secondary": {
         "paragraph": "#93a1a1",
-        "border": "#eee8d5"
+        "background": "#eee8d5",
+        "border": "#e4dcc9"
       },
       "selected": {
-        "background": "#d1e5e4"
+        "background": "#dcd3bc",
+        "hover": "#d8cdb1"
       }
     },
     "editorToolbar": {
