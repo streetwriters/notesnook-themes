@@ -1,0 +1,152 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Gruvbox Material Light",
+  "id": "gruvbox-material-light",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A warm, painterly light theme featuring a comfortable autumn feeling.",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "pixelated@posteo.org",
+      "url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#c35e0a",
+        "paragraph": "#654735",
+        "background": "#fbf1c7",
+        "border": "#deceaa",
+        "heading": "#4f3824",
+        "icon": "#c35e0a",
+        "separator": "#deceaa",
+        "placeholder": "#a89984",
+        "hover": "#f4e8c1",
+        "accentForeground": "#fbf1c7",
+        "backdrop": "#fbf1c7cc"
+      },
+      "secondary": {
+        "accent": "#c35e0a",
+        "paragraph": "#654735",
+        "background": "#eee0b7",
+        "border": "#deceaa",
+        "heading": "#4f3824",
+        "icon": "#6c782b",
+        "separator": "#deceaa",
+        "placeholder": "#a89984",
+        "hover": "#e4d4ae",
+        "accentForeground": "#fbf1c7",
+        "backdrop": "#fbf1c7cc"
+      },
+      "disabled": {
+        "accent": "#a89984",
+        "paragraph": "#a89984",
+        "background": "#fbf1c7",
+        "border": "#deceaa",
+        "heading": "#a89984",
+        "icon": "#a89984",
+        "separator": "#deceaa",
+        "placeholder": "#deceaa",
+        "hover": "#f4e8c1",
+        "accentForeground": "#fbf1c7",
+        "backdrop": "#fbf1c7cc"
+      },
+      "selected": {
+        "accent": "#c35e0a",
+        "paragraph": "#4f3824",
+        "background": "#e4d4ae",
+        "border": "#c35e0a",
+        "heading": "#4f3824",
+        "icon": "#c35e0a",
+        "separator": "#deceaa",
+        "placeholder": "#a89984",
+        "hover": "#deceaa",
+        "accentForeground": "#fbf1c7",
+        "backdrop": "#fbf1c7cc"
+      },
+      "error": {
+        "accent": "#c14a4a",
+        "paragraph": "#c14a4a",
+        "background": "#f4e8c1",
+        "border": "#c14a4a",
+        "heading": "#c14a4a",
+        "icon": "#c14a4a",
+        "separator": "#deceaa",
+        "placeholder": "#a89984",
+        "hover": "#eee0b7",
+        "accentForeground": "#fbf1c7",
+        "backdrop": "#fbf1c7cc"
+      },
+      "success": {
+        "accent": "#6c782b",
+        "paragraph": "#6c782b",
+        "background": "#f4e8c1",
+        "border": "#6c782b",
+        "heading": "#6c782b",
+        "icon": "#6c782b",
+        "separator": "#deceaa",
+        "placeholder": "#a89984",
+        "hover": "#eee0b7",
+        "accentForeground": "#fbf1c7",
+        "backdrop": "#fbf1c7cc"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#654735",
+        "background": "#eee0b7",
+        "separator": "#deceaa"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#654735",
+        "background": "#f4e8c1",
+        "hover": "#eee0b7"
+      },
+      "secondary": {
+        "paragraph": "#a89984",
+        "background": "#f4e8c1"
+      },
+      "selected": {
+        "background": "#e4d4ae"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#fbf1c7",
+        "border": "#deceaa"
+      },
+      "secondary": {
+        "paragraph": "#a89984",
+        "border": "#f4e8c1"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "accent": "#654735",
+        "background": "#fbf1c7",
+        "hover": "#f4e8c1"
+      },
+      "secondary": {
+        "background": "#f4e8c1"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#654735",
+        "background": "#eee0b7"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#6c782b"
+      }
+    }
+  }
+}
