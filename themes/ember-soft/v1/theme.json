@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
   "name": "Ember Soft",
   "id": "ember-soft",
-  "version": 1,
+  "version": 1.1,
   "license": "MIT",
   "homepage": "https://notesnook.com",
   "description": "A warm, monochrome color theme with softer contrast.",
@@ -26,7 +26,7 @@
         "icon": "#e08060",
         "separator": "#2c2a26",
         "placeholder": "#8a8477",
-        "hover": "#2c2a26",
+        "hover": "#37342f",
         "accentForeground": "#242320",
         "backdrop": "#24232099"
       },
@@ -39,7 +39,7 @@
         "icon": "#d8d0c0",
         "separator": "#35332f",
         "placeholder": "#8a8477",
-        "hover": "#35332f",
+        "hover": "#37342f",
         "accentForeground": "#242320",
         "backdrop": "#24232099"
       },
@@ -52,7 +52,7 @@
         "icon": "#8a8477",
         "separator": "#2c2a26",
         "placeholder": "#8a8477",
-        "hover": "#242320",
+        "hover": "#37342f",
         "accentForeground": "#242320",
         "backdrop": "#24232099"
       },
@@ -65,7 +65,7 @@
         "icon": "#e08060",
         "separator": "#3d3b37",
         "placeholder": "#8a8477",
-        "hover": "#3d3b37",
+        "hover": "#37342f",
         "accentForeground": "#242320",
         "backdrop": "#24232099"
       },
@@ -78,7 +78,7 @@
         "icon": "#b07878",
         "separator": "#35332f",
         "placeholder": "#8a8477",
-        "hover": "#35332f",
+        "hover": "#37342f",
         "accentForeground": "#242320",
         "backdrop": "#24232099"
       },
@@ -91,7 +91,7 @@
         "icon": "#8a9868",
         "separator": "#35332f",
         "placeholder": "#8a8477",
-        "hover": "#35332f",
+        "hover": "#37342f",
         "accentForeground": "#242320",
         "backdrop": "#24232099"
       }
@@ -106,14 +106,14 @@
     "list": {
       "primary": {
         "paragraph": "#d8d0c0",
-        "background": "#242320",
-        "hover": "#2c2a26"
+        "background": "#2c2a26",
+        "hover": "#37342f"
       },
       "secondary": {
         "paragraph": "#d8d0c0"
       },
       "disabled": {
-        "hover": "#242320"
+        "hover": "#37342f"
       },
       "selected": {
         "background": "#35332f",
@@ -134,7 +134,7 @@
     "editorToolbar": {
       "primary": {
         "background": "#242320",
-        "hover": "#2c2a26"
+        "hover": "#37342f"
       },
       "secondary": {
         "background": "#2c2a26"
@@ -142,7 +142,8 @@
     },
     "navigationMenu": {
       "primary": {
-        "background": "#242320"
+        "background": "#242320",
+        "hover": "#37342f"
       }
     },
     "contextMenu": {
