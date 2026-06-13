@@ -1,0 +1,159 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Ember Soft",
+  "id": "ember-soft",
+  "version": 1,
+  "license": "MIT",
+  "homepage": "https://notesnook.com",
+  "description": "A warm, monochrome color theme with softer contrast.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "pixelated@posteo.org",
+      "url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#e08060",
+        "paragraph": "#d8d0c0",
+        "background": "#242320",
+        "border": "#2c2a26",
+        "heading": "#d8d0c0",
+        "icon": "#e08060",
+        "separator": "#2c2a26",
+        "placeholder": "#8a8477",
+        "hover": "#2c2a26",
+        "accentForeground": "#242320",
+        "backdrop": "#24232099"
+      },
+      "secondary": {
+        "accent": "#e08060",
+        "paragraph": "#d8d0c0",
+        "background": "#2c2a26",
+        "border": "#35332f",
+        "heading": "#d8d0c0",
+        "icon": "#d8d0c0",
+        "separator": "#35332f",
+        "placeholder": "#8a8477",
+        "hover": "#35332f",
+        "accentForeground": "#242320",
+        "backdrop": "#24232099"
+      },
+      "disabled": {
+        "accent": "#8a8477",
+        "paragraph": "#8a8477",
+        "background": "#242320",
+        "border": "#2c2a26",
+        "heading": "#8a8477",
+        "icon": "#8a8477",
+        "separator": "#2c2a26",
+        "placeholder": "#8a8477",
+        "hover": "#242320",
+        "accentForeground": "#242320",
+        "backdrop": "#24232099"
+      },
+      "selected": {
+        "accent": "#e08060",
+        "paragraph": "#d8d0c0",
+        "background": "#35332f",
+        "border": "#e08060",
+        "heading": "#d8d0c0",
+        "icon": "#e08060",
+        "separator": "#3d3b37",
+        "placeholder": "#8a8477",
+        "hover": "#3d3b37",
+        "accentForeground": "#242320",
+        "backdrop": "#24232099"
+      },
+      "error": {
+        "accent": "#b07878",
+        "paragraph": "#b07878",
+        "background": "#2c2a26",
+        "border": "#b07878",
+        "heading": "#b07878",
+        "icon": "#b07878",
+        "separator": "#35332f",
+        "placeholder": "#8a8477",
+        "hover": "#35332f",
+        "accentForeground": "#242320",
+        "backdrop": "#24232099"
+      },
+      "success": {
+        "accent": "#8a9868",
+        "paragraph": "#8a9868",
+        "background": "#2c2a26",
+        "border": "#8a9868",
+        "heading": "#8a9868",
+        "icon": "#8a9868",
+        "separator": "#35332f",
+        "placeholder": "#8a8477",
+        "hover": "#35332f",
+        "accentForeground": "#242320",
+        "backdrop": "#24232099"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#d8d0c0",
+        "background": "#2c2a26",
+        "separator": "#35332f"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#d8d0c0",
+        "background": "#242320",
+        "hover": "#2c2a26"
+      },
+      "secondary": {
+        "paragraph": "#d8d0c0"
+      },
+      "disabled": {
+        "hover": "#242320"
+      },
+      "selected": {
+        "background": "#35332f",
+        "hover": "#3d3b37"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#242320",
+        "border": "#2c2a26"
+      },
+      "secondary": {
+        "paragraph": "#8a8477",
+        "background": "#2c2a26",
+        "border": "#35332f"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#242320",
+        "hover": "#2c2a26"
+      },
+      "secondary": {
+        "background": "#2c2a26"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#242320"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#2c2a26"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#8a9868"
+      }
+    }
+  }
+}
