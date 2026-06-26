@@ -1,0 +1,154 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Tiniri Light",
+  "id": "tiniri-light",
+  "version": 1,
+  "license": "MIT",
+  "description": "A warm, clean light theme, like print on aged paper.",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "riiku",
+      "email": "pixelated@posteo.org",
+      "url": "https://tech.lgbt/@riiku"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#AD514C",
+        "paragraph": "#333231",
+        "background": "#FDFCFC",
+        "border": "#ECE9E6",
+        "heading": "#333231",
+        "icon": "#AD514C",
+        "separator": "#ECE9E6",
+        "placeholder": "#807974",
+        "hover": "#EDE9E1",
+        "accentForeground": "#FDFCFC",
+        "backdrop": "#FDFCFC99"
+      },
+      "secondary": {
+        "accent": "#AD514C",
+        "paragraph": "#333231",
+        "background": "#F7F3F0",
+        "border": "#ECE9E6",
+        "heading": "#333231",
+        "icon": "#333231",
+        "separator": "#ECE9E6",
+        "placeholder": "#807974",
+        "hover": "#EDE9E1",
+        "accentForeground": "#FDFCFC",
+        "backdrop": "#FDFCFC99"
+      },
+      "disabled": {
+        "accent": "#807974",
+        "paragraph": "#807974",
+        "background": "#FDFCFC",
+        "border": "#ECE9E6",
+        "heading": "#807974",
+        "icon": "#807974",
+        "separator": "#ECE9E6",
+        "placeholder": "#807974",
+        "hover": "#EDE9E1",
+        "accentForeground": "#FDFCFC",
+        "backdrop": "#FDFCFC99"
+      },
+      "selected": {
+        "accent": "#AD514C",
+        "paragraph": "#333231",
+        "background": "#E8E3DF",
+        "border": "#356B94",
+        "heading": "#333231",
+        "icon": "#AD514C",
+        "separator": "#ECE9E6",
+        "placeholder": "#807974",
+        "hover": "#EDE9E1",
+        "accentForeground": "#FDFCFC",
+        "backdrop": "#FDFCFC99"
+      },
+      "error": {
+        "accent": "#AD514C",
+        "paragraph": "#AD514C",
+        "background": "#F7F3F0",
+        "border": "#AD514C",
+        "heading": "#AD514C",
+        "icon": "#AD514C",
+        "separator": "#ECE9E6",
+        "placeholder": "#807974",
+        "hover": "#EDE9E1",
+        "accentForeground": "#FDFCFC",
+        "backdrop": "#FDFCFC99"
+      },
+      "success": {
+        "accent": "#538A8A",
+        "paragraph": "#538A8A",
+        "background": "#F7F3F0",
+        "border": "#538A8A",
+        "heading": "#538A8A",
+        "icon": "#538A8A",
+        "separator": "#ECE9E6",
+        "placeholder": "#807974",
+        "hover": "#EDE9E1",
+        "accentForeground": "#FDFCFC",
+        "backdrop": "#FDFCFC99"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#333231",
+        "background": "#F7F3F0",
+        "separator": "#ECE9E6"
+      }
+    },
+    "list": {
+      "primary": {
+        "paragraph": "#333231",
+        "background": "#F7F3F0",
+        "hover": "#EDE9E1"
+      },
+      "secondary": {
+        "paragraph": "#807974"
+      },
+      "disabled": {
+        "hover": "#EDE9E1"
+      },
+      "selected": {
+        "background": "#E8E3DF",
+        "hover": "#EDE9E1"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#FDFCFC",
+        "border": "#ECE9E6"
+      },
+      "secondary": {
+        "paragraph": "#807974",
+        "background": "#F7F3F0",
+        "border": "#ECE9E6"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#FDFCFC",
+        "hover": "#EDE9E1"
+      },
+      "secondary": {
+        "background": "#F7F3F0"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#FDFCFC",
+        "hover": "#EDE9E1"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#F7F3F0"
+      }
+    }
+  }
+}
