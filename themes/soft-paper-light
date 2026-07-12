@@ -1,0 +1,133 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Soft Paper",
+  "id": "soft-paper-light",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "description": "A warm, reflective paper theme — Nick Milo's Soft Paper (Rosé Pine Dawn + inky teal) translated to Notesnook.",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Christopher"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#1A7DA4",
+        "accentForeground": "#FAF4ED",
+        "paragraph": "#575279",
+        "background": "#FAF4ED",
+        "border": "#DFDAD9",
+        "heading": "#575279",
+        "icon": "#797593",
+        "separator": "#DFDAD9",
+        "placeholder": "#9893A5",
+        "hover": "#F4EDE8",
+        "backdrop": "#5752791a"
+      },
+      "secondary": {
+        "accent": "#1A7DA4",
+        "accentForeground": "#FAF4ED",
+        "paragraph": "#797593",
+        "background": "#F2E9E1",
+        "border": "#DFDAD9",
+        "heading": "#797593",
+        "icon": "#797593",
+        "separator": "#DFDAD9",
+        "placeholder": "#9893A5",
+        "hover": "#EBE1D6",
+        "backdrop": "#5752791a"
+      },
+      "disabled": {
+        "accent": "#1A7DA4",
+        "accentForeground": "#FAF4ED",
+        "paragraph": "#9893A5",
+        "background": "#FAF4ED",
+        "border": "#DFDAD9",
+        "heading": "#9893A5",
+        "icon": "#9893A5",
+        "separator": "#DFDAD9",
+        "placeholder": "#9893A5",
+        "hover": "#57527910",
+        "backdrop": "#5752791a"
+      },
+      "selected": {
+        "accent": "#1A7DA4",
+        "accentForeground": "#FAF4ED",
+        "paragraph": "#575279",
+        "background": "#F4EDE8",
+        "border": "#1A7DA4",
+        "heading": "#575279",
+        "icon": "#575279",
+        "separator": "#DFDAD9",
+        "placeholder": "#9893A5",
+        "hover": "#EBE1D6",
+        "backdrop": "#5752791a"
+      },
+      "error": {
+        "accent": "#B4637A",
+        "accentForeground": "#FAF4ED",
+        "paragraph": "#B4637A",
+        "background": "#F5E0E4",
+        "border": "#DFDAD9",
+        "heading": "#B4637A",
+        "icon": "#B4637A",
+        "separator": "#DFDAD9",
+        "placeholder": "#9893A5",
+        "hover": "#57527910",
+        "backdrop": "#5752791a"
+      },
+      "success": {
+        "accent": "#286983",
+        "accentForeground": "#FAF4ED",
+        "paragraph": "#286983",
+        "background": "#DBE7EA",
+        "border": "#DFDAD9",
+        "heading": "#286983",
+        "icon": "#286983",
+        "separator": "#DFDAD9",
+        "placeholder": "#9893A5",
+        "hover": "#57527910",
+        "backdrop": "#5752791a"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#797593",
+        "background": "#F2E9E1"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#F2E9E1",
+        "paragraph": "#797593",
+        "icon": "#797593",
+        "hover": "#EBE1D6"
+      },
+      "secondary": {
+        "background": "#EBE1D6"
+      },
+      "selected": {
+        "background": "#E3D8CB",
+        "hover": "#EBE1D6"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#FFFAF3"
+      }
+    },
+    "editor": {
+      "selected": {
+        "background": "#D9E6EC"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#1A7DA4"
+      }
+    }
+  }
+}
