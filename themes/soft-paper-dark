@@ -1,0 +1,133 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Soft Paper Dark",
+  "id": "soft-paper-dark",
+  "version": 1,
+  "license": "GPL-3.0-or-later",
+  "description": "The dark half of Soft Paper — Catppuccin Frappé with Nick Milo's teal, translated to Notesnook.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "Christopher"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#11B7C5",
+        "accentForeground": "#232634",
+        "paragraph": "#C6D0F5",
+        "background": "#303446",
+        "border": "#414559",
+        "heading": "#C6D0F5",
+        "icon": "#A5ADCE",
+        "separator": "#414559",
+        "placeholder": "#737994",
+        "hover": "#414559",
+        "backdrop": "#23263466"
+      },
+      "secondary": {
+        "accent": "#11B7C5",
+        "accentForeground": "#232634",
+        "paragraph": "#A5ADCE",
+        "background": "#292C3C",
+        "border": "#414559",
+        "heading": "#A5ADCE",
+        "icon": "#A5ADCE",
+        "separator": "#414559",
+        "placeholder": "#737994",
+        "hover": "#414559",
+        "backdrop": "#23263466"
+      },
+      "disabled": {
+        "accent": "#11B7C5",
+        "accentForeground": "#232634",
+        "paragraph": "#737994",
+        "background": "#303446",
+        "border": "#414559",
+        "heading": "#737994",
+        "icon": "#737994",
+        "separator": "#414559",
+        "placeholder": "#737994",
+        "hover": "#C6D0F510",
+        "backdrop": "#23263466"
+      },
+      "selected": {
+        "accent": "#11B7C5",
+        "accentForeground": "#232634",
+        "paragraph": "#C6D0F5",
+        "background": "#414559",
+        "border": "#11B7C5",
+        "heading": "#C6D0F5",
+        "icon": "#C6D0F5",
+        "separator": "#414559",
+        "placeholder": "#737994",
+        "hover": "#51576D",
+        "backdrop": "#23263466"
+      },
+      "error": {
+        "accent": "#E78284",
+        "accentForeground": "#232634",
+        "paragraph": "#E78284",
+        "background": "#E7828426",
+        "border": "#414559",
+        "heading": "#E78284",
+        "icon": "#E78284",
+        "separator": "#414559",
+        "placeholder": "#737994",
+        "hover": "#C6D0F510",
+        "backdrop": "#23263466"
+      },
+      "success": {
+        "accent": "#A6D189",
+        "accentForeground": "#232634",
+        "paragraph": "#A6D189",
+        "background": "#A6D18926",
+        "border": "#414559",
+        "heading": "#A6D189",
+        "icon": "#A6D189",
+        "separator": "#414559",
+        "placeholder": "#737994",
+        "hover": "#C6D0F510",
+        "backdrop": "#23263466"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#A5ADCE",
+        "background": "#292C3C"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#292C3C",
+        "paragraph": "#A5ADCE",
+        "icon": "#A5ADCE",
+        "hover": "#414559"
+      },
+      "secondary": {
+        "background": "#414559"
+      },
+      "selected": {
+        "background": "#51576D",
+        "hover": "#414559"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#414559"
+      }
+    },
+    "editor": {
+      "selected": {
+        "background": "#11B7C533"
+      }
+    },
+    "sheet": {
+      "selected": {
+        "paragraph": "#11B7C5"
+      }
+    }
+  }
+}
