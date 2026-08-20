@@ -1,0 +1,168 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Panic Mode",
+  "id": "panic-mode",
+  "version": 1.2,
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://notesnook.com",
+  "description": "A Notesnook theme inspired by Bear's 'Panic Mode' theme (itself an homage to Panic Inc.'s Coda editor) — a slate-navy base with a warm amber accent.",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "stevesbrain",
+      "email": "stevesbrain@users.noreply.github.com",
+      "url": "https://github.com/stevesbrain"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#f6a82a",
+        "paragraph": "#e0e2d5",
+        "background": "#151e2d",
+        "border": "#26324a",
+        "heading": "#f6a82a",
+        "icon": "#9aa7bb",
+        "separator": "#2b3852",
+        "placeholder": "#6b7688",
+        "hover": "#26324a80",
+        "accentForeground": "#1b1206",
+        "backdrop": "#151e2d80"
+      },
+      "secondary": {
+        "accent": "#f6a82a",
+        "paragraph": "#9aa7bb",
+        "background": "#0e141e",
+        "border": "#1b2436",
+        "heading": "#9aa7bb",
+        "icon": "#9aa7bb",
+        "separator": "#2b3852",
+        "placeholder": "#6b7688",
+        "hover": "#1b2436",
+        "accentForeground": "#1b1206",
+        "backdrop": "#151e2d80"
+      },
+      "disabled": {
+        "accent": "#f6a82a",
+        "paragraph": "#4c5567",
+        "background": "#0e141e",
+        "border": "#1b2436",
+        "heading": "#3a4356",
+        "icon": "#9aa7bb",
+        "separator": "#2b3852",
+        "placeholder": "#4c5567",
+        "hover": "#ffffff08",
+        "accentForeground": "#1b1206",
+        "backdrop": "#151e2d80"
+      },
+      "selected": {
+        "accent": "#f6a82a",
+        "paragraph": "#e0e2d5",
+        "background": "#232f45",
+        "border": "#f6a82a",
+        "heading": "#e0e2d5",
+        "icon": "#9aa7bb",
+        "separator": "#2b3852",
+        "placeholder": "#6b7688",
+        "hover": "#ffffff10",
+        "accentForeground": "#1b1206",
+        "backdrop": "#151e2d80"
+      },
+      "error": {
+        "accent": "#fc3b44",
+        "paragraph": "#fc3b44",
+        "background": "#2a1418",
+        "border": "#2b3852",
+        "heading": "#fc3b44",
+        "icon": "#fc3b44",
+        "separator": "#2b3852",
+        "placeholder": "#6b7688",
+        "hover": "#331a1f",
+        "accentForeground": "#ffffff",
+        "backdrop": "#151e2d80"
+      },
+      "success": {
+        "accent": "#a0e85b",
+        "paragraph": "#a0e85b",
+        "background": "#16241a",
+        "border": "#2b3852",
+        "heading": "#a0e85b",
+        "icon": "#a0e85b",
+        "separator": "#2b3852",
+        "placeholder": "#6b7688",
+        "hover": "#1c2c20",
+        "accentForeground": "#0c1406",
+        "backdrop": "#151e2d80"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#e0e2d5",
+        "background": "#0e141e",
+        "border": "#1b2436",
+        "icon": "#e0e2d5"
+      }
+    },
+    "list": {
+      "secondary": {
+        "background": "#0e141e"
+      },
+      "selected": {
+        "background": "#232f45"
+      }
+    },
+    "editor": {
+      "primary": {
+        "paragraph": "#e0e2d5",
+        "background": "#151e2d",
+        "heading": "#f6a82a"
+      },
+      "secondary": {
+        "background": "#0e141e"
+      },
+      "selected": {
+        "background": "#232f45",
+        "icon": "#f6a82a"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "paragraph": "#e0e2d5",
+        "background": "#0e141e",
+        "border": "#1b2436"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "accent": "#f6a82a",
+        "background": "#0e141e"
+      },
+      "secondary": {
+        "background": "#151e2d"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#0e141e"
+      },
+      "selected": {
+        "background": "#232f45",
+        "icon": "#f6a82a"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#0e141e"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#0e141e"
+      },
+      "selected": {
+        "paragraph": "#f6a82a"
+      }
+    }
+  }
+}
