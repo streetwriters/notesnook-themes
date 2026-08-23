@@ -1,0 +1,190 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Solarized Light",
+  "id": "solarized-light-bear",
+  "version": 1.9,
+  "license": "MIT",
+  "homepage": "https://notesnook.com",
+  "description": "A Notesnook theme inspired by Bear's 'Solarized Light' theme and Ethan Schoonover's Solarized palette, with a neutral grey sidebar and accent instead of Solarized's blue.",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "authors": [
+    {
+      "name": "stevesbrain",
+      "email": "stevesbrain@users.noreply.github.com",
+      "url": "https://github.com/stevesbrain"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#586e75",
+        "paragraph": "#657b83",
+        "background": "#fdf6e3",
+        "border": "#eee8d5",
+        "heading": "#586e75",
+        "icon": "#93a1a1",
+        "separator": "#eee8d5",
+        "placeholder": "#93a1a1",
+        "hover": "#eee8d580",
+        "accentForeground": "#fdf6e3",
+        "backdrop": "#fdf6e380"
+      },
+      "secondary": {
+        "accent": "#586e75",
+        "paragraph": "#93a1a1",
+        "background": "#eee8d5",
+        "border": "#e3dcc4",
+        "heading": "#93a1a1",
+        "icon": "#93a1a1",
+        "separator": "#e3dcc4",
+        "placeholder": "#93a1a1",
+        "hover": "#e3dcc4",
+        "accentForeground": "#fdf6e3",
+        "backdrop": "#fdf6e380"
+      },
+      "disabled": {
+        "accent": "#586e75",
+        "paragraph": "#b3ada1",
+        "background": "#eee8d5",
+        "border": "#e3dcc4",
+        "heading": "#93a1a1",
+        "icon": "#93a1a1",
+        "separator": "#e3dcc4",
+        "placeholder": "#b3ada1",
+        "hover": "#00000008",
+        "accentForeground": "#fdf6e3",
+        "backdrop": "#fdf6e380"
+      },
+      "selected": {
+        "accent": "#586e75",
+        "paragraph": "#586e75",
+        "background": "#e3e3e1",
+        "border": "#586e75",
+        "heading": "#586e75",
+        "icon": "#586e75",
+        "separator": "#e3dcc4",
+        "placeholder": "#93a1a1",
+        "hover": "#00000010",
+        "accentForeground": "#fdf6e3",
+        "backdrop": "#fdf6e380"
+      },
+      "error": {
+        "accent": "#dc322f",
+        "paragraph": "#dc322f",
+        "background": "#f9e2dd",
+        "border": "#eee8d5",
+        "heading": "#dc322f",
+        "icon": "#dc322f",
+        "separator": "#eee8d5",
+        "placeholder": "#93a1a1",
+        "hover": "#f3d5cf",
+        "accentForeground": "#fdf6e3",
+        "backdrop": "#fdf6e380"
+      },
+      "success": {
+        "accent": "#859900",
+        "paragraph": "#859900",
+        "background": "#eef3d5",
+        "border": "#eee8d5",
+        "heading": "#859900",
+        "icon": "#859900",
+        "separator": "#eee8d5",
+        "placeholder": "#93a1a1",
+        "hover": "#e3ecc4",
+        "accentForeground": "#fdf6e3",
+        "backdrop": "#fdf6e380"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "paragraph": "#657b83",
+        "background": "#eee8d5",
+        "border": "#e3dcc4",
+        "icon": "#657b83"
+      }
+    },
+    "list": {
+      "secondary": {
+        "background": "#eee8d5"
+      },
+      "selected": {
+        "accent": "#ab8a37",
+        "background": "#f4eddd",
+        "border": "#ab8a37"
+      }
+    },
+    "editor": {
+      "primary": {
+        "paragraph": "#657b83",
+        "background": "#fdf6e3"
+      },
+      "secondary": {
+        "background": "#eee8d5"
+      },
+      "selected": {
+        "background": "#e3e3e1",
+        "icon": "#586e75"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "paragraph": "#657b83",
+        "background": "#f4eddd",
+        "border": "#e3dcc4"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "accent": "#586e75",
+        "background": "#eee8d5"
+      },
+      "secondary": {
+        "background": "#fdf6e3"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "paragraph": "#eee8d5",
+        "background": "#5c6d74",
+        "border": "#4f5e64",
+        "heading": "#fdf6e3",
+        "icon": "#c3cdd0",
+        "separator": "#4f5e64",
+        "placeholder": "#a3aeb2",
+        "hover": "#ffffff10"
+      },
+      "secondary": {
+        "accent": "#c3cdd0",
+        "paragraph": "#eee8d5",
+        "background": "#6d7d84",
+        "border": "#4f5e64",
+        "heading": "#fdf6e3",
+        "icon": "#c3cdd0",
+        "separator": "#4f5e64",
+        "placeholder": "#a3aeb2",
+        "hover": "#4f5e64",
+        "accentForeground": "#2f3b3f",
+        "backdrop": "#5c6d7480"
+      },
+      "selected": {
+        "paragraph": "#fdf6e3",
+        "background": "#7a8a90",
+        "icon": "#fdf6e3"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#eee8d5"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#eee8d5"
+      },
+      "selected": {
+        "paragraph": "#586e75"
+      }
+    }
+  }
+}
