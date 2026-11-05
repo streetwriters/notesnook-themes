@@ -1,0 +1,197 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Cosmic Tokyo Night",
+  "id": "cosmic-tokyonight",
+  "version": 1,
+  "license": "MIT",
+  "homepage": "https://github.com/atraxsrc/cosmic-tokyonight-theme",
+  "description": "Tokyo Night navy, blue and lime, from the Tokyo Night COSMIC rice",
+  "colorScheme": "dark",
+  "compatibilityVersion": 1,
+  "tags": [
+    "dark",
+    "cosmic"
+  ],
+  "authors": [
+    {
+      "name": "atraxsrc",
+      "url": "https://github.com/atraxsrc"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#7AA2F7",
+        "accentForeground": "#1A1B26",
+        "paragraph": "#C0CAF5",
+        "background": "#1A1B26",
+        "border": "#4E5576",
+        "heading": "#C0CAF5",
+        "icon": "#A9B1D6",
+        "separator": "#292E42",
+        "placeholder": "#646A83",
+        "hover": "#292E42",
+        "backdrop": "#111219B3",
+        "shade": "#7AA2F720",
+        "textSelection": "#7AA2F740"
+      },
+      "secondary": {
+        "accent": "#7AA2F7",
+        "accentForeground": "#1A1B26",
+        "paragraph": "#A9B1D6",
+        "background": "#24283B",
+        "border": "#4E5576",
+        "heading": "#C0CAF5",
+        "icon": "#A9B1D6",
+        "separator": "#4E5576",
+        "placeholder": "#646A83",
+        "hover": "#292E42",
+        "backdrop": "#111219B3"
+      },
+      "disabled": {
+        "accent": "#646A83",
+        "accentForeground": "#646A83",
+        "paragraph": "#565F89",
+        "background": "#24283B",
+        "border": "#292E42",
+        "heading": "#565F89",
+        "icon": "#646A83",
+        "separator": "#292E42",
+        "placeholder": "#646A83",
+        "hover": "#24283B",
+        "backdrop": "#111219B3"
+      },
+      "selected": {
+        "accent": "#7AA2F7",
+        "accentForeground": "#1A1B26",
+        "paragraph": "#C0CAF5",
+        "background": "#292E42",
+        "border": "#7AA2F7",
+        "heading": "#C0CAF5",
+        "icon": "#7AA2F7",
+        "separator": "#4E5576",
+        "placeholder": "#646A83",
+        "hover": "#4E5576",
+        "backdrop": "#111219B3"
+      },
+      "error": {
+        "accent": "#F7768E",
+        "accentForeground": "#1A1B26",
+        "paragraph": "#F7768E",
+        "background": "#2C222E",
+        "border": "#F7768E",
+        "heading": "#F7768E",
+        "icon": "#F7768E",
+        "separator": "#4E5576",
+        "placeholder": "#E0AF68",
+        "hover": "#372734",
+        "backdrop": "#111219B3"
+      },
+      "success": {
+        "accent": "#9ECE6A",
+        "accentForeground": "#1A1B26",
+        "paragraph": "#9ECE6A",
+        "background": "#25292B",
+        "border": "#9ECE6A",
+        "heading": "#9ECE6A",
+        "icon": "#9ECE6A",
+        "separator": "#4E5576",
+        "placeholder": "#646A83",
+        "hover": "#2B322F",
+        "backdrop": "#111219B3"
+      }
+    },
+    "titleBar": {
+      "primary": {
+        "background": "#1A1B26",
+        "paragraph": "#A9B1D6",
+        "icon": "#A9B1D6"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "background": "#1A1B26",
+        "paragraph": "#A9B1D6",
+        "icon": "#A9B1D6",
+        "separator": "#1A1B26"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#111219",
+        "paragraph": "#A9B1D6",
+        "icon": "#A9B1D6",
+        "hover": "#24283B"
+      },
+      "selected": {
+        "background": "#24283B",
+        "paragraph": "#C0CAF5",
+        "icon": "#7AA2F7"
+      }
+    },
+    "list": {
+      "primary": {
+        "background": "#1F2230",
+        "paragraph": "#A9B1D6",
+        "heading": "#C0CAF5",
+        "hover": "#292E42"
+      },
+      "secondary": {
+        "paragraph": "#A9B1D6",
+        "icon": "#A9B1D6"
+      },
+      "selected": {
+        "background": "#292E42",
+        "heading": "#7AA2F7"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#1A1B26",
+        "paragraph": "#C0CAF5",
+        "heading": "#7AA2F7",
+        "border": "#292E42"
+      },
+      "secondary": {
+        "background": "#24283B",
+        "paragraph": "#7AA2F7",
+        "border": "#4E5576"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#1F2230",
+        "icon": "#A9B1D6",
+        "hover": "#292E42"
+      },
+      "secondary": {
+        "background": "#24283B"
+      }
+    },
+    "editorSidebar": {
+      "primary": {
+        "background": "#1F2230"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "background": "#24283B",
+        "border": "#4E5576",
+        "hover": "#292E42"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#24283B",
+        "border": "#4E5576",
+        "hover": "#292E42"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#24283B",
+        "border": "#4E5576"
+      }
+    }
+  }
+}
