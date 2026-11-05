@@ -1,0 +1,197 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json",
+  "name": "Cosmic Ember Day",
+  "id": "cosmic-emberday",
+  "version": 1,
+  "license": "MIT",
+  "homepage": "https://github.com/atraxsrc/cosmic-emberday-theme",
+  "description": "Ember Day warm stone, ink and one ember accent, from the Ember Day COSMIC rice",
+  "colorScheme": "light",
+  "compatibilityVersion": 1,
+  "tags": [
+    "light",
+    "cosmic"
+  ],
+  "authors": [
+    {
+      "name": "atraxsrc",
+      "url": "https://github.com/atraxsrc"
+    }
+  ],
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#A4441A",
+        "accentForeground": "#E9E6DF",
+        "paragraph": "#2B2E36",
+        "background": "#E9E6DF",
+        "border": "#BBB9B2",
+        "heading": "#2B2E36",
+        "icon": "#6B6F78",
+        "separator": "#DDD9D1",
+        "placeholder": "#6B6F78",
+        "hover": "#DDD9D1",
+        "backdrop": "#00000066",
+        "shade": "#A4441A20",
+        "textSelection": "#A4441A40"
+      },
+      "secondary": {
+        "accent": "#A4441A",
+        "accentForeground": "#E9E6DF",
+        "paragraph": "#5C5F67",
+        "background": "#E2DED6",
+        "border": "#BBB9B2",
+        "heading": "#2B2E36",
+        "icon": "#5C5F67",
+        "separator": "#BBB9B2",
+        "placeholder": "#6B6F78",
+        "hover": "#DDD9D1",
+        "backdrop": "#00000066"
+      },
+      "disabled": {
+        "accent": "#BBB9B2",
+        "accentForeground": "#6B6F78",
+        "paragraph": "#8C9099",
+        "background": "#E2DED6",
+        "border": "#DDD9D1",
+        "heading": "#8C9099",
+        "icon": "#BBB9B2",
+        "separator": "#DDD9D1",
+        "placeholder": "#BBB9B2",
+        "hover": "#E2DED6",
+        "backdrop": "#00000066"
+      },
+      "selected": {
+        "accent": "#A4441A",
+        "accentForeground": "#E9E6DF",
+        "paragraph": "#2B2E36",
+        "background": "#DDD9D1",
+        "border": "#A4441A",
+        "heading": "#2B2E36",
+        "icon": "#A4441A",
+        "separator": "#BBB9B2",
+        "placeholder": "#6B6F78",
+        "hover": "#BBB9B2",
+        "backdrop": "#00000066"
+      },
+      "error": {
+        "accent": "#9E3A3A",
+        "accentForeground": "#E9E6DF",
+        "paragraph": "#9E3A3A",
+        "background": "#E3D8D2",
+        "border": "#9E3A3A",
+        "heading": "#9E3A3A",
+        "icon": "#9E3A3A",
+        "separator": "#BBB9B2",
+        "placeholder": "#8A5E12",
+        "hover": "#DFD0CA",
+        "backdrop": "#00000066"
+      },
+      "success": {
+        "accent": "#4C6B45",
+        "accentForeground": "#E9E6DF",
+        "paragraph": "#4C6B45",
+        "background": "#E1E0D7",
+        "border": "#4C6B45",
+        "heading": "#4C6B45",
+        "icon": "#4C6B45",
+        "separator": "#BBB9B2",
+        "placeholder": "#6B6F78",
+        "hover": "#D9DAD0",
+        "backdrop": "#00000066"
+      }
+    },
+    "titleBar": {
+      "primary": {
+        "background": "#E9E6DF",
+        "paragraph": "#5C5F67",
+        "icon": "#5C5F67"
+      }
+    },
+    "statusBar": {
+      "primary": {
+        "background": "#E9E6DF",
+        "paragraph": "#5C5F67",
+        "icon": "#5C5F67",
+        "separator": "#E9E6DF"
+      }
+    },
+    "navigationMenu": {
+      "primary": {
+        "background": "#E0DDD6",
+        "paragraph": "#2B2E36",
+        "icon": "#2B2E36",
+        "hover": "#D7D4CD"
+      },
+      "selected": {
+        "background": "#D7D4CD",
+        "paragraph": "#2B2E36",
+        "icon": "#A4441A"
+      }
+    },
+    "list": {
+      "primary": {
+        "background": "#E6E2DA",
+        "paragraph": "#6B6F78",
+        "heading": "#2B2E36",
+        "hover": "#DDD9D1"
+      },
+      "secondary": {
+        "paragraph": "#5C5F67",
+        "icon": "#5C5F67"
+      },
+      "selected": {
+        "background": "#DDD9D1",
+        "heading": "#9F4219"
+      }
+    },
+    "editor": {
+      "primary": {
+        "background": "#E9E6DF",
+        "paragraph": "#2B2E36",
+        "heading": "#9F4219",
+        "border": "#DDD9D1"
+      },
+      "secondary": {
+        "background": "#E2DED6",
+        "paragraph": "#2F5C8A",
+        "border": "#BBB9B2"
+      }
+    },
+    "editorToolbar": {
+      "primary": {
+        "background": "#E6E2DA",
+        "icon": "#6B6F78",
+        "hover": "#DDD9D1"
+      },
+      "secondary": {
+        "background": "#E2DED6"
+      }
+    },
+    "editorSidebar": {
+      "primary": {
+        "background": "#E6E2DA"
+      }
+    },
+    "dialog": {
+      "primary": {
+        "background": "#E2DED6",
+        "border": "#BBB9B2",
+        "hover": "#DDD9D1"
+      }
+    },
+    "contextMenu": {
+      "primary": {
+        "background": "#E2DED6",
+        "border": "#BBB9B2",
+        "hover": "#DDD9D1"
+      }
+    },
+    "sheet": {
+      "primary": {
+        "background": "#E2DED6",
+        "border": "#BBB9B2"
+      }
+    }
+  }
+}
